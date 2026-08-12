@@ -1,0 +1,14 @@
+﻿Metric,Before,After
+Total rows,630.0,612.0
+Missing Customer_Email,50.0,0.0
+Missing Province,12.0,0.0
+Exact duplicates,18.0,0.0
+Distinct Gender values,10.0,2.0
+Distinct Payment_Method values,14.0,4.0
+Invalid / non-standard Order_Date,279.0,0.0
+Invalid Quantity (not 1-20),3.0,3.0
+Mismatched Transaction_Amount,51.0,50.0
+Invalid Order_Status,16.0,5.0
+Outliers capped (non-promotion),19.0,0.0
+Max Transaction_Amount,999999.0,19610.76
+Late loads (> 24 hrs),38.0,38.0

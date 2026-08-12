@@ -1,0 +1,613 @@
+﻿Transaction_ID,Customer_ID,Customer_Name,Customer_Email,Gender,Province,Order_Date,Load_Timestamp,Product_Category,Quantity,Unit_Price,Discount_Rate,Transaction_Amount,Payment_Method,Order_Status,Is_Promotion,Customer_Email_Was_Missing,Province_Was_Missing,Order_Date_Parse_Method,Order_Date_Was_Imputed,Quantity_Was_Invalid,Expected_Amount,Accuracy_Flag,Status_Was_Invalid,Outlier_Flag_Before_Capping,Transaction_Amount_Before_Capping,Load_Delay_Hours,Is_Late_Load
+T000127,C0103,Tee Phromla,tee.phromla103@example.com,F,Phuket,2026-06-11,2026-06-11 05:00:00,Sports,3,110.26,0.05,314.24,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,314.24,0,0,0,314.24,5.0,0
+T000169,C0138,Mint Dechawat,mint.dechawat138@example.com,M,Khon Kaen,2026-01-24,2026-01-24 01:00:00,Home,3,138.08,0.05,393.53,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,393.53,0,0,0,393.53,1.0,0
+T000003,C0071,Aom Sukjai,aom.sukjai71@example.com,M,Chanthaburi,2026-05-29,2026-05-29 05:00:00,Home,4,263.93,0.0,1055.72,Cash on Delivery,Cancelled,N,0,0,MM/DD/YYYY,0,0,1055.72,0,0,0,1055.72,5.0,0
+T000336,C0152,Tee Dechawat,tee.dechawat152@example.com,M,Chanthaburi,2026-02-01,2026-02-01 18:00:00,Food,6,116.53,0.1,629.26,Bank Transfer,Returned,N,0,0,MM/DD/YYYY,0,0,629.26,0,0,0,629.26,18.0,0
+T000093,C0090,Mook Sukjai,mook.sukjai90@example.com,M,Chanthaburi,2026-04-18,2026-04-18 13:00:00,Electronics,5,358.35,0.0,1791.75,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,1791.75,0,0,0,1791.75,13.0,0
+T000440,C0038,Boss Kittikul,boss.kittikul38@example.com,F,Nakhon Ratchasima,2026-02-23,2026-02-23 05:00:00,Sports,6,142.14,0.0,852.84,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,852.84,0,0,0,852.84,5.0,0
+T000419,C0147,Film Chaiyo,film.chaiyo147@example.com,M,Chiang Mai,2026-06-01,2026-06-01 10:00:00,Fashion,2,334.89,0.0,669.78,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,669.78,0,0,0,669.78,10.0,0
+T000307,C0018,Nont Chaiyo,nont.chaiyo18@example.com,M,Phuket,2026-02-06,2026-02-06 13:00:00,Home,4,484.67,0.0,1891.04,Bank Transfer,Completed,N,0,0,MM/DD/YYYY,0,0,1938.68,1,0,0,1891.04,13.0,0
+T000438,C0073,May Lertprasert,may.lertprasert73@example.com,M,Bangkok,2026-02-26,2026-02-26 09:00:00,Sports,6,238.93,0.1,1290.22,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,1290.22,0,0,0,1290.22,9.0,0
+T000544,C0103,Tee Phromla,tee.phromla103@example.com,F,Phuket,2026-04-25,2026-04-25 03:00:00,Beauty,5,68.77,0.05,326.66,Bank Transfer,Returned,Y,0,0,YYYY-MM-DD,0,0,326.66,0,0,0,326.66,3.0,0
+T000141,C0116,Boss Wongsa,boss.wongsa116@example.com,F,Chonburi,2026-06-19,2026-06-19 06:00:00,Food,4,98.35,0.0,393.4,Credit Card,Cancelled,N,0,0,Fallback_LoadTimestamp,1,0,393.4,0,0,0,393.4,6.0,0
+T000476,C0081,Film Srisawat,film.srisawat81@example.com,M,Chonburi,2026-03-20,2026-03-20 09:00:00,Food,4,432.12,0.0,1728.48,Bank Transfer,Processing,N,0,0,MM/DD/YYYY,0,0,1728.48,0,0,0,1728.48,9.0,0
+T000433,C0007,Jane Saelim,jane.saelim7@example.com,M,Chiang Mai,2026-02-11,2026-02-11 17:00:00,Food,6,225.36,0.05,1284.55,PromptPay,Processing,Y,0,0,YYYY-MM-DD,0,0,1284.55,0,0,0,1284.55,17.0,0
+T000589,C0029,Aom Pattanakul,aom.pattanakul29@example.com,F,Bangkok,2026-03-21,2026-03-21 08:00:00,Food,6,131.69,0.05,750.63,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,750.63,0,0,0,750.63,8.0,0
+T000565,C0086,Korn Dechawat,korn.dechawat86@example.com,F,Nakhon Ratchasima,2026-05-26,2026-05-26 10:00:00,Electronics,5,83.16,0.0,415.8,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,415.8,0,0,0,415.8,10.0,0
+T000598,C0060,Tee Maneerat,tee.maneerat60@example.com,M,Rayong,2026-04-07,2026-04-07 10:00:00,Sports,4,486.91,0.05,1850.26,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,1850.26,0,0,0,1850.26,10.0,0
+T000277,C0085,Aom Thongdee,aom.thongdee85@example.com,F,Chiang Mai,2026-02-11,2026-02-11 12:00:00,Food,3,282.28,0.05,804.5,Cash on Delivery,Completed,N,0,0,YYYY/MM/DD,0,0,804.5,0,0,0,804.5,12.0,0
+T000344,C0116,Boss Wongsa,boss.wongsa116@example.com,F,Chonburi,2026-01-14,2026-01-14 07:00:00,Sports,3,202.84,0.0,608.52,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,608.52,0,0,0,608.52,7.0,0
+T000129,C0079,Mook Srisawat,mook.srisawat79@example.com,F,Chanthaburi,2026-04-15,2026-04-15 11:00:00,Electronics,3,105.51,0.1,284.88,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,284.88,0,0,0,284.88,11.0,0
+T000044,C0173,Tee Wongsa,tee.wongsa173@example.com,M,Phuket,2026-01-26,2026-01-26 02:00:00,Beauty,5,273.16,0.2,1092.64,Cash on Delivery,Completed,N,0,0,DD-MM-YYYY,0,0,1092.64,0,0,0,1092.64,2.0,0
+T000293,C0076,Pim Phromla,pim.phromla76@example.com,M,Chanthaburi,2026-02-18,2026-02-20 01:00:00,Electronics,6,297.28,0.05,1694.5,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,1694.5,0,0,0,1694.5,49.0,1
+T000146,C0132,Fah Saelim,fah.saelim132@example.com,M,Khon Kaen,2026-01-16,2026-01-16 02:00:00,Food,3,119.99,0.1,323.97,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,323.97,0,0,0,323.97,2.0,0
+T000559,C0038,Boss Kittikul,boss.kittikul38@example.com,F,Nakhon Ratchasima,2026-05-19,2026-05-19 03:00:00,Electronics,4,385.46,0.05,1407.15,Bank Transfer,Returned,N,0,0,MM/DD/YYYY,0,0,1464.75,1,0,0,1407.15,3.0,0
+T000082,C0145,Tee Srisawat,tee.srisawat145@example.com,M,Nakhon Ratchasima,2026-02-22,2026-02-22 17:00:00,Electronics,4,213.82,0.0,855.28,Cash on Delivery,Processing,N,0,0,YYYY/MM/DD,0,0,855.28,0,0,0,855.28,17.0,0
+T000368,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-04-12,2026-04-12 01:00:00,Electronics,6,147.75,0.0,886.5,PromptPay,Processing,N,0,0,DD-MM-YYYY,0,0,886.5,0,0,0,886.5,1.0,0
+T000353,C0109,Jane Thongdee,unknown_C0109@unknown.local,F,Bangkok,2026-04-16,2026-04-16 04:00:00,Electronics,6,143.3,0.0,859.8,PromptPay,Cancelled,N,1,0,YYYY-MM-DD,0,0,859.8,0,0,0,859.8,4.0,0
+T000505,C0173,Tee Wongsa,tee.wongsa173@example.com,M,Phuket,2026-04-14,2026-04-14 17:00:00,Beauty,5,258.8,0.0,1294.0,Credit Card,Processing,N,0,0,DD/MM/YYYY,0,0,1294.0,0,0,0,1294.0,17.0,0
+T000571,C0085,Aom Thongdee,aom.thongdee85@example.com,F,Chiang Mai,2026-01-17,2026-01-20 13:00:00,Food,4,236.68,0.0,946.72,Cash on Delivery,Completed,N,0,0,DD-MM-YYYY,0,0,946.72,0,0,0,946.72,85.0,1
+T000599,C0039,Beam Boonmee,beam.boonmee39@example.com,M,Rayong,2026-01-01,2026-01-01 07:00:00,Sports,1,470.07,0.15,318.43,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,399.56,1,0,0,318.43,7.0,0
+T000074,C0022,Film Kittikul,film.kittikul22@example.com,F,Nakhon Ratchasima,2026-06-12,2026-06-12 08:00:00,Beauty,6,166.19,0.1,897.43,PromptPay,Returned,Y,0,0,YYYY-MM-DD,0,0,897.43,0,0,0,897.43,8.0,0
+T000205,C0134,Pim Wongsa,unknown_C0134@unknown.local,M,Chanthaburi,2026-06-28,2026-06-28 16:00:00,Food,6,247.3,0.0,1483.8,Cash on Delivery,Cancelled,N,1,0,YYYY-MM-DD,0,0,1483.8,0,0,0,1483.8,16.0,0
+T000070,C0062,Beam Rattanakul,unknown_C0062@unknown.local,M,Bangkok,2026-03-31,2026-03-31 08:00:00,Beauty,6,210.09,0.0,1260.54,Credit Card,Completed,N,1,0,DD-MM-YYYY,0,0,1260.54,0,0,0,1260.54,8.0,0
+T000130,C0093,Bank Thongdee,bank.thongdee93@example.com,F,Khon Kaen,2026-01-06,2026-01-06 08:00:00,Sports,3,162.6,0.1,439.02,PromptPay,Cancelled,N,0,0,DD-MM-YYYY,0,0,439.02,0,0,0,439.02,8.0,0
+T000411,C0056,Mint Maneerat,mint.maneerat56@example.com,M,Rayong,2026-01-09,2026-01-09 11:00:00,Beauty,5,268.07,0.0,1340.35,PromptPay,Cancelled,N,0,0,DD-MM-YYYY,0,0,1340.35,0,0,0,1340.35,11.0,0
+T900007,C0149,May Pattanakul,may.pattanakul149@example.com,F,Chiang Mai,2026-04-03,2026-04-03 17:00:00,Fashion,2,218.01,0.1,392.42,Bank Transfer,Returned,N,0,0,Fallback_LoadTimestamp,1,0,392.42,0,0,0,392.42,17.0,0
+T000116,C0145,Tee Srisawat,tee.srisawat145@example.com,M,Nakhon Ratchasima,2026-05-25,2026-05-25 06:00:00,Beauty,4,340.01,0.05,1292.04,Bank Transfer,Unknown,N,0,0,MM/DD/YYYY,0,0,1292.04,0,1,0,1292.04,6.0,0
+T000548,C0053,Jane Pattanakul,jane.pattanakul53@example.com,M,Nakhon Ratchasima,2026-01-08,2026-01-08 02:00:00,Beauty,4,77.7,0.0,310.8,Credit Card,Cancelled,N,0,0,DD/MM/YYYY,0,0,310.8,0,0,0,310.8,2.0,0
+T000211,C0150,Mook Chaiyo,mook.chaiyo150@example.com,F,Chiang Mai,2026-04-30,2026-04-30 05:00:00,Food,5,76.96,0.0,384.8,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,384.8,0,0,0,384.8,5.0,0
+T000558,C0033,Pim Srisawat,pim.srisawat33@example.com,M,Rayong,2026-06-27,2026-06-27 14:00:00,Electronics,2,89.22,0.0,115.33,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,178.44,1,0,0,115.33,14.0,0
+T000531,C0125,May Lertprasert,may.lertprasert125@example.com,F,Rayong,2026-01-10,2026-01-10 10:00:00,Sports,1,103.51,0.15,87.98,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,87.98,0,0,0,87.98,10.0,0
+T000250,C0011,Mint Rattanakul,mint.rattanakul11@example.com,F,Chanthaburi,2026-02-04,2026-02-04 19:00:00,Food,5,231.48,0.15,983.79,Cash on Delivery,Returned,N,0,0,MM/DD/YYYY,0,0,983.79,0,0,0,983.79,19.0,0
+T000179,C0034,Fah Pattanakul,fah.pattanakul34@example.com,M,Chiang Mai,2026-02-23,2026-02-23 15:00:00,Sports,6,87.78,0.0,526.68,Credit Card,Cancelled,N,0,0,YYYY/MM/DD,0,0,526.68,0,0,0,526.68,15.0,0
+T000105,C0086,Korn Dechawat,korn.dechawat86@example.com,F,Nakhon Ratchasima,2026-05-07,2026-05-07 08:00:00,Food,2,79.14,0.0,158.28,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,158.28,0,0,0,158.28,8.0,0
+T000462,C0085,Aom Thongdee,aom.thongdee85@example.com,F,Unknown,2026-06-25,2026-06-25 18:00:00,Beauty,1,137.25,0.1,123.53,Cash on Delivery,Cancelled,N,0,1,MM/DD/YYYY,0,0,123.52,0,0,0,123.53,18.0,0
+T000441,C0016,Korn Lertprasert,korn.lertprasert16@example.com,M,Unknown,2026-03-01,2026-03-01 13:00:00,Sports,2,211.65,0.15,359.81,Credit Card,Cancelled,N,0,1,YYYY/MM/DD,0,0,359.8,0,0,0,359.81,13.0,0
+T000118,C0024,Fah Boonmee,fah.boonmee24@example.com,F,Bangkok,2026-06-22,2026-06-22 01:00:00,Electronics,5,198.5,0.05,942.88,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,942.88,0,0,0,942.88,1.0,0
+T000050,C0122,Anan Wongsa,anan.wongsa122@example.com,M,Chanthaburi,2026-02-27,2026-02-27 15:00:00,Food,6,188.54,0.05,1074.68,PromptPay,Completed,N,0,0,MM/DD/YYYY,0,0,1074.68,0,0,0,1074.68,15.0,0
+T000253,C0149,May Pattanakul,may.pattanakul149@example.com,F,Unknown,2026-04-21,2026-04-21 14:00:00,Electronics,6,166.88,0.15,851.09,Bank Transfer,Returned,N,0,1,YYYY-MM-DD,0,0,851.09,0,0,0,851.09,14.0,0
+T000479,C0133,Gun Kittikul,unknown_C0133@unknown.local,F,Phuket,2026-05-28,2026-05-28 11:00:00,Home,6,98.7,0.1,382.34,PromptPay,Returned,N,1,0,MM/DD/YYYY,0,0,532.98,1,0,0,382.34,11.0,0
+T000139,C0044,Gun Phromla,gun.phromla44@example.com,F,Chonburi,2026-05-24,2026-05-24 19:00:00,Electronics,4,172.46,0.15,586.36,PromptPay,Cancelled,N,0,0,DD-MM-YYYY,0,0,586.36,0,0,0,586.36,19.0,0
+T000300,C0176,Ploy Boonmee,ploy.boonmee176@example.com,M,Chanthaburi,2026-02-19,2026-02-19 17:00:00,Fashion,1,666.44,0.1,599.8,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,599.8,0,0,0,599.8,17.0,0
+T000510,C0016,Korn Lertprasert,korn.lertprasert16@example.com,M,Khon Kaen,2026-02-12,2026-02-12 18:00:00,Beauty,3,116.82,0.0,350.46,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,350.46,0,0,0,350.46,18.0,0
+T000171,C0166,Jane Srisawat,jane.srisawat166@example.com,F,Nakhon Ratchasima,2026-05-30,2026-05-30 17:00:00,Fashion,5,151.98,0.0,759.9,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,759.9,0,0,0,759.9,17.0,0
+T000528,C0067,May Pattanakul,may.pattanakul67@example.com,M,Chonburi,2026-03-14,2026-03-14 16:00:00,Beauty,3,137.2,0.05,391.02,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,391.02,0,0,0,391.02,16.0,0
+T900001,C0173,Tee Wongsa,tee.wongsa173@example.com,M,Phuket,2026-02-03,2026-02-03 03:00:00,Beauty,3,286.06,0.0,858.18,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,858.18,0,0,0,858.18,3.0,0
+T000532,C0010,Beam Sukjai,beam.sukjai10@example.com,M,Phuket,2026-06-27,2026-06-27 06:00:00,Electronics,3,148.42,0.1,400.73,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,400.73,0,0,0,400.73,6.0,0
+T000498,C0149,May Pattanakul,may.pattanakul149@example.com,F,Unknown,2026-03-22,2026-03-22 11:00:00,Home,4,166.41,0.0,665.64,Bank Transfer,Processing,N,0,1,YYYY/MM/DD,0,0,665.64,0,0,0,665.64,11.0,0
+T000401,C0137,Film Boonmee,film.boonmee137@example.com,M,Khon Kaen,2026-06-10,2026-06-10 15:00:00,Fashion,1,488.78,0.2,391.02,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,391.02,0,0,0,391.02,15.0,0
+T000102,C0004,Tee Dechawat,tee.dechawat4@example.com,M,Bangkok,2026-06-12,2026-06-14 18:00:00,Electronics,1,144.45,0.15,1227.8,Bank Transfer,Completed,Y,0,0,YYYY-MM-DD,0,0,122.78,1,0,0,1227.8,66.0,1
+T000509,C0071,Aom Sukjai,aom.sukjai71@example.com,M,Chanthaburi,2026-03-08,2026-03-10 10:00:00,Beauty,3,90.67,0.0,272.01,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,272.01,0,0,0,272.01,58.0,1
+T000464,C0103,Tee Phromla,tee.phromla103@example.com,F,Phuket,2026-01-19,2026-01-19 05:00:00,Food,6,260.38,0.05,1484.17,Credit Card,Cancelled,N,0,0,MM/DD/YYYY,0,0,1484.17,0,0,0,1484.17,5.0,0
+T000354,C0152,Tee Dechawat,tee.dechawat152@example.com,M,Chanthaburi,2026-02-15,2026-02-15 19:00:00,Fashion,1,177.36,0.0,177.36,Bank Transfer,Completed,N,0,0,MM/DD/YYYY,0,0,177.36,0,0,0,177.36,19.0,0
+T000358,C0069,Jane Saelim,jane.saelim69@example.com,M,Khon Kaen,2026-01-22,2026-01-22 04:00:00,Electronics,2,327.93,0.05,623.07,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,623.07,0,0,0,623.07,4.0,0
+T000583,C0119,Boss Khamdee,boss.khamdee119@example.com,M,Khon Kaen,2026-05-03,2026-05-03 17:00:00,Fashion,1,149.8,0.2,119.84,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,119.84,0,0,0,119.84,17.0,0
+T000542,C0104,May Srisawat,may.srisawat104@example.com,F,Chonburi,2026-02-28,2026-02-28 05:00:00,Sports,5,199.81,0.05,949.1,PromptPay,Completed,N,0,0,YYYY/MM/DD,0,0,949.1,0,0,0,949.1,5.0,0
+T000183,C0001,Tee Saelim,tee.saelim1@example.com,F,Bangkok,2026-04-15,2026-04-15 09:00:00,Home,4,167.56,0.0,670.24,Bank Transfer,Processing,N,0,0,YYYY/MM/DD,0,0,670.24,0,0,0,670.24,9.0,0
+T000158,C0049,Gun Dechawat,gun.dechawat49@example.com,F,Nakhon Ratchasima,2026-02-13,2026-02-13 07:00:00,Food,6,175.83,0.1,949.48,PromptPay,Returned,N,0,0,YYYY/MM/DD,0,0,949.48,0,0,0,949.48,7.0,0
+T000117,C0025,Mook Srisawat,mook.srisawat25@example.com,M,Nakhon Ratchasima,2026-02-28,2026-02-28 02:00:00,Fashion,5,202.7,0.2,694.33,PromptPay,Returned,N,0,0,YYYY/MM/DD,0,0,810.8,1,0,0,694.33,2.0,0
+T000213,C0013,Narin Wongsa,narin.wongsa13@example.com,F,Khon Kaen,2026-05-21,2026-05-25 19:00:00,Sports,5,284.47,0.1,1280.12,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,1280.12,0,0,0,1280.12,115.0,1
+T000577,C0007,Jane Saelim,jane.saelim7@example.com,M,Chiang Mai,2026-03-09,2026-03-09 03:00:00,Home,2,376.66,0.2,602.66,Cash on Delivery,Processing,Y,0,0,DD-MM-YYYY,0,0,602.66,0,0,0,602.66,3.0,0
+T000203,C0070,Pim Chaiyo,pim.chaiyo70@example.com,M,Khon Kaen,2026-05-22,2026-05-22 19:00:00,Home,2,114.35,0.05,217.26,PromptPay,Processing,N,0,0,MM/DD/YYYY,0,0,217.26,0,0,0,217.26,19.0,0
+T000320,C0017,Mook Rattanakul,mook.rattanakul17@example.com,F,Khon Kaen,2026-02-23,2026-02-23 17:00:00,Sports,6,333.51,0.0,2001.06,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,2001.06,0,0,0,2001.06,17.0,0
+T000315,C0029,Aom Pattanakul,aom.pattanakul29@example.com,F,Bangkok,2026-03-17,2026-03-17 12:00:00,Beauty,5,247.85,0.0,1239.25,Cash on Delivery,Cancelled,N,0,0,MM/DD/YYYY,0,0,1239.25,0,0,0,1239.25,12.0,0
+T000410,C0172,Beam Saelim,beam.saelim172@example.com,F,Rayong,2026-02-05,2026-02-05 10:00:00,Food,2,64.3,0.1,115.74,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,115.74,0,0,0,115.74,10.0,0
+T000121,C0141,Korn Phromla,korn.phromla141@example.com,M,Khon Kaen,2026-01-22,2026-01-22 07:00:00,Fashion,1,76.25,0.05,72.44,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,72.44,0,0,0,72.44,7.0,0
+T000210,C0044,Gun Phromla,gun.phromla44@example.com,F,Chonburi,2026-03-28,2026-03-28 02:00:00,Electronics,6,213.42,0.15,1088.44,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,1088.44,0,0,0,1088.44,2.0,0
+T000319,C0123,Ploy Khamdee,ploy.khamdee123@example.com,F,Chanthaburi,2026-04-14,2026-04-14 11:00:00,Electronics,6,312.61,0.1,1688.09,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,1688.09,0,0,0,1688.09,11.0,0
+T000352,C0081,Film Srisawat,film.srisawat81@example.com,M,Chonburi,2026-05-12,2026-05-12 01:00:00,Sports,1,316.91,0.0,316.91,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,316.91,0,0,0,316.91,1.0,0
+T000292,C0080,May Kittikul,may.kittikul80@example.com,F,Khon Kaen,2026-06-24,2026-06-24 07:00:00,Fashion,2,299.01,0.1,538.22,Cash on Delivery,Cancelled,N,0,0,DD-MM-YYYY,0,0,538.22,0,0,0,538.22,7.0,0
+T000051,C0162,Aom Dechawat,aom.dechawat162@example.com,M,Rayong,2026-05-22,2026-05-22 15:00:00,Food,6,147.08,0.1,794.23,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,794.23,0,0,0,794.23,15.0,0
+T000295,C0060,Tee Maneerat,tee.maneerat60@example.com,M,Rayong,2026-02-16,2026-02-16 13:00:00,Food,4,521.86,0.15,1774.32,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,1774.32,0,0,0,1774.32,13.0,0
+T000027,C0173,Tee Wongsa,tee.wongsa173@example.com,M,Phuket,2026-06-13,2026-06-13 12:00:00,Home,3,254.83,0.0,764.49,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,764.49,0,0,0,764.49,12.0,0
+T000477,C0139,Gun Phromla,gun.phromla139@example.com,M,Nakhon Ratchasima,2026-03-19,2026-03-19 06:00:00,Fashion,5,73.37,0.0,366.85,Cash on Delivery,Returned,N,0,0,YYYY/MM/DD,0,0,366.85,0,0,0,366.85,6.0,0
+T000045,C0075,Ice Maneerat,ice.maneerat75@example.com,F,Bangkok,2026-05-30,2026-05-30 06:00:00,Home,3,347.59,0.1,938.49,Credit Card,Completed,N,0,0,DD/MM/YYYY,0,0,938.49,0,0,0,938.49,6.0,0
+T000367,C0123,Ploy Khamdee,ploy.khamdee123@example.com,F,Chanthaburi,2026-06-16,2026-06-16 09:00:00,Food,5,227.44,0.1,1023.48,Cash on Delivery,Cancelled,N,0,0,YYYY/MM/DD,0,0,1023.48,0,0,0,1023.48,9.0,0
+T000398,C0069,Jane Saelim,jane.saelim69@example.com,M,Khon Kaen,2026-05-15,2026-05-19 00:00:00,Food,5,205.91,0.0,1029.55,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,1029.55,0,0,0,1029.55,96.0,1
+T000327,C0048,Boss Dechawat,boss.dechawat48@example.com,F,Rayong,2026-03-12,2026-03-12 13:00:00,Food,2,180.15,0.15,306.25,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,306.26,0,0,0,306.25,13.0,0
+T000555,C0019,Korn Dechawat,korn.dechawat19@example.com,M,Nakhon Ratchasima,2026-06-13,2026-06-15 01:00:00,Electronics,4,473.76,0.2,1516.03,Cash on Delivery,Returned,N,0,0,DD-MM-YYYY,0,0,1516.03,0,0,0,1516.03,49.0,1
+T000090,C0109,Jane Thongdee,jane.thongdee109@example.com,F,Bangkok,2026-05-14,2026-05-14 04:00:00,Sports,4,255.94,0.0,1023.76,PromptPay,Returned,N,0,0,DD/MM/YYYY,0,0,1023.76,0,0,0,1023.76,4.0,0
+T000197,C0109,Jane Thongdee,jane.thongdee109@example.com,F,Bangkok,2026-02-02,2026-02-02 05:00:00,Home,2,210.54,0.0,421.08,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,421.08,0,0,0,421.08,5.0,0
+T000107,C0087,May Sukjai,may.sukjai87@example.com,M,Chanthaburi,2026-06-13,2026-06-13 07:00:00,Home,4,125.39,0.0,501.56,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,501.56,0,0,0,501.56,7.0,0
+T000569,C0086,Korn Dechawat,korn.dechawat86@example.com,F,Nakhon Ratchasima,2026-05-06,2026-05-06 19:00:00,Food,3,181.97,0.1,330.28,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,491.32,1,0,0,330.28,19.0,0
+T000095,C0142,Ploy Maneerat,ploy.maneerat142@example.com,F,Chiang Mai,2026-05-09,2026-05-09 17:00:00,Electronics,6,571.14,0.0,2092.5,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,3426.84,0,0,1,3426.84,17.0,0
+T000317,C0036,Film Maneerat,film.maneerat36@example.com,F,Chonburi,2026-03-30,2026-03-30 14:00:00,Beauty,6,159.05,0.0,954.3,Credit Card,Returned,N,0,0,DD-MM-YYYY,0,0,954.3,0,0,0,954.3,14.0,0
+T000024,C0141,Korn Phromla,korn.phromla141@example.com,M,Khon Kaen,2026-04-17,2026-04-17 01:00:00,Sports,5,212.22,0.05,1008.04,Credit Card,Cancelled,N,0,0,MM/DD/YYYY,0,0,1008.04,0,0,0,1008.04,1.0,0
+T000088,C0047,Ploy Saelim,ploy.saelim47@example.com,F,Khon Kaen,2026-04-11,2026-04-11 17:00:00,Electronics,3,383.05,0.0,1149.15,Bank Transfer,Returned,N,0,0,DD/MM/YYYY,0,0,1149.15,0,0,0,1149.15,17.0,0
+T900011,C0047,Ploy  Saelim,ploy.saelim47@example.com,F,Khon Kaen,2026-05-18,2026-05-18 17:00:00,Home,2,149.97,0.05,284.94,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,284.94,0,0,0,284.94,17.0,0
+T000473,C0052,Gun Dechawat,gun.dechawat52@example.com,F,Rayong,2026-04-22,2026-04-22 02:00:00,Electronics,1,284.44,0.15,241.77,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,241.77,0,0,0,241.77,2.0,0
+T000165,C0043,Beam Rattanakul,beam.rattanakul43@example.com,M,Bangkok,2026-06-07,2026-06-07 12:00:00,Sports,6,208.96,0.1,1128.38,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,1128.38,0,0,0,1128.38,12.0,0
+T000097,C0158,Nont Kittikul,nont.kittikul158@example.com,M,Nakhon Ratchasima,2026-01-05,2026-01-05 19:00:00,Food,4,175.75,0.0,703.0,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,703.0,0,0,0,703.0,19.0,0
+T000054,C0012,Mint Pattanakul,mint.pattanakul12@example.com,M,Chiang Mai,2026-02-27,2026-02-27 13:00:00,Sports,3,305.63,0.05,871.05,PromptPay,Processing,N,0,0,DD/MM/YYYY,0,0,871.05,0,0,0,871.05,13.0,0
+T000486,C0178,Anan Wongsa,anan.wongsa178@example.com,M,Khon Kaen,2026-04-15,2026-04-19 05:00:00,Fashion,6,156.07,0.0,936.42,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,936.42,0,0,0,936.42,101.0,1
+T000488,C0110,Mook Srisawat,mook.srisawat110@example.com,F,Nakhon Ratchasima,2026-04-18,2026-04-18 01:00:00,Food,1,269.19,0.1,242.27,Bank Transfer,Returned,N,0,0,YYYY/MM/DD,0,0,242.27,0,0,0,242.27,1.0,0
+T000214,C0156,Beam Kittikul,beam.kittikul156@example.com,M,Chanthaburi,2026-06-26,2026-06-26 02:00:00,Sports,5,130.87,0.2,523.48,Bank Transfer,Returned,N,0,0,DD/MM/YYYY,0,0,523.48,0,0,0,523.48,2.0,0
+T000231,C0156,Beam Kittikul,beam.kittikul156@example.com,M,Chanthaburi,2026-02-23,2026-02-23 08:00:00,Home,2,141.82,0.0,283.64,Bank Transfer,Processing,N,0,0,MM/DD/YYYY,0,0,283.64,0,0,0,283.64,8.0,0
+T000037,C0068,Beam Sukjai,beam.sukjai68@example.com,F,Bangkok,2026-02-04,2026-02-04 04:00:00,Sports,4,365.29,0.0,1461.16,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,1461.16,0,0,0,1461.16,4.0,0
+T000543,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-06-01,2026-06-01 19:00:00,Sports,6,300.46,0.0,1802.76,PromptPay,Unknown,N,0,0,MM/DD/YYYY,0,0,1802.76,0,1,0,1802.76,19.0,0
+T000414,C0030,May Thongdee,may.thongdee30@example.com,M,Nakhon Ratchasima,2026-04-10,2026-04-10 07:00:00,Electronics,3,158.95,0.0,476.85,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,476.85,0,0,0,476.85,7.0,0
+T000038,C0129,Ploy Chaiyo,unknown_C0129@unknown.local,M,Bangkok,2026-01-06,2026-01-06 17:00:00,Beauty,4,211.89,0.1,762.8,PromptPay,Completed,N,1,0,YYYY-MM-DD,0,0,762.8,0,0,0,762.8,17.0,0
+T000143,C0169,Boss Kittikul,boss.kittikul169@example.com,M,Nakhon Ratchasima,2026-05-06,2026-05-06 13:00:00,Sports,3,161.97,0.0,485.91,Credit Card,Cancelled,N,0,0,YYYY/MM/DD,0,0,485.91,0,0,0,485.91,13.0,0
+T000140,C0174,Ploy Kittikul,unknown_C0174@unknown.local,M,Chiang Mai,2026-03-02,2026-03-02 13:00:00,Sports,5,138.85,0.1,624.83,PromptPay,Completed,N,1,0,YYYY-MM-DD,0,0,624.83,0,0,0,624.83,13.0,0
+T000220,C0178,Anan Wongsa,anan.wongsa178@example.com,M,Khon Kaen,2026-03-18,2026-03-18 06:00:00,Home,1,221.19,0.05,210.13,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,210.13,0,0,0,210.13,6.0,0
+T000014,C0144,Gun Sukjai,unknown_C0144@unknown.local,M,Phuket,2026-01-29,2026-01-29 18:00:00,Home,3,172.11,0.0,516.33,Bank Transfer,Processing,N,1,0,MM/DD/YYYY,0,0,516.33,0,0,0,516.33,18.0,0
+T000272,C0029,Aom Pattanakul,aom.pattanakul29@example.com,F,Bangkok,2026-04-27,2026-04-27 10:00:00,Sports,3,185.42,0.0,556.26,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,556.26,0,0,0,556.26,10.0,0
+T000534,C0086,Korn Dechawat,korn.dechawat86@example.com,F,Nakhon Ratchasima,2026-06-18,2026-06-18 01:00:00,Fashion,6,259.77,0.05,1480.69,Credit Card,Cancelled,N,0,0,MM/DD/YYYY,0,0,1480.69,0,0,0,1480.69,1.0,0
+T000582,C0034,Fah Pattanakul,fah.pattanakul34@example.com,M,Chiang Mai,2026-03-21,2026-03-21 02:00:00,Electronics,4,138.78,0.0,555.12,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,555.12,0,0,0,555.12,2.0,0
+T000001,C0132,Fah Saelim,fah.saelim132@example.com,M,Khon Kaen,2026-02-10,2026-02-10 02:00:00,Electronics,4,199.57,0.0,798.28,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,798.28,0,0,0,798.28,2.0,0
+T000346,C0127,Fah Rattanakul,fah.rattanakul127@example.com,F,Rayong,2026-05-26,2026-05-26 08:00:00,Beauty,6,301.38,0.0,1808.28,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,1808.28,0,0,0,1808.28,8.0,0
+T000529,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-03-20,2026-03-20 07:00:00,Home,5,386.42,0.2,1545.68,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,1545.68,0,0,0,1545.68,7.0,0
+T000435,C0026,Mook Wongsa,mook.wongsa26@example.com,M,Chiang Mai,2026-03-08,2026-03-12 16:00:00,Beauty,5,120.9,0.1,544.05,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,544.05,0,0,0,544.05,112.0,1
+T000574,C0041,Tee Chaiyo,tee.chaiyo41@example.com,M,Chonburi,2026-06-22,2026-06-22 08:00:00,Fashion,0,189.02,0.2,151.22,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,1,0.0,1,0,0,151.22,8.0,0
+T000413,C0047,Ploy Saelim,ploy.saelim47@example.com,F,Khon Kaen,2026-04-11,2026-04-11 13:00:00,Food,1,439.01,0.1,395.11,Bank Transfer,Returned,N,0,0,DD/MM/YYYY,0,0,395.11,0,0,0,395.11,13.0,0
+T000111,C0105,Korn Sukjai,korn.sukjai105@example.com,F,Rayong,2026-01-28,2026-01-28 04:00:00,Beauty,3,163.24,0.0,489.72,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,489.72,0,0,0,489.72,4.0,0
+T000513,C0023,Beam Boonmee,beam.boonmee23@example.com,M,Khon Kaen,2026-03-09,2026-03-09 05:00:00,Electronics,5,288.21,0.05,1369.0,PromptPay,Completed,Y,0,0,YYYY-MM-DD,0,0,1369.0,0,0,0,1369.0,5.0,0
+T000104,C0065,Pim Srisawat,pim.srisawat65@example.com,M,Nakhon Ratchasima,2026-01-07,2026-01-07 12:00:00,Electronics,3,340.28,0.05,969.8,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,969.8,0,0,0,969.8,12.0,0
+T000393,C0040,Pim Srisawat,pim.srisawat40@example.com,M,Rayong,2026-02-13,2026-02-13 09:00:00,Fashion,6,90.22,0.0,-1.0,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,541.32,1,0,0,-1.0,9.0,0
+T000196,C0089,May Sukjai,may.sukjai89@example.com,F,Unknown,2026-04-18,2026-04-18 06:00:00,Home,2,166.53,0.1,299.75,Bank Transfer,Returned,N,0,1,YYYY-MM-DD,0,0,299.75,0,0,0,299.75,6.0,0
+T000375,C0108,Anan Khamdee,anan.khamdee108@example.com,M,Nakhon Ratchasima,2026-01-09,2026-01-09 09:00:00,Fashion,6,480.57,0.0,2092.5,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,2883.42,0,0,1,2883.42,9.0,0
+T000306,C0136,Nont Kittikul,nont.kittikul136@example.com,F,Khon Kaen,2026-04-22,2026-04-22 04:00:00,Beauty,4,74.59,0.2,238.69,Credit Card,Processing,N,0,0,YYYY/MM/DD,0,0,238.69,0,0,0,238.69,4.0,0
+T000442,C0136,Nont Kittikul,unknown_C0136@unknown.local,F,Khon Kaen,2026-01-30,2026-01-30 13:00:00,Fashion,5,329.1,0.15,1398.67,Cash on Delivery,Completed,N,1,0,DD/MM/YYYY,0,0,1398.68,0,0,0,1398.67,13.0,0
+T000337,C0096,Korn Dechawat,korn.dechawat96@example.com,M,Chonburi,2026-05-13,2026-05-13 19:00:00,Electronics,3,373.15,0.0,1119.45,Credit Card,Cancelled,N,0,0,DD/MM/YYYY,0,0,1119.45,0,0,0,1119.45,19.0,0
+T000012,C0032,Bank Dechawat,bank.dechawat32@example.com,F,Nakhon Ratchasima,2026-04-02,2026-04-02 12:00:00,Fashion,4,303.9,0.15,1033.26,Credit Card,Returned,N,0,0,DD/MM/YYYY,0,0,1033.26,0,0,0,1033.26,12.0,0
+T000444,C0014,Beam Thongdee,beam.thongdee14@example.com,M,Chonburi,2026-03-02,2026-03-02 14:00:00,Food,2,466.56,0.0,933.12,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,933.12,0,0,0,933.12,14.0,0
+T000537,C0072,Tee Lertprasert,tee.lertprasert72@example.com,F,Chanthaburi,2026-04-15,2026-04-15 12:00:00,Fashion,4,351.31,0.2,1124.19,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,1124.19,0,0,0,1124.19,12.0,0
+T000525,C0080,May Kittikul,unknown_C0080@unknown.local,F,Khon Kaen,2026-04-16,2026-04-16 16:00:00,Fashion,3,670.66,0.0,2011.98,Cash on Delivery,Cancelled,N,1,0,YYYY-MM-DD,0,0,2011.98,0,0,0,2011.98,16.0,0
+T000461,C0008,Ice Rattanakul,ice.rattanakul8@example.com,M,Chiang Mai,2026-02-18,2026-02-18 10:00:00,Home,5,538.57,0.0,2092.5,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,2692.85,0,0,1,2692.85,10.0,0
+T000483,C0167,Anan Sukjai,anan.sukjai167@example.com,M,Nakhon Ratchasima,2026-02-18,2026-02-18 02:00:00,Home,2,132.25,0.05,251.27,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,251.27,0,0,0,251.27,2.0,0
+T000484,C0016,Korn Lertprasert,unknown_C0016@unknown.local,M,Khon Kaen,2026-03-29,2026-03-29 10:00:00,Electronics,1,152.78,0.05,145.14,Bank Transfer,Completed,N,1,0,DD/MM/YYYY,0,0,145.14,0,0,0,145.14,10.0,0
+T000321,C0169,Boss Kittikul,boss.kittikul169@example.com,M,Nakhon Ratchasima,2026-01-20,2026-01-20 14:00:00,Fashion,6,199.84,0.1,1079.14,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,1079.14,0,0,0,1079.14,14.0,0
+T000585,C0144,Gun Sukjai,gun.sukjai144@example.com,M,Phuket,2026-02-26,2026-02-26 17:00:00,Home,6,173.04,0.1,934.42,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,934.42,0,0,0,934.42,17.0,0
+T900004,C0144,Gun Sukjai,gun.sukjai144@example.com,M,Phuket,2026-06-15,2026-06-15 19:00:00,Fashion,4,307.1,0.1,680.15,Credit Card,Returned,N,0,0,DD-MM-YYYY,0,0,1105.56,1,0,0,680.15,19.0,0
+T000308,C0141,Korn Phromla,korn.phromla141@example.com,M,Khon Kaen,2026-03-06,2026-03-06 09:00:00,Electronics,6,147.42,0.0,884.52,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,884.52,0,0,0,884.52,9.0,0
+T000331,C0026,Mook Wongsa,mook.wongsa26@example.com,M,Chiang Mai,2026-02-20,2026-02-20 19:00:00,Sports,4,132.13,0.05,502.09,Credit Card,Cancelled,N,0,0,YYYY/MM/DD,0,0,502.09,0,0,0,502.09,19.0,0
+T000334,C0033,Pim Srisawat,pim.srisawat33@example.com,M,Rayong,2026-02-27,2026-02-27 02:00:00,Electronics,1,479.61,0.15,407.67,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,407.67,0,0,0,407.67,2.0,0
+T000276,C0006,Pim Khamdee,unknown_C0006@unknown.local,M,Nakhon Ratchasima,2026-05-19,2026-05-19 11:00:00,Fashion,6,118.86,0.1,641.84,Cash on Delivery,Completed,N,1,0,YYYY-MM-DD,0,0,641.84,0,0,0,641.84,11.0,0
+T000380,C0020,New Chaiyo,new.chaiyo20@example.com,M,Unknown,2026-04-12,2026-04-12 13:00:00,Fashion,1,147.16,0.05,139.8,Credit Card,Completed,N,0,1,YYYY-MM-DD,0,0,139.8,0,0,0,139.8,13.0,0
+T000593,C0138,Mint Dechawat,mint.dechawat138@example.com,M,Khon Kaen,2026-06-11,2026-06-11 13:00:00,Electronics,6,164.61,0.05,938.28,Bank Transfer,Completed,N,0,0,MM/DD/YYYY,0,0,938.28,0,0,0,938.28,13.0,0
+T000228,C0111,New Rattanakul,new.rattanakul111@example.com,M,Bangkok,2026-03-25,2026-03-25 02:00:00,Electronics,4,72.06,0.1,259.42,Bank Transfer,Processing,N,0,0,YYYY/MM/DD,0,0,259.42,0,0,0,259.42,2.0,0
+T000405,C0126,Ploy Maneerat,ploy.maneerat126@example.com,F,Phuket,2026-04-25,2026-04-25 11:00:00,Sports,2,136.56,0.15,232.15,PromptPay,Returned,N,0,0,DD/MM/YYYY,0,0,232.15,0,0,0,232.15,11.0,0
+T000403,C0076,Pim Phromla,pim.phromla76@example.com,M,Chanthaburi,2026-03-11,2026-03-11 02:00:00,Home,5,776.68,0.1,2092.5,Bank Transfer,Cancelled,N,0,0,DD-MM-YYYY,0,0,3495.06,0,0,1,3495.06,2.0,0
+T000482,C0067,May Pattanakul,unknown_C0067@unknown.local,M,Chonburi,2026-01-03,2026-01-03 01:00:00,Home,1,237.37,0.1,213.63,Credit Card,Cancelled,N,1,0,YYYY-MM-DD,0,0,213.63,0,0,0,213.63,1.0,0
+T000270,C0160,Mint Kittikul,mint.kittikul160@example.com,F,Chiang Mai,2026-01-23,2026-01-23 04:00:00,Home,4,82.86,0.05,314.87,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,314.87,0,0,0,314.87,4.0,0
+T000396,C0110,Mook Srisawat,mook.srisawat110@example.com,F,Nakhon Ratchasima,2026-01-19,2026-01-19 14:00:00,Beauty,1,195.61,0.1,176.05,Credit Card,Completed,N,0,0,DD/MM/YYYY,0,0,176.05,0,0,0,176.05,14.0,0
+T000175,C0064,Ploy Thongdee,ploy.thongdee64@example.com,F,Phuket,2026-02-16,2026-02-16 03:00:00,Beauty,4,472.97,0.1,1702.69,PromptPay,Processing,N,0,0,DD-MM-YYYY,0,0,1702.69,0,0,0,1702.69,3.0,0
+T000347,C0157,Nont Rattanakul,nont.rattanakul157@example.com,F,Khon Kaen,2026-05-16,2026-05-16 07:00:00,Food,3,282.51,0.1,762.78,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,762.78,0,0,0,762.78,7.0,0
+T000318,C0060,Tee Maneerat,tee.maneerat60@example.com,M,Rayong,2026-06-18,2026-06-18 11:00:00,Sports,5,119.93,0.1,539.69,PromptPay,Processing,N,0,0,MM/DD/YYYY,0,0,539.69,0,0,0,539.69,11.0,0
+T000383,C0076,Pim Phromla,pim.phromla76@example.com,M,Chanthaburi,2026-01-19,2026-01-19 01:00:00,Home,2,141.51,0.15,240.57,Credit Card,Cancelled,N,0,0,MM/DD/YYYY,0,0,240.57,0,0,0,240.57,1.0,0
+T000394,C0098,Film Lertprasert,film.lertprasert98@example.com,F,Khon Kaen,2026-05-06,2026-05-06 06:00:00,Food,1,206.5,0.0,206.5,Bank Transfer,Processing,Y,0,0,DD/MM/YYYY,0,0,206.5,0,0,0,206.5,6.0,0
+T000397,C0106,Korn Srisawat,korn.srisawat106@example.com,M,Rayong,2026-03-24,2026-03-24 04:00:00,Food,4,106.73,0.0,426.92,Bank Transfer,Completed,N,0,0,DD/MM/YYYY,0,0,426.92,0,0,0,426.92,4.0,0
+T000240,C0007,Jane Saelim,jane.saelim7@example.com,M,Chiang Mai,2026-02-09,2026-02-09 09:00:00,Beauty,5,201.04,0.15,854.42,Cash on Delivery,Processing,N,0,0,MM/DD/YYYY,0,0,854.42,0,0,0,854.42,9.0,0
+T000091,C0084,Film Thongdee,film.thongdee84@example.com,F,Bangkok,2026-01-16,2026-01-16 09:00:00,Home,2,180.02,0.0,360.04,Bank Transfer,Cancelled,N,0,0,YYYY/MM/DD,0,0,360.04,0,0,0,360.04,9.0,0
+T000185,C0041,Tee Chaiyo,tee.chaiyo41@example.com,M,Chonburi,2026-04-23,2026-04-23 17:00:00,Food,1,188.03,0.15,159.83,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,159.83,0,0,0,159.83,17.0,0
+T000458,C0092,Tee Wongsa,tee.wongsa92@example.com,F,Chanthaburi,2026-06-25,2026-06-25 15:00:00,Home,2,243.54,0.0,487.08,PromptPay,Cancelled,Y,0,0,YYYY-MM-DD,0,0,487.08,0,0,0,487.08,15.0,0
+T000359,C0058,Anan Wongsa,unknown_C0058@unknown.local,F,Khon Kaen,2026-03-26,2026-03-26 18:00:00,Beauty,5,298.54,0.0,1492.7,Bank Transfer,Completed,N,1,0,YYYY-MM-DD,0,0,1492.7,0,0,0,1492.7,18.0,0
+T000524,C0061,Tee Maneerat,unknown_C0061@unknown.local,M,Chiang Mai,2026-03-24,2026-03-24 12:00:00,Beauty,3,162.12,0.1,437.72,Credit Card,Returned,N,1,0,DD/MM/YYYY,0,0,437.72,0,0,0,437.72,12.0,0
+T000342,C0065,Pim Srisawat,pim.srisawat65@example.com,M,Nakhon Ratchasima,2026-06-07,2026-06-07 14:00:00,Beauty,1,55.08,0.05,52.33,Cash on Delivery,Processing,N,0,0,DD/MM/YYYY,0,0,52.33,0,0,0,52.33,14.0,0
+T000022,C0111,New Rattanakul,new.rattanakul111@example.com,M,Bangkok,2026-02-04,2026-02-04 13:00:00,Food,6,91.54,0.0,440.2,PromptPay,Cancelled,N,0,0,DD-MM-YYYY,0,0,549.24,1,0,0,440.2,13.0,0
+T000236,C0138,Mint Dechawat,mint.dechawat138@example.com,M,Khon Kaen,2026-01-15,2026-01-15 16:00:00,Electronics,2,243.3,0.1,437.94,PromptPay,Returned,N,0,0,YYYY/MM/DD,0,0,437.94,0,0,0,437.94,16.0,0
+T000150,C0011,Mint Rattanakul,mint.rattanakul11@example.com,F,Unknown,2026-02-22,2026-02-22 18:00:00,Sports,4,155.35,0.2,497.12,Credit Card,Unknown,N,0,1,YYYY-MM-DD,0,0,497.12,0,1,0,497.12,18.0,0
+T000416,C0036,Film Maneerat,film.maneerat36@example.com,F,Chonburi,2026-03-29,2026-03-29 13:00:00,Beauty,2,112.29,0.0,224.58,PromptPay,Completed,N,0,0,DD/MM/YYYY,0,0,224.58,0,0,0,224.58,13.0,0
+T000166,C0134,Pim Wongsa,pim.wongsa134@example.com,M,Chanthaburi,2026-02-23,2026-02-23 07:00:00,Home,1,269.63,0.05,256.15,Credit Card,Returned,N,0,0,MM/DD/YYYY,0,0,256.15,0,0,0,256.15,7.0,0
+T000275,C0007,Jane Saelim,jane.saelim7@example.com,M,Chiang Mai,2026-03-21,2026-03-21 17:00:00,Beauty,5,167.2,0.0,836.0,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,836.0,0,0,0,836.0,17.0,0
+T000600,C0151,Mook Thongdee,mook.thongdee151@example.com,M,Bangkok,2026-05-02,2026-05-02 02:00:00,Beauty,2,344.51,0.05,654.57,PromptPay,Returned,N,0,0,MM/DD/YYYY,0,0,654.57,0,0,0,654.57,2.0,0
+T000326,C0068,Beam Sukjai,beam.sukjai68@example.com,F,Bangkok,2026-04-15,2026-04-15 06:00:00,Home,4,530.24,0.1,1908.86,Credit Card,Completed,N,0,0,MM/DD/YYYY,0,0,1908.86,0,0,0,1908.86,6.0,0
+T000350,C0157,Nont Rattanakul,nont.rattanakul157@example.com,F,Khon Kaen,2026-01-11,2026-01-11 19:00:00,Beauty,2,303.06,0.0,606.12,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,606.12,0,0,0,606.12,19.0,0
+T000594,C0109,Jane Thongdee,jane.thongdee109@example.com,F,Bangkok,2026-03-10,2026-03-10 02:00:00,Beauty,4,351.63,0.1,1265.87,PromptPay,Processing,N,0,0,DD-MM-YYYY,0,0,1265.87,0,0,0,1265.87,2.0,0
+T000057,C0177,Ice Lertprasert,unknown_C0177@unknown.local,M,Chiang Mai,2026-01-24,2026-01-25 20:00:00,Food,2,99.51,0.0,197.76,Credit Card,Processing,N,1,0,YYYY-MM-DD,0,0,199.02,1,0,0,197.76,44.0,1
+T000176,C0013,Narin Wongsa,narin.wongsa13@example.com,F,Khon Kaen,2026-01-17,2026-01-20 13:00:00,Fashion,6,408.72,0.05,2092.5,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,2329.7,0,0,1,2329.7,85.0,1
+T000278,C0043,Beam Rattanakul,unknown_C0043@unknown.local,M,Bangkok,2026-04-02,2026-04-02 10:00:00,Sports,6,161.62,0.05,921.23,Bank Transfer,Completed,N,1,0,DD/MM/YYYY,0,0,921.23,0,0,0,921.23,10.0,0
+T000157,C0046,Nont Boonmee,nont.boonmee46@example.com,F,Chiang Mai,2026-06-22,2026-06-22 19:00:00,Food,5,191.71,0.0,958.55,PromptPay,Returned,N,0,0,DD/MM/YYYY,0,0,958.55,0,0,0,958.55,19.0,0
+T000445,C0021,May Boonmee,may.boonmee21@example.com,F,Nakhon Ratchasima,2026-04-18,2026-04-18 11:00:00,Food,2,156.01,0.2,249.62,Credit Card,Processing,N,0,0,DD/MM/YYYY,0,0,249.62,0,0,0,249.62,11.0,0
+T000540,C0113,Tee Dechawat,tee.dechawat113@example.com,M,Rayong,2026-03-10,2026-03-10 07:00:00,Food,5,179.32,0.05,851.77,Bank Transfer,Completed,N,0,0,MM/DD/YYYY,0,0,851.77,0,0,0,851.77,7.0,0
+T000282,C0113,Tee Dechawat,tee.dechawat113@example.com,M,Rayong,2026-05-06,2026-05-06 19:00:00,Sports,6,183.9,0.05,11530.53,PromptPay,Cancelled,Y,0,0,MM/DD/YYYY,0,0,1048.23,1,0,0,11530.53,19.0,0
+T000298,C0101,Boss Phromla,boss.phromla101@example.com,M,Bangkok,2026-03-11,2026-03-11 13:00:00,Beauty,2,187.88,0.1,3043.62,Bank Transfer,Returned,Y,0,0,YYYY-MM-DD,0,0,338.18,1,0,0,3043.62,13.0,0
+T000148,C0080,May Kittikul,may.kittikul80@example.com,F,Khon Kaen,2026-05-23,2026-05-23 02:00:00,Fashion,6,350.59,0.0,2092.5,Bank Transfer,Processing,N,0,0,MM/DD/YYYY,0,0,2103.54,0,0,1,2103.54,2.0,0
+T000426,C0072,Tee Lertprasert,tee.lertprasert72@example.com,F,Chanthaburi,2026-03-31,2026-03-31 15:00:00,Sports,2,247.84,0.2,396.54,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,396.54,0,0,0,396.54,15.0,0
+T000550,C0175,Boss Khamdee,boss.khamdee175@example.com,F,Nakhon Ratchasima,2026-01-01,2026-01-01 14:00:00,Electronics,5,128.66,0.0,643.3,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,643.3,0,0,0,643.3,14.0,0
+T000374,C0128,Ploy Khamdee,ploy.khamdee128@example.com,M,Bangkok,2026-03-25,2026-03-25 06:00:00,Sports,3,198.33,0.05,565.24,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,565.24,0,0,0,565.24,6.0,0
+T000333,C0157,Nont Rattanakul,nont.rattanakul157@example.com,F,Khon Kaen,2026-03-20,2026-03-20 13:00:00,Food,4,88.38,0.2,282.82,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,282.82,0,0,0,282.82,13.0,0
+T000073,C0076,Pim Phromla,pim.phromla76@example.com,M,Chanthaburi,2026-03-09,2026-03-09 12:00:00,Sports,6,101.8,0.0,610.8,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,610.8,0,0,0,610.8,12.0,0
+T000460,C0043,Beam Rattanakul,beam.rattanakul43@example.com,M,Bangkok,2026-06-07,2026-06-07 05:00:00,Sports,5,302.17,0.05,1435.31,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,1435.31,0,0,0,1435.31,5.0,0
+T000032,C0017,Mook Rattanakul,mook.rattanakul17@example.com,F,Khon Kaen,2026-05-23,2026-05-23 17:00:00,Food,2,50.64,0.2,81.02,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,81.02,0,0,0,81.02,17.0,0
+T000234,C0002,Mint Thongdee,mint.thongdee2@example.com,F,Rayong,2026-06-19,2026-06-19 09:00:00,Home,5,100.99,0.05,479.7,Bank Transfer,Cancelled,N,0,0,DD/MM/YYYY,0,0,479.7,0,0,0,479.7,9.0,0
+T000579,C0041,Tee Chaiyo,tee.chaiyo41@example.com,M,Chonburi,2026-03-25,2026-03-25 02:00:00,Sports,4,372.19,0.2,1191.01,Bank Transfer,Processing,Y,0,0,YYYY/MM/DD,0,0,1191.01,0,0,0,1191.01,2.0,0
+T000404,C0125,May Lertprasert,may.lertprasert125@example.com,F,Rayong,2026-06-07,2026-06-07 18:00:00,Fashion,2,324.16,0.2,518.66,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,518.66,0,0,0,518.66,18.0,0
+T000301,C0128,Ploy Khamdee,ploy.khamdee128@example.com,M,Bangkok,2026-01-19,2026-01-19 03:00:00,Food,6,152.16,0.0,912.96,Credit Card,Cancelled,N,0,0,MM/DD/YYYY,0,0,912.96,0,0,0,912.96,3.0,0
+T000235,C0008,Ice Rattanakul,ice.rattanakul8@example.com,M,Chiang Mai,2026-01-13,2026-01-13 16:00:00,Electronics,6,44.37,0.05,252.91,Credit Card,Completed,N,0,0,DD/MM/YYYY,0,0,252.91,0,0,0,252.91,16.0,0
+T000494,C0016,Korn Lertprasert,korn.lertprasert16@example.com,M,Khon Kaen,2026-04-22,2026-04-22 09:00:00,Food,3,394.57,0.0,1183.71,Cash on Delivery,Returned,N,0,0,DD/MM/YYYY,0,0,1183.71,0,0,0,1183.71,9.0,0
+T000443,C0162,Aom Dechawat,aom.dechawat162@example.com,M,Rayong,2026-04-28,2026-04-28 13:00:00,Home,6,120.21,0.0,721.26,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,721.26,0,0,0,721.26,13.0,0
+T000083,C0056,Mint Maneerat,mint.maneerat56@example.com,M,Rayong,2026-03-09,2026-03-09 17:00:00,Food,5,244.91,0.0,1224.55,Cash on Delivery,Processing,N,0,0,YYYY/MM/DD,0,0,1224.55,0,0,0,1224.55,17.0,0
+T000428,C0112,Pim Rattanakul,pim.rattanakul112@example.com,M,Phuket,2026-02-03,2026-02-03 03:00:00,Fashion,-3,161.2,0.05,306.28,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,1,-459.42,1,0,0,306.28,3.0,0
+T000454,C0033,Pim Srisawat,pim.srisawat33@example.com,M,Rayong,2026-06-11,2026-06-11 01:00:00,Sports,2,233.48,0.05,443.61,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,443.61,0,0,0,443.61,1.0,0
+T000125,C0044,Gun Phromla,gun.phromla44@example.com,F,Chonburi,2026-06-14,2026-06-14 16:00:00,Home,1,71.84,0.0,71.84,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,71.84,0,0,0,71.84,16.0,0
+T000245,C0083,Beam Srisawat,beam.srisawat83@example.com,M,Chiang Mai,2026-02-26,2026-02-26 14:00:00,Food,3,266.88,0.0,800.64,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,800.64,0,0,0,800.64,14.0,0
+T000296,C0030,May Thongdee,may.thongdee30@example.com,M,Nakhon Ratchasima,2026-03-25,2026-03-25 17:00:00,Electronics,4,169.87,0.1,611.53,PromptPay,Completed,N,0,0,YYYY/MM/DD,0,0,611.53,0,0,0,611.53,17.0,0
+T000195,C0047,Ploy Saelim,ploy.saelim47@example.com,F,Khon Kaen,2026-05-05,2026-05-05 01:00:00,Food,4,319.22,0.0,1276.88,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,1276.88,0,0,0,1276.88,1.0,0
+T000076,C0038,Boss Kittikul,boss.kittikul38@example.com,F,Nakhon Ratchasima,2026-03-21,2026-03-21 02:00:00,Electronics,2,146.57,0.0,293.14,Credit Card,Cancelled,N,0,0,MM/DD/YYYY,0,0,293.14,0,0,0,293.14,2.0,0
+T000063,C0022,Film Kittikul,film.kittikul22@example.com,F,Nakhon Ratchasima,2026-01-11,2026-01-11 02:00:00,Sports,1,195.89,0.15,166.51,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,166.51,0,0,0,166.51,2.0,0
+T000181,C0121,Ice Kittikul,ice.kittikul121@example.com,M,Bangkok,2026-03-30,2026-03-30 14:00:00,Electronics,6,276.17,0.2,1325.62,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,1325.62,0,0,0,1325.62,14.0,0
+T000560,C0068,Beam Sukjai,beam.sukjai68@example.com,F,Bangkok,2026-01-04,2026-01-04 14:00:00,Electronics,5,106.54,0.2,426.16,Credit Card,Unknown,N,0,0,YYYY/MM/DD,0,0,426.16,0,1,0,426.16,14.0,0
+T000222,C0135,Korn Srisawat,korn.srisawat135@example.com,F,Bangkok,2026-03-19,2026-03-19 13:00:00,Beauty,1,110.93,0.1,93.39,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,99.84,1,0,0,93.39,13.0,0
+T000226,C0164,Gun Srisawat,gun.srisawat164@example.com,F,Chonburi,2026-02-15,2026-02-15 10:00:00,Home,3,128.01,0.05,364.83,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,364.83,0,0,0,364.83,10.0,0
+T000564,C0057,Ploy Thongdee,ploy.thongdee57@example.com,F,Nakhon Ratchasima,2026-04-06,2026-04-06 03:00:00,Beauty,6,555.53,0.1,2092.5,Cash on Delivery,Processing,N,0,0,MM/DD/YYYY,0,0,2999.86,0,0,1,2999.86,3.0,0
+T000338,C0123,Ploy Khamdee,ploy.khamdee123@example.com,F,Chanthaburi,2026-03-06,2026-03-06 09:00:00,Food,2,662.26,0.0,1324.52,Credit Card,Processing,N,0,0,DD-MM-YYYY,0,0,1324.52,0,0,0,1324.52,9.0,0
+T000048,C0151,Mook Thongdee,mook.thongdee151@example.com,M,Bangkok,2026-05-02,2026-05-05 09:00:00,Electronics,2,164.0,0.0,328.0,Cash on Delivery,Completed,N,0,0,YYYY/MM/DD,0,0,328.0,0,0,0,328.0,81.0,1
+T000067,C0137,Film Boonmee,film.boonmee137@example.com,M,Khon Kaen,2026-03-07,2026-03-07 02:00:00,Home,3,77.71,0.2,186.5,PromptPay,Cancelled,N,0,0,MM/DD/YYYY,0,0,186.5,0,0,0,186.5,2.0,0
+T000092,C0008,Ice Rattanakul,ice.rattanakul8@example.com,M,Chiang Mai,2026-04-09,2026-04-09 01:00:00,Sports,4,219.68,0.05,834.78,Cash on Delivery,Cancelled,Y,0,0,MM/DD/YYYY,0,0,834.78,0,0,0,834.78,1.0,0
+T000230,C0141,Korn Phromla,korn.phromla141@example.com,M,Khon Kaen,2026-02-23,2026-02-23 12:00:00,Electronics,2,348.44,0.05,662.04,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,662.04,0,0,0,662.04,12.0,0
+T000036,C0067,May Pattanakul,may.pattanakul67@example.com,M,Chonburi,2026-06-15,2026-06-18 09:00:00,Home,3,158.13,0.05,450.67,PromptPay,Cancelled,N,0,0,DD/MM/YYYY,0,0,450.67,0,0,0,450.67,81.0,1
+T000134,C0131,Narin Rattanakul,narin.rattanakul131@example.com,F,Khon Kaen,2026-01-18,2026-01-18 12:00:00,Fashion,4,344.47,0.0,1377.88,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,1377.88,0,0,0,1377.88,12.0,0
+T000439,C0160,Mint Kittikul,mint.kittikul160@example.com,F,Chiang Mai,2026-05-21,2026-05-21 17:00:00,Sports,3,94.33,0.0,2092.5,Credit Card,Returned,N,0,0,Fallback_LoadTimestamp,1,0,282.99,1,0,1,666666.0,17.0,0
+T000010,C0085,Aom Thongdee,aom.thongdee85@example.com,F,Chiang Mai,2026-05-09,2026-05-13 20:00:00,Home,2,259.33,0.0,518.66,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,518.66,0,0,0,518.66,116.0,1
+T000023,C0125,May Lertprasert,may.lertprasert125@example.com,F,Unknown,2026-05-25,2026-05-25 19:00:00,Beauty,5,97.06,0.05,324.63,PromptPay,Returned,N,0,1,DD-MM-YYYY,0,0,461.04,1,0,0,324.63,19.0,0
+T000430,C0138,Mint Dechawat,mint.dechawat138@example.com,M,Khon Kaen,2026-01-24,2026-01-24 05:00:00,Electronics,6,208.35,0.0,1250.1,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,1250.1,0,0,0,1250.1,5.0,0
+T000467,C0011,Mint Rattanakul,mint.rattanakul11@example.com,F,Chanthaburi,2026-03-05,2026-03-05 09:00:00,Fashion,6,219.12,0.0,1314.72,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,1314.72,0,0,0,1314.72,9.0,0
+T000485,C0058,Anan Wongsa,unknown_C0058@unknown.local,F,Khon Kaen,2026-01-01,2026-01-01 16:00:00,Beauty,4,221.28,0.1,796.61,Credit Card,Processing,N,1,0,DD/MM/YYYY,0,0,796.61,0,0,0,796.61,16.0,0
+T000584,C0036,Film Maneerat,film.maneerat36@example.com,F,Chonburi,2026-02-06,2026-02-06 10:00:00,Food,2,286.09,0.2,7323.84,Bank Transfer,Completed,Y,0,0,DD-MM-YYYY,0,0,457.74,1,0,0,7323.84,10.0,0
+T000556,C0116,Boss Wongsa,boss.wongsa116@example.com,F,Chonburi,2026-02-01,2026-02-04 20:00:00,Beauty,5,226.64,0.1,1019.88,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,1019.88,0,0,0,1019.88,92.0,1
+T000255,C0135,Korn Srisawat,korn.srisawat135@example.com,F,Bangkok,2026-05-03,2026-05-03 19:00:00,Home,6,213.05,0.0,2092.5,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,1278.3,1,0,1,777777.0,19.0,0
+T000287,C0007,Jane Saelim,unknown_C0007@unknown.local,M,Chiang Mai,2026-01-09,2026-01-09 14:00:00,Food,3,187.66,0.15,478.53,Credit Card,Returned,N,1,0,YYYY-MM-DD,0,0,478.53,0,0,0,478.53,14.0,0
+T000265,C0049,Gun Dechawat,gun.dechawat49@example.com,F,Nakhon Ratchasima,2026-01-21,2026-01-21 02:00:00,Electronics,1,108.13,0.2,86.5,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,86.5,0,0,0,86.5,2.0,0
+T000015,C0110,Mook Srisawat,mook.srisawat110@example.com,F,Nakhon Ratchasima,2026-01-06,2026-01-06 01:00:00,Fashion,6,233.41,0.2,1120.37,Credit Card,Completed,N,0,0,MM/DD/YYYY,0,0,1120.37,0,0,0,1120.37,1.0,0
+T000553,C0031,Ploy Rattanakul,ploy.rattanakul31@example.com,F,Chiang Mai,2026-02-25,2026-02-25 08:00:00,Electronics,4,108.06,0.05,410.63,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,410.63,0,0,0,410.63,8.0,0
+T900010,C0047,Ploy  Saelim,ploy.saelim47@example.com,F,Khon Kaen,2026-05-05,2026-05-05 01:00:00,Food,4,319.22,0.0,1276.88,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,1276.88,0,0,0,1276.88,1.0,0
+T000507,C0040,Pim Srisawat,pim.srisawat40@example.com,M,Rayong,2026-02-25,2026-02-25 03:00:00,Home,4,244.96,0.2,783.87,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,783.87,0,0,0,783.87,3.0,0
+T000170,C0092,Tee Wongsa,tee.wongsa92@example.com,F,Chanthaburi,2026-03-16,2026-03-16 19:00:00,Home,4,92.14,0.1,331.7,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,331.7,0,0,0,331.7,19.0,0
+T000297,C0033,Pim Srisawat,pim.srisawat33@example.com,M,Rayong,2026-05-08,2026-05-08 15:00:00,Fashion,2,392.26,0.0,784.52,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,784.52,0,0,0,784.52,15.0,0
+T000322,C0049,Gun Dechawat,gun.dechawat49@example.com,F,Nakhon Ratchasima,2026-02-26,2026-02-26 09:00:00,Fashion,4,303.39,0.15,926.95,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,1031.53,1,0,0,926.95,9.0,0
+T000489,C0085,Aom Thongdee,aom.thongdee85@example.com,F,Chiang Mai,2026-04-13,2026-04-16 10:00:00,Food,1,312.97,0.2,250.38,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,250.38,0,0,0,250.38,82.0,1
+T000016,C0016,Korn Lertprasert,korn.lertprasert16@example.com,M,Khon Kaen,2026-02-22,2026-02-22 01:00:00,Beauty,2,132.42,0.05,251.6,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,251.6,0,0,0,251.6,1.0,0
+T000547,C0164,Gun Srisawat,gun.srisawat164@example.com,F,Chonburi,2026-03-19,2026-03-19 10:00:00,Electronics,5,199.37,0.0,996.85,Credit Card,Cancelled,N,0,0,DD/MM/YYYY,0,0,996.85,0,0,0,996.85,10.0,0
+T000192,C0144,Gun Sukjai,gun.sukjai144@example.com,M,Phuket,2026-03-07,2026-03-07 10:00:00,Food,5,98.44,0.0,492.2,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,492.2,0,0,0,492.2,10.0,0
+T000465,C0158,Nont Kittikul,nont.kittikul158@example.com,M,Nakhon Ratchasima,2026-04-03,2026-04-03 05:00:00,Sports,6,207.01,0.15,1055.75,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,1055.75,0,0,0,1055.75,5.0,0
+T000511,C0083,Beam Srisawat,beam.srisawat83@example.com,M,Chiang Mai,2026-03-24,2026-03-24 16:00:00,Beauty,4,259.71,0.0,1038.84,Cash on Delivery,Completed,N,0,0,MM/DD/YYYY,0,0,1038.84,0,0,0,1038.84,16.0,0
+T000258,C0143,Korn Srisawat,korn.srisawat143@example.com,M,Unknown,2026-05-15,2026-05-15 10:00:00,Food,3,262.19,0.1,707.91,Bank Transfer,Cancelled,N,0,1,DD/MM/YYYY,0,0,707.91,0,0,0,707.91,10.0,0
+T000377,C0029,Aom Pattanakul,aom.pattanakul29@example.com,F,Bangkok,2026-06-23,2026-06-23 06:00:00,Home,6,106.75,0.0,640.5,Credit Card,Returned,N,0,0,DD/MM/YYYY,0,0,640.5,0,0,0,640.5,6.0,0
+T000351,C0052,Gun Dechawat,gun.dechawat52@example.com,F,Rayong,2026-03-09,2026-03-09 06:00:00,Sports,4,67.63,0.0,270.52,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,270.52,0,0,0,270.52,6.0,0
+T000186,C0090,Mook Sukjai,mook.sukjai90@example.com,M,Chanthaburi,2026-04-04,2026-04-04 01:00:00,Electronics,2,164.39,0.0,328.78,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,328.78,0,0,0,328.78,1.0,0
+T000259,C0145,Tee Srisawat,tee.srisawat145@example.com,M,Nakhon Ratchasima,2026-05-02,2026-05-02 03:00:00,Food,6,219.95,0.15,1121.74,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,1121.74,0,0,0,1121.74,3.0,0
+T000264,C0083,Beam Srisawat,beam.srisawat83@example.com,M,Chiang Mai,2026-06-21,2026-06-21 09:00:00,Food,3,138.51,0.15,353.2,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,353.2,0,0,0,353.2,9.0,0
+T000239,C0030,May Thongdee,may.thongdee30@example.com,M,Nakhon Ratchasima,2026-02-24,2026-02-24 04:00:00,Fashion,1,344.9,0.1,310.41,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,310.41,0,0,0,310.41,4.0,0
+T000202,C0010,Beam Sukjai,beam.sukjai10@example.com,M,Phuket,2026-03-02,2026-03-02 15:00:00,Food,3,241.49,0.1,652.02,PromptPay,Cancelled,N,0,0,DD/MM/YYYY,0,0,652.02,0,0,0,652.02,15.0,0
+T000501,C0166,Jane Srisawat,jane.srisawat166@example.com,F,Nakhon Ratchasima,2026-03-20,2026-03-20 19:00:00,Home,6,113.14,0.15,577.01,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,577.01,0,0,0,577.01,19.0,0
+T000339,C0120,Mook Boonmee,mook.boonmee120@example.com,M,Chonburi,2026-06-16,2026-06-16 07:00:00,Sports,1,284.82,0.1,256.34,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,256.34,0,0,0,256.34,7.0,0
+T000305,C0062,Beam Rattanakul,beam.rattanakul62@example.com,M,Bangkok,2026-03-03,2026-03-03 13:00:00,Fashion,2,132.76,0.15,225.69,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,225.69,0,0,0,225.69,13.0,0
+T000109,C0029,Aom Pattanakul,unknown_C0029@unknown.local,F,Bangkok,2026-03-17,2026-03-17 14:00:00,Electronics,2,419.11,0.0,838.22,Credit Card,Processing,N,1,0,YYYY-MM-DD,0,0,838.22,0,0,0,838.22,14.0,0
+T000391,C0131,Narin Rattanakul,narin.rattanakul131@example.com,F,Khon Kaen,2026-01-23,2026-01-23 14:00:00,Fashion,3,158.05,0.0,474.15,PromptPay,Processing,N,0,0,MM/DD/YYYY,0,0,474.15,0,0,0,474.15,14.0,0
+T000563,C0123,Ploy Khamdee,ploy.khamdee123@example.com,F,Chanthaburi,2026-05-03,2026-05-03 07:00:00,Beauty,3,115.39,0.0,346.17,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,346.17,0,0,0,346.17,7.0,0
+T000412,C0159,Nont Dechawat,nont.dechawat159@example.com,M,Chiang Mai,2026-05-04,2026-05-04 15:00:00,Beauty,3,99.91,0.05,284.74,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,284.74,0,0,0,284.74,15.0,0
+T000591,C0037,Jane Phromla,jane.phromla37@example.com,M,Chiang Mai,2026-04-09,2026-04-09 16:00:00,Beauty,5,159.09,0.2,732.4,Cash on Delivery,Processing,N,0,0,MM/DD/YYYY,0,0,636.36,1,0,0,732.4,16.0,0
+T000471,C0105,Korn Sukjai,korn.sukjai105@example.com,F,Rayong,2026-01-06,2026-01-06 05:00:00,Home,1,199.55,0.15,169.62,PromptPay,Completed,N,0,0,DD/MM/YYYY,0,0,169.62,0,0,0,169.62,5.0,0
+T000273,C0141,Korn Phromla,korn.phromla141@example.com,M,Khon Kaen,2026-06-08,2026-06-08 11:00:00,Electronics,3,258.82,0.0,776.46,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,776.46,0,0,0,776.46,11.0,0
+T000124,C0007,Jane Saelim,jane.saelim7@example.com,M,Chiang Mai,2026-06-08,2026-06-08 03:00:00,Fashion,3,113.44,0.05,323.3,Credit Card,Completed,N,0,0,Fallback_LoadTimestamp,1,0,323.3,0,0,0,323.3,3.0,0
+T000182,C0039,Beam Boonmee,beam.boonmee39@example.com,M,Rayong,2026-02-14,2026-02-14 08:00:00,Sports,2,45.51,0.0,91.02,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,91.02,0,0,0,91.02,8.0,0
+T000592,C0178,Anan Wongsa,anan.wongsa178@example.com,M,Khon Kaen,2026-05-22,2026-05-22 09:00:00,Home,5,302.17,0.2,1208.68,Bank Transfer,Processing,N,0,0,MM/DD/YYYY,0,0,1208.68,0,0,0,1208.68,9.0,0
+T000267,C0039,Beam Boonmee,beam.boonmee39@example.com,M,Rayong,2026-04-07,2026-04-07 13:00:00,Fashion,3,253.67,0.0,761.01,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,761.01,0,0,0,761.01,13.0,0
+T000407,C0006,Pim Khamdee,pim.khamdee6@example.com,M,Nakhon Ratchasima,2026-06-11,2026-06-11 12:00:00,Electronics,1,136.65,0.0,136.65,Cash on Delivery,Completed,Y,0,0,DD/MM/YYYY,0,0,136.65,0,0,0,136.65,12.0,0
+T000328,C0034,Fah Pattanakul,fah.pattanakul34@example.com,M,Chiang Mai,2026-01-14,2026-01-14 03:00:00,Electronics,5,175.02,0.1,787.59,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,787.59,0,0,0,787.59,3.0,0
+T000492,C0100,Fah Rattanakul,fah.rattanakul100@example.com,F,Bangkok,2026-03-18,2026-03-18 09:00:00,Food,1,64.15,0.2,51.32,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,51.32,0,0,0,51.32,9.0,0
+T000434,C0150,Mook Chaiyo,mook.chaiyo150@example.com,F,Chiang Mai,2026-01-04,2026-01-04 01:00:00,Food,3,568.0,0.0,1704.0,Credit Card,Processing,N,0,0,DD/MM/YYYY,0,0,1704.0,0,0,0,1704.0,1.0,0
+T000033,C0122,Anan Wongsa,anan.wongsa122@example.com,M,Chanthaburi,2026-06-01,2026-06-01 10:00:00,Electronics,6,111.27,0.1,513.09,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,600.86,1,0,0,513.09,10.0,0
+T000096,C0043,Beam Rattanakul,beam.rattanakul43@example.com,M,Bangkok,2026-01-06,2026-01-06 10:00:00,Food,3,216.75,0.15,552.71,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,552.71,0,0,0,552.71,10.0,0
+T000349,C0011,Mint Rattanakul,mint.rattanakul11@example.com,F,Chanthaburi,2026-04-15,2026-04-15 05:00:00,Electronics,6,214.11,0.0,1284.66,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,1284.66,0,0,0,1284.66,5.0,0
+T000552,C0139,Gun Phromla,gun.phromla139@example.com,M,Nakhon Ratchasima,2026-01-14,2026-01-14 04:00:00,Beauty,5,113.86,0.05,540.83,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,540.83,0,0,0,540.83,4.0,0
+T000064,C0153,Nont Chaiyo,nont.chaiyo153@example.com,F,Chiang Mai,2026-02-02,2026-02-02 04:00:00,Home,3,226.22,0.0,678.66,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,678.66,0,0,0,678.66,4.0,0
+T000269,C0039,Beam Boonmee,unknown_C0039@unknown.local,M,Rayong,2026-06-01,2026-06-01 16:00:00,Electronics,1,290.78,0.1,261.7,Credit Card,Cancelled,N,1,0,YYYY-MM-DD,0,0,261.7,0,0,0,261.7,16.0,0
+T000215,C0158,Nont Kittikul,nont.kittikul158@example.com,M,Nakhon Ratchasima,2026-05-12,2026-05-12 07:00:00,Beauty,2,195.18,0.15,331.81,Cash on Delivery,Processing,Y,0,0,YYYY-MM-DD,0,0,331.81,0,0,0,331.81,7.0,0
+T000039,C0066,Beam Rattanakul,beam.rattanakul66@example.com,M,Chonburi,2026-04-05,2026-04-09 14:00:00,Fashion,1,384.01,0.05,364.81,Bank Transfer,Returned,N,0,0,YYYY/MM/DD,0,0,364.81,0,0,0,364.81,110.0,1
+T000135,C0108,Anan Khamdee,anan.khamdee108@example.com,M,Nakhon Ratchasima,2026-05-02,2026-05-02 01:00:00,Beauty,2,208.75,0.1,375.75,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,375.75,0,0,0,375.75,1.0,0
+T000256,C0033,Pim Srisawat,pim.srisawat33@example.com,M,Rayong,2026-04-11,2026-04-11 13:00:00,Electronics,3,119.94,0.0,359.82,Bank Transfer,Returned,N,0,0,MM/DD/YYYY,0,0,359.82,0,0,0,359.82,13.0,0
+T000106,C0140,Ploy Khamdee,ploy.khamdee140@example.com,F,Nakhon Ratchasima,2026-04-21,2026-04-21 04:00:00,Fashion,6,96.3,0.05,548.91,Bank Transfer,Returned,N,0,0,MM/DD/YYYY,0,0,548.91,0,0,0,548.91,4.0,0
+T000056,C0021,May Boonmee,may.boonmee21@example.com,F,Nakhon Ratchasima,2026-02-20,2026-02-20 12:00:00,Food,5,132.65,0.1,596.93,Bank Transfer,Returned,N,0,0,DD/MM/YYYY,0,0,596.93,0,0,0,596.93,12.0,0
+T000490,C0135,Korn Srisawat,korn.srisawat135@example.com,F,Bangkok,2026-05-28,2026-05-28 17:00:00,Food,2,209.44,0.1,376.99,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,376.99,0,0,0,376.99,17.0,0
+T000288,C0110,Mook Srisawat,mook.srisawat110@example.com,F,Nakhon Ratchasima,2026-06-02,2026-06-02 06:00:00,Sports,2,249.47,0.0,498.94,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,498.94,0,0,0,498.94,6.0,0
+T000535,C0165,Nont Thongdee,nont.thongdee165@example.com,F,Nakhon Ratchasima,2026-06-16,2026-06-16 01:00:00,Sports,1,311.73,0.0,311.73,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,311.73,0,0,0,311.73,1.0,0
+T000561,C0160,Mint Kittikul,mint.kittikul160@example.com,F,Chiang Mai,2026-01-23,2026-01-23 13:00:00,Beauty,6,290.31,0.0,1741.86,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,1741.86,0,0,0,1741.86,13.0,0
+T000523,C0158,Nont Kittikul,unknown_C0158@unknown.local,M,Nakhon Ratchasima,2026-02-09,2026-02-12 05:00:00,Sports,6,66.64,0.1,359.86,Cash on Delivery,Completed,N,1,0,YYYY-MM-DD,0,0,359.86,0,0,0,359.86,77.0,1
+T000332,C0048,Boss Dechawat,boss.dechawat48@example.com,F,Rayong,2026-01-16,2026-01-16 08:00:00,Home,4,121.03,0.0,484.12,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,484.12,0,0,0,484.12,8.0,0
+T000424,C0076,Pim Phromla,pim.phromla76@example.com,M,Chanthaburi,2026-01-19,2026-01-19 03:00:00,Electronics,1,328.23,0.0,328.23,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,328.23,0,0,0,328.23,3.0,0
+T000243,C0151,Mook Thongdee,mook.thongdee151@example.com,M,Bangkok,2026-02-10,2026-02-10 15:00:00,Home,6,352.86,0.0,2092.5,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,2117.16,0,0,1,2117.16,15.0,0
+T000128,C0005,Ploy Chaiyo,ploy.chaiyo5@example.com,F,Bangkok,2026-06-22,2026-06-22 13:00:00,Home,6,153.51,0.0,921.06,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,921.06,0,0,0,921.06,13.0,0
+T000087,C0169,Boss Kittikul,boss.kittikul169@example.com,M,Nakhon Ratchasima,2026-06-18,2026-06-20 20:00:00,Food,5,143.91,0.0,719.55,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,719.55,0,0,0,719.55,68.0,1
+T000178,C0070,Pim Chaiyo,pim.chaiyo70@example.com,M,Khon Kaen,2026-03-08,2026-03-11 17:00:00,Food,5,333.14,0.1,1499.13,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,1499.13,0,0,0,1499.13,89.0,1
+T000199,C0029,Aom Pattanakul,aom.pattanakul29@example.com,F,Bangkok,2026-02-18,2026-02-19 22:00:00,Food,2,256.96,0.1,462.53,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,462.53,0,0,0,462.53,46.0,1
+T000103,C0166,Jane Srisawat,jane.srisawat166@example.com,F,Nakhon Ratchasima,2026-02-09,2026-02-09 10:00:00,Fashion,2,113.99,0.0,227.98,PromptPay,Cancelled,N,0,0,MM/DD/YYYY,0,0,227.98,0,0,0,227.98,10.0,0
+T000566,C0064,Ploy Thongdee,ploy.thongdee64@example.com,F,Phuket,2026-03-11,2026-03-11 18:00:00,Beauty,5,308.69,0.1,1389.11,Bank Transfer,Cancelled,N,0,0,YYYY/MM/DD,0,0,1389.1,0,0,0,1389.11,18.0,0
+T000387,C0013,Narin Wongsa,narin.wongsa13@example.com,F,Khon Kaen,2026-04-01,2026-04-01 03:00:00,Fashion,1,113.61,0.0,113.61,PromptPay,Completed,N,0,0,YYYY/MM/DD,0,0,113.61,0,0,0,113.61,3.0,0
+T000459,C0145,Tee Srisawat,tee.srisawat145@example.com,M,Nakhon Ratchasima,2026-01-16,2026-01-16 01:00:00,Home,3,192.4,0.0,577.2,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,577.2,0,0,0,577.2,1.0,0
+T000554,C0147,Film Chaiyo,film.chaiyo147@example.com,M,Chiang Mai,2026-03-09,2026-03-09 13:00:00,Beauty,4,150.53,0.2,481.7,Cash on Delivery,Processing,Y,0,0,YYYY-MM-DD,0,0,481.7,0,0,0,481.7,13.0,0
+T000075,C0026,Mook Wongsa,mook.wongsa26@example.com,M,Chiang Mai,2026-04-23,2026-04-23 06:00:00,Electronics,1,124.44,0.0,124.44,Bank Transfer,Cancelled,N,0,0,DD/MM/YYYY,0,0,124.44,0,0,0,124.44,6.0,0
+T000310,C0018,Nont Chaiyo,nont.chaiyo18@example.com,M,Phuket,2026-05-23,2026-05-23 10:00:00,Beauty,6,85.56,0.0,513.36,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,513.36,0,0,0,513.36,10.0,0
+T000514,C0011,Mint Rattanakul,mint.rattanakul11@example.com,F,Chanthaburi,2026-06-13,2026-06-13 03:00:00,Fashion,6,68.7,0.0,412.2,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,412.2,0,0,0,412.2,3.0,0
+T000389,C0116,Boss Wongsa,boss.wongsa116@example.com,F,Chonburi,2026-05-04,2026-05-04 02:00:00,Sports,1,101.61,0.1,91.45,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,91.45,0,0,0,91.45,2.0,0
+T000429,C0144,Gun Sukjai,gun.sukjai144@example.com,M,Phuket,2026-06-15,2026-06-15 19:00:00,Fashion,4,307.1,0.1,680.15,Credit Card,Returned,N,0,0,DD-MM-YYYY,0,0,1105.56,1,0,0,680.15,19.0,0
+T000173,C0058,Anan Wongsa,anan.wongsa58@example.com,F,Khon Kaen,2026-04-26,2026-04-26 19:00:00,Fashion,5,204.88,0.1,921.96,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,921.96,0,0,0,921.96,19.0,0
+T000533,C0133,Gun Kittikul,gun.kittikul133@example.com,F,Phuket,2026-06-08,2026-06-08 06:00:00,Home,6,232.08,0.0,1392.48,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,1392.48,0,0,0,1392.48,6.0,0
+T000172,C0112,Pim Rattanakul,unknown_C0112@unknown.local,M,Phuket,2026-06-10,2026-06-10 01:00:00,Beauty,3,71.11,0.0,229.66,Cash on Delivery,Cancelled,N,1,0,YYYY-MM-DD,0,0,213.33,1,0,0,229.66,1.0,0
+T000335,C0120,Mook Boonmee,mook.boonmee120@example.com,M,Chonburi,2026-01-08,2026-01-08 01:00:00,Beauty,1,169.44,0.2,135.55,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,135.55,0,0,0,135.55,1.0,0
+T000456,C0177,Ice Lertprasert,ice.lertprasert177@example.com,M,Chiang Mai,2026-04-05,2026-04-07 13:00:00,Home,2,154.08,0.0,308.16,PromptPay,Cancelled,N,0,0,YYYY/MM/DD,0,0,308.16,0,0,0,308.16,61.0,1
+T000004,C0151,Mook Thongdee,mook.thongdee151@example.com,M,Bangkok,2026-06-11,2026-06-11 01:00:00,Beauty,5,415.29,0.1,1868.81,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,1868.81,0,0,0,1868.81,1.0,0
+T000043,C0083,Beam Srisawat,beam.srisawat83@example.com,M,Chiang Mai,2026-02-01,2026-02-01 14:00:00,Electronics,6,296.58,0.15,1512.56,Bank Transfer,Processing,N,0,0,DD/MM/YYYY,0,0,1512.56,0,0,0,1512.56,14.0,0
+T000463,C0153,Nont Chaiyo,nont.chaiyo153@example.com,F,Chiang Mai,2026-03-27,2026-03-27 11:00:00,Sports,6,221.64,0.0,1329.84,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,1329.84,0,0,0,1329.84,11.0,0
+T000586,C0016,Korn Lertprasert,korn.lertprasert16@example.com,M,Khon Kaen,2026-02-08,2026-02-08 11:00:00,Food,4,72.4,0.15,246.16,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,246.16,0,0,0,246.16,11.0,0
+T000005,C0110,Mook Srisawat,mook.srisawat110@example.com,F,Nakhon Ratchasima,2026-06-12,2026-06-12 09:00:00,Home,6,50.19,0.15,2559.7,Bank Transfer,Processing,Y,0,0,YYYY-MM-DD,0,0,255.97,1,0,0,2559.7,9.0,0
+T000382,C0021,May Boonmee,may.boonmee21@example.com,F,Nakhon Ratchasima,2026-01-19,2026-01-19 05:00:00,Electronics,3,202.19,0.0,606.57,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,606.57,0,0,0,606.57,5.0,0
+T000219,C0047,Ploy Saelim,ploy.saelim47@example.com,F,Khon Kaen,2026-02-07,2026-02-07 04:00:00,Electronics,2,133.02,0.2,212.83,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,212.83,0,0,0,212.83,4.0,0
+T000468,C0115,Korn Lertprasert,korn.lertprasert115@example.com,M,Phuket,2026-01-13,2026-01-13 12:00:00,Sports,5,231.14,0.0,1155.7,PromptPay,Cancelled,N,0,0,DD/MM/YYYY,0,0,1155.7,0,0,0,1155.7,12.0,0
+T000519,C0114,Ploy Thongdee,ploy.thongdee114@example.com,M,Nakhon Ratchasima,2026-01-11,2026-01-11 11:00:00,Sports,2,357.73,0.05,679.69,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,679.69,0,0,0,679.69,11.0,0
+T000041,C0141,Korn Phromla,korn.phromla141@example.com,M,Khon Kaen,2026-06-08,2026-06-08 11:00:00,Food,3,143.49,0.05,408.95,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,408.95,0,0,0,408.95,11.0,0
+T000149,C0040,Pim Srisawat,pim.srisawat40@example.com,M,Rayong,2026-03-14,2026-03-14 02:00:00,Electronics,6,234.72,0.0,1408.32,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,1408.32,0,0,0,1408.32,2.0,0
+T000042,C0036,Film Maneerat,film.maneerat36@example.com,F,Chonburi,2026-06-05,2026-06-05 08:00:00,Fashion,3,422.01,0.1,1139.43,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,1139.43,0,0,0,1139.43,8.0,0
+T000180,C0114,Ploy Thongdee,ploy.thongdee114@example.com,M,Nakhon Ratchasima,2026-05-06,2026-05-06 03:00:00,Fashion,1,361.76,0.05,343.67,PromptPay,Processing,N,0,0,DD/MM/YYYY,0,0,343.67,0,0,0,343.67,3.0,0
+T000099,C0065,Pim Srisawat,pim.srisawat65@example.com,M,Nakhon Ratchasima,2026-04-28,2026-04-28 12:00:00,Food,4,174.07,0.1,626.65,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,626.65,0,0,0,626.65,12.0,0
+T000137,C0038,Boss Kittikul,boss.kittikul38@example.com,F,Nakhon Ratchasima,2026-06-29,2026-06-29 11:00:00,Food,2,264.19,0.1,475.54,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,475.54,0,0,0,475.54,11.0,0
+T000527,C0024,Fah Boonmee,fah.boonmee24@example.com,F,Bangkok,2026-01-09,2026-01-09 07:00:00,Sports,2,202.29,0.1,364.12,Cash on Delivery,Processing,Y,0,0,YYYY-MM-DD,0,0,364.12,0,0,0,364.12,7.0,0
+T000242,C0108,Anan Khamdee,anan.khamdee108@example.com,M,Nakhon Ratchasima,2026-04-10,2026-04-10 12:00:00,Sports,6,144.15,0.05,821.66,Bank Transfer,Processing,N,0,0,YYYY/MM/DD,0,0,821.66,0,0,0,821.66,12.0,0
+T000241,C0060,Tee Maneerat,tee.maneerat60@example.com,M,Rayong,2026-03-17,2026-03-17 05:00:00,Food,6,251.32,0.0,1636.96,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,1507.92,1,0,0,1636.96,5.0,0
+T000570,C0019,Korn Dechawat,korn.dechawat19@example.com,M,Nakhon Ratchasima,2026-04-04,2026-04-04 15:00:00,Electronics,1,225.45,0.0,225.45,Bank Transfer,Completed,N,0,0,YYYY/MM/DD,0,0,225.45,0,0,0,225.45,15.0,0
+T000094,C0170,Beam Boonmee,beam.boonmee170@example.com,M,Nakhon Ratchasima,2026-03-18,2026-03-18 12:00:00,Sports,4,146.05,0.2,467.36,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,467.36,0,0,0,467.36,12.0,0
+T000108,C0163,Tee Thongdee,tee.thongdee163@example.com,M,Chanthaburi,2026-06-19,2026-06-19 17:00:00,Beauty,2,197.35,0.0,394.7,Bank Transfer,Returned,N,0,0,YYYY/MM/DD,0,0,394.7,0,0,0,394.7,17.0,0
+T000432,C0139,Gun Phromla,gun.phromla139@example.com,M,Nakhon Ratchasima,2026-02-03,2026-02-03 19:00:00,Home,5,137.06,0.1,616.77,Credit Card,Returned,N,0,0,MM/DD/YYYY,0,0,616.77,0,0,0,616.77,19.0,0
+T000188,C0012,Mint Pattanakul,mint.pattanakul12@example.com,M,Chiang Mai,2026-02-23,2026-02-23 17:00:00,Food,5,779.43,0.0,2092.5,PromptPay,Processing,N,0,0,YYYY/MM/DD,0,0,3897.15,1,0,1,2734.94,17.0,0
+T000491,C0016,Korn Lertprasert,korn.lertprasert16@example.com,M,Khon Kaen,2026-04-05,2026-04-05 09:00:00,Food,3,216.03,0.15,550.88,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,550.88,0,0,0,550.88,9.0,0
+T000427,C0116,Boss Wongsa,boss.wongsa116@example.com,F,Chonburi,2026-01-19,2026-01-19 14:00:00,Beauty,3,188.05,0.1,507.74,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,507.74,0,0,0,507.74,14.0,0
+T000289,C0096,Korn Dechawat,korn.dechawat96@example.com,M,Chonburi,2026-06-20,2026-06-20 18:00:00,Home,5,164.17,0.0,820.85,Bank Transfer,Processing,N,0,0,DD/MM/YYYY,0,0,820.85,0,0,0,820.85,18.0,0
+T000247,C0048,Boss Dechawat,boss.dechawat48@example.com,F,Rayong,2026-05-21,2026-05-21 05:00:00,Food,2,116.7,0.0,233.4,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,233.4,0,0,0,233.4,5.0,0
+T000415,C0006,Pim Khamdee,pim.khamdee6@example.com,M,Nakhon Ratchasima,2026-02-02,2026-02-02 03:00:00,Food,6,224.99,0.0,1349.94,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,1349.94,0,0,0,1349.94,3.0,0
+T000431,C0005,Ploy Chaiyo,ploy.chaiyo5@example.com,F,Bangkok,2026-05-15,2026-05-15 09:00:00,Food,4,368.36,0.2,1178.75,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,1178.75,0,0,0,1178.75,9.0,0
+T000133,C0087,May Sukjai,may.sukjai87@example.com,M,Chanthaburi,2026-06-19,2026-06-19 11:00:00,Electronics,6,158.25,0.0,949.5,Credit Card,Returned,N,0,0,YYYY/MM/DD,0,0,949.5,0,0,0,949.5,11.0,0
+T000212,C0106,Korn Srisawat,korn.srisawat106@example.com,M,Rayong,2026-05-04,2026-05-04 07:00:00,Home,6,286.92,0.1,1549.37,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,1549.37,0,0,0,1549.37,7.0,0
+T000034,C0117,Mint Phromla,mint.phromla117@example.com,F,Nakhon Ratchasima,2026-06-09,2026-06-09 10:00:00,Fashion,1,200.15,0.05,190.14,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,190.14,0,0,0,190.14,10.0,0
+T000466,C0047,Ploy Saelim,unknown_C0047@unknown.local,F,Khon Kaen,2026-05-16,2026-05-16 07:00:00,Home,5,120.77,0.0,603.85,Bank Transfer,Completed,N,1,0,YYYY-MM-DD,0,0,603.85,0,0,0,603.85,7.0,0
+T000496,C0068,Beam Sukjai,beam.sukjai68@example.com,F,Bangkok,2026-03-25,2026-03-25 08:00:00,Food,5,169.79,0.1,764.05,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,764.06,0,0,0,764.05,8.0,0
+T000376,C0166,Jane Srisawat,jane.srisawat166@example.com,F,Nakhon Ratchasima,2026-04-14,2026-04-14 05:00:00,Beauty,5,80.57,0.0,402.85,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,402.85,0,0,0,402.85,5.0,0
+T000549,C0160,Mint Kittikul,mint.kittikul160@example.com,F,Chiang Mai,2026-01-31,2026-01-31 18:00:00,Fashion,3,313.72,0.0,941.16,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,941.16,0,0,0,941.16,18.0,0
+T000040,C0034,Fah Pattanakul,fah.pattanakul34@example.com,M,Chiang Mai,2026-01-28,2026-01-28 19:00:00,Fashion,3,156.5,0.0,493.99,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,469.5,1,0,0,493.99,19.0,0
+T000360,C0174,Ploy Kittikul,ploy.kittikul174@example.com,M,Chiang Mai,2026-04-07,2026-04-07 18:00:00,Beauty,5,188.59,0.0,942.95,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,942.95,0,0,0,942.95,18.0,0
+T000209,C0002,Mint Thongdee,mint.thongdee2@example.com,F,Rayong,2026-01-23,2026-01-23 06:00:00,Food,1,299.62,0.0,299.62,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,299.62,0,0,0,299.62,6.0,0
+T000055,C0021,May Boonmee,may.boonmee21@example.com,F,Nakhon Ratchasima,2026-05-04,2026-05-04 19:00:00,Food,1,96.41,0.0,96.41,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,96.41,0,0,0,96.41,19.0,0
+T000385,C0103,Tee Phromla,tee.phromla103@example.com,F,Phuket,2026-02-21,2026-02-21 03:00:00,Home,3,331.97,0.0,995.91,Credit Card,Cancelled,N,0,0,YYYY/MM/DD,0,0,995.91,0,0,0,995.91,3.0,0
+T900008,C0151,Mook Thongdee,mook.thongdee151@example.com,M,Bangkok,2026-03-15,2026-03-15 07:00:00,Sports,3,269.12,0.15,686.26,Bank Transfer,Processing,N,0,0,DD-MM-YYYY,0,0,686.26,0,0,0,686.26,7.0,0
+T000400,C0153,Nont Chaiyo,nont.chaiyo153@example.com,F,Chiang Mai,2026-04-19,2026-04-19 11:00:00,Sports,3,162.55,0.0,487.65,PromptPay,Cancelled,N,0,0,DD/MM/YYYY,0,0,487.65,0,0,0,487.65,11.0,0
+T000030,C0082,Beam Srisawat,beam.srisawat82@example.com,M,Khon Kaen,2026-06-17,2026-06-17 17:00:00,Food,3,172.18,0.05,490.71,Bank Transfer,Processing,N,0,0,DD/MM/YYYY,0,0,490.71,0,0,0,490.71,17.0,0
+T000123,C0117,Mint Phromla,mint.phromla117@example.com,F,Nakhon Ratchasima,2026-06-16,2026-06-16 14:00:00,Sports,2,90.18,0.05,171.34,Bank Transfer,Cancelled,N,0,0,YYYY/MM/DD,0,0,171.34,0,0,0,171.34,14.0,0
+T000153,C0143,Korn Srisawat,korn.srisawat143@example.com,M,Rayong,2026-05-17,2026-05-17 11:00:00,Home,6,121.84,0.05,694.49,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,694.49,0,0,0,694.49,11.0,0
+T000522,C0104,May Srisawat,may.srisawat104@example.com,F,Chonburi,2026-05-16,2026-05-16 06:00:00,Beauty,3,195.53,0.0,586.59,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,586.59,0,0,0,586.59,6.0,0
+T000357,C0137,Film Boonmee,film.boonmee137@example.com,M,Khon Kaen,2026-03-08,2026-03-08 14:00:00,Fashion,3,56.68,0.0,170.04,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,170.04,0,0,0,170.04,14.0,0
+T000131,C0108,Anan Khamdee,anan.khamdee108@example.com,M,Nakhon Ratchasima,2026-06-24,2026-06-24 04:00:00,Beauty,6,265.91,0.0,1595.46,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,1595.46,0,0,0,1595.46,4.0,0
+T000493,C0173,Tee Wongsa,tee.wongsa173@example.com,M,Phuket,2026-02-03,2026-02-03 03:00:00,Beauty,3,286.06,0.0,858.18,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,858.18,0,0,0,858.18,3.0,0
+T000409,C0072,Tee Lertprasert,tee.lertprasert72@example.com,F,Chanthaburi,2026-05-22,2026-05-22 05:00:00,Food,6,378.53,0.1,2044.06,Cash on Delivery,Processing,N,0,0,Fallback_LoadTimestamp,1,0,2044.06,0,0,0,2044.06,5.0,0
+T000406,C0028,Korn Rattanakul,korn.rattanakul28@example.com,M,Chonburi,2026-03-11,2026-03-11 07:00:00,Home,2,754.26,0.0,19610.76,Credit Card,Processing,Y,0,0,YYYY-MM-DD,0,0,1508.52,1,0,0,19610.76,7.0,0
+T000562,C0146,Beam Maneerat,beam.maneerat146@example.com,F,Chanthaburi,2026-04-17,2026-04-17 13:00:00,Home,3,326.41,0.05,930.27,Bank Transfer,Cancelled,N,0,0,DD/MM/YYYY,0,0,930.27,0,0,0,930.27,13.0,0
+T000072,C0097,Ploy Boonmee,ploy.boonmee97@example.com,F,Chiang Mai,2026-01-10,2026-01-10 19:00:00,Sports,4,66.11,0.0,264.44,Bank Transfer,Completed,N,0,0,DD/MM/YYYY,0,0,264.44,0,0,0,264.44,19.0,0
+T000361,C0007,Jane Saelim,unknown_C0007@unknown.local,M,Chiang Mai,2026-06-24,2026-06-24 09:00:00,Beauty,1,170.79,0.2,136.63,PromptPay,Completed,N,1,0,DD/MM/YYYY,0,0,136.63,0,0,0,136.63,9.0,0
+T000314,C0135,Korn Srisawat,korn.srisawat135@example.com,F,Bangkok,2026-03-31,2026-03-31 11:00:00,Food,4,175.32,0.05,666.22,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,666.22,0,0,0,666.22,11.0,0
+T000384,C0138,Mint Dechawat,unknown_C0138@unknown.local,M,Khon Kaen,2026-01-13,2026-01-13 06:00:00,Beauty,4,268.67,0.1,1110.52,Credit Card,Processing,N,1,0,YYYY-MM-DD,0,0,967.21,1,0,0,1110.52,6.0,0
+T000263,C0064,Ploy Thongdee,ploy.thongdee64@example.com,F,Phuket,2026-03-06,2026-03-10 10:00:00,Food,4,242.46,0.1,872.86,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,872.86,0,0,0,872.86,106.0,1
+T000060,C0158,Nont Kittikul,nont.kittikul158@example.com,M,Nakhon Ratchasima,2026-03-04,2026-03-04 15:00:00,Beauty,5,97.05,0.15,412.46,Credit Card,Returned,N,0,0,YYYY/MM/DD,0,0,412.46,0,0,0,412.46,15.0,0
+T000271,C0039,Beam Boonmee,beam.boonmee39@example.com,M,Rayong,2026-05-04,2026-05-04 08:00:00,Home,6,162.55,0.0,975.3,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,975.3,0,0,0,975.3,8.0,0
+T000355,C0031,Ploy Rattanakul,ploy.rattanakul31@example.com,F,Chiang Mai,2026-05-19,2026-05-19 06:00:00,Electronics,99,286.94,0.0,860.82,Bank Transfer,Completed,N,0,0,MM/DD/YYYY,0,1,28407.06,1,0,0,860.82,6.0,0
+T000503,C0089,May Sukjai,may.sukjai89@example.com,F,Chiang Mai,2026-04-11,2026-04-11 07:00:00,Electronics,3,129.73,0.2,311.35,Cash on Delivery,Completed,Y,0,0,YYYY-MM-DD,0,0,311.35,0,0,0,311.35,7.0,0
+T000388,C0115,Korn Lertprasert,korn.lertprasert115@example.com,M,Phuket,2026-04-23,2026-04-23 06:00:00,Sports,4,71.99,0.1,192.82,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,259.16,1,0,0,192.82,6.0,0
+T000217,C0127,Fah Rattanakul,fah.rattanakul127@example.com,F,Rayong,2026-05-10,2026-05-10 10:00:00,Fashion,4,97.44,0.0,403.5,PromptPay,Completed,N,0,0,YYYY/MM/DD,0,0,389.76,1,0,0,403.5,10.0,0
+T000013,C0124,Aom Thongdee,unknown_C0124@unknown.local,F,Khon Kaen,2026-05-21,2026-05-21 14:00:00,Electronics,5,375.75,0.0,1664.62,Cash on Delivery,Processing,N,1,0,YYYY/MM/DD,0,0,1878.75,1,0,0,1664.62,14.0,0
+T000147,C0038,Boss Kittikul,boss.kittikul38@example.com,F,Nakhon Ratchasima,2026-05-17,2026-05-17 03:00:00,Fashion,6,400.11,0.0,2092.5,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,2400.66,0,0,1,2400.66,3.0,0
+T000312,C0012,Mint Pattanakul,unknown_C0012@unknown.local,M,Chiang Mai,2026-03-25,2026-03-25 09:00:00,Home,1,373.85,0.1,336.47,Bank Transfer,Completed,N,1,0,YYYY-MM-DD,0,0,336.46,0,0,0,336.47,9.0,0
+T000285,C0028,Korn Rattanakul,korn.rattanakul28@example.com,M,Chonburi,2026-06-09,2026-06-09 11:00:00,Food,6,230.09,0.0,1380.54,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,1380.54,0,0,0,1380.54,11.0,0
+T000101,C0074,Ice Kittikul,ice.kittikul74@example.com,M,Chonburi,2026-05-08,2026-05-08 06:00:00,Fashion,5,370.47,0.0,1852.35,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,1852.35,0,0,0,1852.35,6.0,0
+T000257,C0060,Tee Maneerat,tee.maneerat60@example.com,M,Rayong,2026-03-24,2026-03-24 10:00:00,Electronics,2,217.62,0.0,435.24,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,435.24,0,0,0,435.24,10.0,0
+T000369,C0144,Gun Sukjai,gun.sukjai144@example.com,M,Phuket,2026-01-24,2026-01-24 16:00:00,Sports,3,379.61,0.0,1138.83,Cash on Delivery,Processing,N,0,0,DD/MM/YYYY,0,0,1138.83,0,0,0,1138.83,16.0,0
+T000151,C0003,Mint Thongdee,unknown_C0003@unknown.local,M,Phuket,2026-05-13,2026-05-13 04:00:00,Electronics,5,221.56,0.15,941.63,Credit Card,Completed,N,1,0,YYYY-MM-DD,0,0,941.63,0,0,0,941.63,4.0,0
+T000194,C0002,Mint Thongdee,mint.thongdee2@example.com,F,Rayong,2026-06-02,2026-06-02 03:00:00,Fashion,3,100.22,0.05,285.63,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,285.63,0,0,0,285.63,3.0,0
+T000378,C0047,Ploy Saelim,ploy.saelim47@example.com,F,Khon Kaen,2026-05-18,2026-05-18 17:00:00,Home,2,149.97,0.05,284.94,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,284.94,0,0,0,284.94,17.0,0
+T000081,C0005,Ploy Chaiyo,unknown_C0005@unknown.local,F,Bangkok,2026-06-10,2026-06-11 09:00:00,Food,3,95.64,0.1,258.23,Credit Card,Processing,N,1,0,YYYY-MM-DD,0,0,258.23,0,0,0,258.23,33.0,1
+T000218,C0082,Beam Srisawat,beam.srisawat82@example.com,M,Khon Kaen,2026-02-06,2026-02-06 13:00:00,Sports,5,59.38,0.0,296.9,Cash on Delivery,Completed,N,0,0,MM/DD/YYYY,0,0,296.9,0,0,0,296.9,13.0,0
+T000132,C0101,Boss Phromla,boss.phromla101@example.com,M,Bangkok,2026-05-16,2026-05-20 17:00:00,Sports,4,389.96,0.1,1403.86,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,1403.86,0,0,0,1403.86,113.0,1
+T000164,C0114,Ploy Thongdee,ploy.thongdee114@example.com,M,Nakhon Ratchasima,2026-02-15,2026-02-18 15:00:00,Food,5,99.6,0.1,448.2,Bank Transfer,Returned,N,0,0,YYYY/MM/DD,0,0,448.2,0,0,0,448.2,87.0,1
+T000455,C0023,Beam Boonmee,beam.boonmee23@example.com,M,Khon Kaen,2026-06-03,2026-06-03 03:00:00,Electronics,2,348.59,0.1,627.46,Cash on Delivery,Processing,N,0,0,DD/MM/YYYY,0,0,627.46,0,0,0,627.46,3.0,0
+T000478,C0122,Anan Wongsa,anan.wongsa122@example.com,M,Chanthaburi,2026-03-16,2026-03-16 18:00:00,Fashion,2,367.69,0.0,735.38,Credit Card,Cancelled,N,0,0,YYYY/MM/DD,0,0,735.38,0,0,0,735.38,18.0,0
+T000536,C0151,Mook Thongdee,mook.thongdee151@example.com,M,Bangkok,2026-03-15,2026-03-15 07:00:00,Sports,3,269.12,0.15,686.26,Bank Transfer,Processing,N,0,0,DD-MM-YYYY,0,0,686.26,0,0,0,686.26,7.0,0
+T000193,C0128,Ploy Khamdee,ploy.khamdee128@example.com,M,Bangkok,2026-01-17,2026-01-17 02:00:00,Sports,3,144.29,0.2,346.3,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,346.3,0,0,0,346.3,2.0,0
+T000366,C0134,Pim Wongsa,pim.wongsa134@example.com,M,Chanthaburi,2026-05-01,2026-05-01 14:00:00,Fashion,5,311.08,0.0,1555.4,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,1555.4,0,0,0,1555.4,14.0,0
+T000539,C0055,Beam Thongdee,beam.thongdee55@example.com,M,Chonburi,2026-03-25,2026-03-25 03:00:00,Home,1,238.15,0.0,238.15,Cash on Delivery,Completed,N,0,0,YYYY/MM/DD,0,0,238.15,0,0,0,238.15,3.0,0
+T000114,C0145,Tee Srisawat,tee.srisawat145@example.com,M,Nakhon Ratchasima,2026-04-21,2026-04-21 12:00:00,Beauty,3,178.6,0.1,482.22,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,482.22,0,0,0,482.22,12.0,0
+T000450,C0120,Mook Boonmee,mook.boonmee120@example.com,M,Chonburi,2026-04-03,2026-04-03 17:00:00,Electronics,5,298.23,0.0,1491.15,Bank Transfer,Cancelled,N,0,0,MM/DD/YYYY,0,0,1491.15,0,0,0,1491.15,17.0,0
+T000136,C0033,Pim Srisawat,pim.srisawat33@example.com,M,Rayong,2026-05-26,2026-05-26 17:00:00,Sports,4,157.09,0.2,502.69,Credit Card,Completed,N,0,0,MM/DD/YYYY,0,0,502.69,0,0,0,502.69,17.0,0
+T000495,C0082,Beam Srisawat,beam.srisawat82@example.com,M,Khon Kaen,2026-02-10,2026-02-10 02:00:00,Beauty,1,450.25,0.05,427.74,PromptPay,Processing,N,0,0,DD/MM/YYYY,0,0,427.74,0,0,0,427.74,2.0,0
+T000017,C0018,Nont Chaiyo,nont.chaiyo18@example.com,M,Phuket,2026-01-27,2026-01-27 11:00:00,Home,1,128.16,0.05,121.75,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,121.75,0,0,0,121.75,11.0,0
+T000557,C0173,Tee Wongsa,tee.wongsa173@example.com,M,Phuket,2026-05-12,2026-05-12 08:00:00,Food,3,160.58,0.2,385.39,Cash on Delivery,Completed,Y,0,0,MM/DD/YYYY,0,0,385.39,0,0,0,385.39,8.0,0
+T000071,C0137,Film Boonmee,unknown_C0137@unknown.local,M,Khon Kaen,2026-01-16,2026-01-16 15:00:00,Fashion,2,478.1,0.15,812.77,PromptPay,Cancelled,N,1,0,YYYY-MM-DD,0,0,812.77,0,0,0,812.77,15.0,0
+T000031,C0069,Jane Saelim,unknown_C0069@unknown.local,M,Khon Kaen,2026-05-10,2026-05-10 12:00:00,Electronics,3,101.59,0.05,289.53,Credit Card,Cancelled,N,1,0,YYYY-MM-DD,0,0,289.53,0,0,0,289.53,12.0,0
+T000142,C0128,Ploy Khamdee,ploy.khamdee128@example.com,M,Bangkok,2026-04-01,2026-04-01 13:00:00,Electronics,2,143.96,0.15,244.73,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,244.73,0,0,0,244.73,13.0,0
+T000578,C0015,New Pattanakul,new.pattanakul15@example.com,F,Bangkok,2026-03-28,2026-03-28 11:00:00,Beauty,4,447.52,0.2,1432.06,Cash on Delivery,Returned,N,0,0,MM/DD/YYYY,0,0,1432.06,0,0,0,1432.06,11.0,0
+T000402,C0167,Anan Sukjai,anan.sukjai167@example.com,M,Nakhon Ratchasima,2026-02-17,2026-02-17 14:00:00,Fashion,3,81.2,0.0,243.6,Credit Card,Cancelled,N,0,0,DD/MM/YYYY,0,0,243.6,0,0,0,243.6,14.0,0
+T000516,C0063,Korn Wongsa,korn.wongsa63@example.com,M,Bangkok,2026-06-09,2026-06-09 09:00:00,Sports,1,104.25,0.15,88.61,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,88.61,0,0,0,88.61,9.0,0
+T000011,C0046,Nont Boonmee,nont.boonmee46@example.com,F,Chiang Mai,2026-06-11,2026-06-11 15:00:00,Food,5,54.49,0.0,272.45,Credit Card,Cancelled,N,0,0,MM/DD/YYYY,0,0,272.45,0,0,0,272.45,15.0,0
+T000422,C0061,Tee Maneerat,tee.maneerat61@example.com,M,Chiang Mai,2026-04-19,2026-04-19 17:00:00,Beauty,2,113.88,0.0,257.22,Credit Card,Returned,N,0,0,DD-MM-YYYY,0,0,227.76,1,0,0,257.22,17.0,0
+T000487,C0013,Narin Wongsa,narin.wongsa13@example.com,F,Khon Kaen,2026-02-05,2026-02-05 18:00:00,Food,1,343.93,0.1,309.54,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,309.54,0,0,0,309.54,18.0,0
+T000227,C0079,Mook Srisawat,mook.srisawat79@example.com,F,Chanthaburi,2026-05-27,2026-05-27 04:00:00,Electronics,3,122.62,0.0,367.86,Cash on Delivery,Returned,N,0,0,MM/DD/YYYY,0,0,367.86,0,0,0,367.86,4.0,0
+T000053,C0116,Boss Wongsa,boss.wongsa116@example.com,F,Chonburi,2026-04-07,2026-04-07 13:00:00,Home,3,211.11,0.05,601.66,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,601.66,0,0,0,601.66,13.0,0
+T000047,C0131,Narin Rattanakul,narin.rattanakul131@example.com,F,Khon Kaen,2026-04-04,2026-04-08 22:00:00,Sports,2,85.82,0.1,154.48,Credit Card,Cancelled,N,0,0,DD-MM-YYYY,0,0,154.48,0,0,0,154.48,118.0,1
+T000470,C0046,Nont Boonmee,unknown_C0046@unknown.local,F,Chiang Mai,2026-04-17,2026-04-17 07:00:00,Electronics,3,76.17,0.0,228.51,Credit Card,Completed,N,1,0,DD/MM/YYYY,0,0,228.51,0,0,0,228.51,7.0,0
+T000538,C0010,Beam Sukjai,beam.sukjai10@example.com,M,Phuket,2026-03-20,2026-03-20 08:00:00,Fashion,1,145.78,0.05,90.24,PromptPay,Returned,N,0,0,YYYY/MM/DD,0,0,138.49,1,0,0,90.24,8.0,0
+T000262,C0091,Beam Maneerat,beam.maneerat91@example.com,M,Chonburi,2026-06-03,2026-06-03 09:00:00,Beauty,1,451.69,0.0,451.69,Credit Card,Returned,N,0,0,DD/MM/YYYY,0,0,451.69,0,0,0,451.69,9.0,0
+T000156,C0174,Ploy Kittikul,ploy.kittikul174@example.com,M,Chiang Mai,2026-03-18,2026-03-18 11:00:00,Fashion,4,301.08,0.0,1204.32,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,1204.32,0,0,0,1204.32,11.0,0
+T000386,C0049,Gun Dechawat,gun.dechawat49@example.com,F,Nakhon Ratchasima,2026-03-26,2026-03-26 16:00:00,Home,6,91.88,0.0,2092.5,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,551.28,1,0,1,999999.0,16.0,0
+T000373,C0052,Gun Dechawat,gun.dechawat52@example.com,F,Rayong,2026-03-17,2026-03-17 19:00:00,Beauty,2,211.43,0.0,422.86,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,422.86,0,0,0,422.86,19.0,0
+T000517,C0155,Korn Srisawat,korn.srisawat155@example.com,F,Phuket,2026-02-08,2026-02-08 18:00:00,Home,2,527.03,0.0,1054.06,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,1054.06,0,0,0,1054.06,18.0,0
+T000325,C0008,Ice Rattanakul,ice.rattanakul8@example.com,M,Chiang Mai,2026-03-30,2026-03-30 08:00:00,Electronics,1,191.52,0.0,191.52,Cash on Delivery,Cancelled,N,0,0,YYYY/MM/DD,0,0,191.52,0,0,0,191.52,8.0,0
+T000597,C0052,Gun Dechawat,unknown_C0052@unknown.local,F,Rayong,2026-03-30,2026-03-30 02:00:00,Beauty,1,426.97,0.0,426.97,PromptPay,Returned,N,1,0,YYYY-MM-DD,0,0,426.97,0,0,0,426.97,2.0,0
+T000190,C0147,Film Chaiyo,film.chaiyo147@example.com,M,Chiang Mai,2026-01-24,2026-01-24 04:00:00,Home,1,160.97,0.05,152.92,Cash on Delivery,Completed,N,0,0,DD-MM-YYYY,0,0,152.92,0,0,0,152.92,4.0,0
+T900005,C0090,Mook Sukjai,mook.sukjai90@example.com,M,Chanthaburi,2026-04-04,2026-04-04 01:00:00,Electronics,2,164.39,0.0,328.78,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,328.78,0,0,0,328.78,1.0,0
+T000480,C0159,Nont Dechawat,nont.dechawat159@example.com,M,Chiang Mai,2026-02-15,2026-02-15 05:00:00,Food,4,637.89,0.0,2092.5,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,2551.56,0,0,1,2551.56,5.0,0
+T000504,C0034,Fah Pattanakul,fah.pattanakul34@example.com,M,Chiang Mai,2026-05-24,2026-05-24 04:00:00,Home,2,166.19,0.0,332.38,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,332.38,0,0,0,332.38,4.0,0
+T000085,C0002,Mint Thongdee,mint.thongdee2@example.com,F,Rayong,2026-02-10,2026-02-10 17:00:00,Beauty,2,207.86,0.15,353.36,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,353.36,0,0,0,353.36,17.0,0
+T000324,C0102,Nont Saelim,nont.saelim102@example.com,M,Chanthaburi,2026-02-06,2026-02-06 02:00:00,Sports,4,324.36,0.0,1297.44,Bank Transfer,Returned,N,0,0,YYYY/MM/DD,0,0,1297.44,0,0,0,1297.44,2.0,0
+T000201,C0014,Beam Thongdee,beam.thongdee14@example.com,M,Chonburi,2026-01-28,2026-01-28 19:00:00,Fashion,1,379.52,0.0,379.52,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,379.52,0,0,0,379.52,19.0,0
+T000223,C0158,Nont Kittikul,nont.kittikul158@example.com,M,Nakhon Ratchasima,2026-03-13,2026-03-13 09:00:00,Sports,2,164.8,0.0,329.6,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,329.6,0,0,0,329.6,9.0,0
+T000249,C0077,Tee Chaiyo,tee.chaiyo77@example.com,F,Khon Kaen,2026-04-30,2026-04-30 10:00:00,Electronics,4,393.3,0.0,1573.2,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,1573.2,0,0,0,1573.2,10.0,0
+T000551,C0069,Jane Saelim,jane.saelim69@example.com,M,Khon Kaen,2026-04-03,2026-04-03 19:00:00,Sports,6,618.74,0.0,2092.5,PromptPay,Processing,N,0,0,MM/DD/YYYY,0,0,3712.44,0,0,1,3712.44,19.0,0
+T000581,C0165,Nont Thongdee,nont.thongdee165@example.com,F,Nakhon Ratchasima,2026-02-18,2026-02-18 09:00:00,Home,1,219.66,0.1,197.69,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,197.69,0,0,0,197.69,9.0,0
+T000521,C0022,Film Kittikul,film.kittikul22@example.com,F,Nakhon Ratchasima,2026-02-19,2026-02-19 17:00:00,Electronics,1,244.3,0.2,195.44,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,195.44,0,0,0,195.44,17.0,0
+T000526,C0144,Gun Sukjai,gun.sukjai144@example.com,M,Phuket,2026-03-21,2026-03-21 17:00:00,Fashion,2,148.59,0.0,297.18,Cash on Delivery,Processing,N,0,0,MM/DD/YYYY,0,0,297.18,0,0,0,297.18,17.0,0
+T000343,C0130,Jane Srisawat,jane.srisawat130@example.com,F,Nakhon Ratchasima,2026-02-06,2026-02-06 07:00:00,Electronics,4,187.75,0.0,751.0,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,751.0,0,0,0,751.0,7.0,0
+T000068,C0138,Mint Dechawat,mint.dechawat138@example.com,M,Khon Kaen,2026-01-29,2026-01-29 04:00:00,Electronics,1,73.56,0.0,73.56,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,73.56,0,0,0,73.56,4.0,0
+T000512,C0171,Beam Lertprasert,beam.lertprasert171@example.com,F,Rayong,2026-04-13,2026-04-13 09:00:00,Beauty,4,84.31,0.0,337.24,Credit Card,Processing,N,0,0,MM/DD/YYYY,0,0,337.24,0,0,0,337.24,9.0,0
+T000113,C0153,Nont Chaiyo,nont.chaiyo153@example.com,F,Chiang Mai,2026-03-28,2026-03-28 18:00:00,Electronics,5,180.46,0.15,766.96,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,766.96,0,0,0,766.96,18.0,0
+T000224,C0022,Film Kittikul,film.kittikul22@example.com,F,Nakhon Ratchasima,2026-01-05,2026-01-05 10:00:00,Fashion,1,87.31,0.05,82.94,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,82.94,0,0,0,82.94,10.0,0
+T000069,C0147,Film Chaiyo,film.chaiyo147@example.com,M,Chiang Mai,2026-06-04,2026-06-04 13:00:00,Food,4,380.85,0.2,1218.72,Credit Card,Processing,N,0,0,DD-MM-YYYY,0,0,1218.72,0,0,0,1218.72,13.0,0
+T000078,C0120,Mook Boonmee,mook.boonmee120@example.com,M,Chonburi,2026-02-24,2026-02-24 16:00:00,Home,5,132.52,0.15,563.21,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,563.21,0,0,0,563.21,16.0,0
+T000174,C0004,Tee Dechawat,tee.dechawat4@example.com,M,Bangkok,2026-04-30,2026-04-30 14:00:00,Beauty,3,382.84,0.0,1148.52,PromptPay,Processing,N,0,0,MM/DD/YYYY,0,0,1148.52,0,0,0,1148.52,14.0,0
+T000006,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-06-29,2026-06-29 01:00:00,Fashion,4,119.57,0.15,283.5,Bank Transfer,Completed,N,0,0,DD-MM-YYYY,0,0,406.54,1,0,0,283.5,1.0,0
+T000154,C0025,Mook Srisawat,mook.srisawat25@example.com,M,Nakhon Ratchasima,2026-03-07,2026-03-07 17:00:00,Electronics,1,189.98,0.0,189.98,PromptPay,Returned,N,0,0,MM/DD/YYYY,0,0,189.98,0,0,0,189.98,17.0,0
+T000204,C0037,Jane Phromla,jane.phromla37@example.com,M,Chiang Mai,2026-05-05,2026-05-05 03:00:00,Beauty,2,411.88,0.1,741.38,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,741.38,0,0,0,741.38,3.0,0
+T000290,C0137,Film Boonmee,film.boonmee137@example.com,M,Khon Kaen,2026-01-18,2026-01-18 06:00:00,Home,3,473.43,0.0,1689.26,PromptPay,Processing,N,0,0,MM/DD/YYYY,0,0,1420.29,1,0,0,1689.26,6.0,0
+T000595,C0046,Nont Boonmee,nont.boonmee46@example.com,F,Chiang Mai,2026-03-05,2026-03-05 04:00:00,Home,5,169.18,0.1,761.31,Cash on Delivery,Completed,N,0,0,MM/DD/YYYY,0,0,761.31,0,0,0,761.31,4.0,0
+T000423,C0019,Korn Dechawat,korn.dechawat19@example.com,M,Nakhon Ratchasima,2026-01-09,2026-01-09 06:00:00,Food,1,337.51,0.0,337.51,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,337.51,0,0,0,337.51,6.0,0
+T000580,C0063,Korn Wongsa,korn.wongsa63@example.com,M,Bangkok,2026-05-12,2026-05-12 02:00:00,Home,1,170.82,0.0,170.82,PromptPay,Processing,N,0,0,DD-MM-YYYY,0,0,170.82,0,0,0,170.82,2.0,0
+T000059,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-05-26,2026-05-26 13:00:00,Home,2,317.87,0.1,789.88,Credit Card,Returned,N,0,0,DD-MM-YYYY,0,0,572.17,1,0,0,789.88,13.0,0
+T000291,C0086,Korn Dechawat,korn.dechawat86@example.com,F,Nakhon Ratchasima,2026-01-09,2026-01-13 12:00:00,Beauty,3,66.91,0.05,190.69,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,190.69,0,0,0,190.69,108.0,1
+T000284,C0135,Korn Srisawat,korn.srisawat135@example.com,F,Bangkok,2026-04-05,2026-04-05 06:00:00,Fashion,5,230.27,0.0,1151.35,Credit Card,Returned,N,0,0,YYYY/MM/DD,0,0,1151.35,0,0,0,1151.35,6.0,0
+T000046,C0149,May Pattanakul,may.pattanakul149@example.com,F,Chiang Mai,2026-04-20,2026-04-20 04:00:00,Fashion,5,318.51,0.0,1592.55,Bank Transfer,Cancelled,N,0,0,DD/MM/YYYY,0,0,1592.55,0,0,0,1592.55,4.0,0
+T000198,C0114,Ploy Thongdee,ploy.thongdee114@example.com,M,Nakhon Ratchasima,2026-03-13,2026-03-13 17:00:00,Electronics,6,185.56,0.0,1113.36,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,1113.36,0,0,0,1113.36,17.0,0
+T000294,C0011,Mint Rattanakul,mint.rattanakul11@example.com,F,Chanthaburi,2026-06-14,2026-06-14 06:00:00,Sports,1,339.66,0.0,339.66,Credit Card,Completed,N,0,0,YYYY-MM-DD,0,0,339.66,0,0,0,339.66,6.0,0
+T000323,C0114,Ploy Thongdee,ploy.thongdee114@example.com,M,Nakhon Ratchasima,2026-06-14,2026-06-14 09:00:00,Beauty,5,64.65,0.1,290.93,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,290.92,0,0,0,290.93,9.0,0
+T000120,C0021,May Boonmee,may.boonmee21@example.com,F,Nakhon Ratchasima,2026-05-13,2026-05-13 14:00:00,Beauty,6,260.0,0.0,1560.0,PromptPay,Returned,N,0,0,MM/DD/YYYY,0,0,1560.0,0,0,0,1560.0,14.0,0
+T000345,C0079,Mook Srisawat,mook.srisawat79@example.com,F,Chanthaburi,2026-06-29,2026-06-29 04:00:00,Sports,5,294.59,0.0,1472.95,Bank Transfer,Returned,N,0,0,DD/MM/YYYY,0,0,1472.95,0,0,0,1472.95,4.0,0
+T000541,C0021,May Boonmee,may.boonmee21@example.com,F,Unknown,2026-03-26,2026-03-26 04:00:00,Food,3,214.9,0.0,644.7,Credit Card,Processing,N,0,1,DD-MM-YYYY,0,0,644.7,0,0,0,644.7,4.0,0
+T000395,C0093,Bank Thongdee,bank.thongdee93@example.com,F,Khon Kaen,2026-02-05,2026-02-05 09:00:00,Beauty,5,362.09,0.0,1810.45,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,1810.45,0,0,0,1810.45,9.0,0
+T000028,C0178,Anan Wongsa,unknown_C0178@unknown.local,M,Khon Kaen,2026-01-28,2026-01-28 02:00:00,Fashion,5,86.54,0.0,432.7,Cash on Delivery,Processing,N,1,0,MM/DD/YYYY,0,0,432.7,0,0,0,432.7,2.0,0
+T000392,C0077,Tee Chaiyo,tee.chaiyo77@example.com,F,Khon Kaen,2026-06-26,2026-06-26 16:00:00,Electronics,5,539.43,0.1,2092.5,Bank Transfer,Cancelled,N,0,0,MM/DD/YYYY,0,0,2427.44,0,0,1,2427.43,16.0,0
+T000086,C0143,Korn Srisawat,korn.srisawat143@example.com,M,Rayong,2026-05-05,2026-05-05 10:00:00,Home,3,161.21,0.1,435.27,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,435.27,0,0,0,435.27,10.0,0
+T000500,C0125,May Lertprasert,unknown_C0125@unknown.local,F,Rayong,2026-02-23,2026-02-23 19:00:00,Fashion,3,184.24,0.1,497.45,Credit Card,Processing,N,1,0,YYYY-MM-DD,0,0,497.45,0,0,0,497.45,19.0,0
+T000546,C0161,Gun Saelim,gun.saelim161@example.com,F,Khon Kaen,2026-02-17,2026-02-17 14:00:00,Electronics,3,154.41,0.0,463.23,PromptPay,Processing,N,0,0,MM/DD/YYYY,0,0,463.23,0,0,0,463.23,14.0,0
+T000279,C0074,Ice Kittikul,ice.kittikul74@example.com,M,Chonburi,2026-05-05,2026-05-05 16:00:00,Home,4,104.9,0.1,377.64,Bank Transfer,Completed,N,0,0,DD/MM/YYYY,0,0,377.64,0,0,0,377.64,16.0,0
+T000499,C0093,Bank Thongdee,bank.thongdee93@example.com,F,Khon Kaen,2026-04-03,2026-04-03 10:00:00,Fashion,1,467.98,0.05,444.58,Credit Card,Processing,N,0,0,MM/DD/YYYY,0,0,444.58,0,0,0,444.58,10.0,0
+T000475,C0173,Tee Wongsa,tee.wongsa173@example.com,M,Phuket,2026-03-31,2026-03-31 19:00:00,Electronics,5,144.45,0.0,722.25,Credit Card,Processing,N,0,0,DD/MM/YYYY,0,0,722.25,0,0,0,722.25,19.0,0
+T000518,C0168,Aom Saelim,aom.saelim168@example.com,M,Khon Kaen,2026-06-23,2026-06-23 05:00:00,Beauty,2,264.86,0.05,503.23,Cash on Delivery,Cancelled,N,0,0,DD-MM-YYYY,0,0,503.23,0,0,0,503.23,5.0,0
+T000587,C0019,Korn Dechawat,korn.dechawat19@example.com,M,Nakhon Ratchasima,2026-05-21,2026-05-25 14:00:00,Home,5,436.15,0.1,1962.67,Cash on Delivery,Returned,N,0,0,MM/DD/YYYY,0,0,1962.68,0,0,0,1962.67,110.0,1
+T000590,C0118,Jane Phromla,jane.phromla118@example.com,F,Chanthaburi,2026-05-01,2026-05-01 15:00:00,Home,5,295.4,0.0,1477.0,Credit Card,Returned,N,0,0,DD/MM/YYYY,0,0,1477.0,0,0,0,1477.0,15.0,0
+T000189,C0101,Boss Phromla,boss.phromla101@example.com,M,Bangkok,2026-05-29,2026-06-01 22:00:00,Fashion,5,237.69,0.0,1188.45,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,1188.45,0,0,0,1188.45,94.0,1
+T000049,C0102,Nont Saelim,nont.saelim102@example.com,M,Chanthaburi,2026-05-21,2026-05-21 16:00:00,Food,4,204.06,0.0,816.24,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,816.24,0,0,0,816.24,16.0,0
+T900003,C0080,May Kittikul,may.kittikul80@example.com,F,Khon Kaen,2026-06-24,2026-06-24 07:00:00,Fashion,2,299.01,0.1,538.22,Cash on Delivery,Cancelled,N,0,0,DD-MM-YYYY,0,0,538.22,0,0,0,538.22,7.0,0
+T000363,C0165,Nont Thongdee,nont.thongdee165@example.com,F,Nakhon Ratchasima,2026-03-15,2026-03-15 11:00:00,Food,1,381.57,0.2,305.26,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,305.26,0,0,0,305.26,11.0,0
+T000065,C0038,Boss Kittikul,boss.kittikul38@example.com,F,Nakhon Ratchasima,2026-03-20,2026-03-20 02:00:00,Home,1,101.63,0.1,91.47,Credit Card,Processing,N,0,0,DD-MM-YYYY,0,0,91.47,0,0,0,91.47,2.0,0
+T000588,C0010,Beam Sukjai,beam.sukjai10@example.com,M,Phuket,2026-03-26,2026-03-29 21:00:00,Fashion,1,475.37,0.05,451.6,PromptPay,Cancelled,N,0,0,MM/DD/YYYY,0,0,451.6,0,0,0,451.6,93.0,1
+T000506,C0065,Pim Srisawat,pim.srisawat65@example.com,M,Nakhon Ratchasima,2026-04-14,2026-04-14 04:00:00,Electronics,1,348.38,0.0,348.38,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,348.38,0,0,0,348.38,4.0,0
+T000362,C0075,Ice Maneerat,ice.maneerat75@example.com,F,Bangkok,2026-05-24,2026-05-24 02:00:00,Home,5,87.15,0.15,370.39,Bank Transfer,Returned,N,0,0,YYYY/MM/DD,0,0,370.39,0,0,0,370.39,2.0,0
+T000437,C0127,Fah Rattanakul,fah.rattanakul127@example.com,F,Rayong,2026-04-09,2026-04-09 01:00:00,Home,2,162.74,0.2,260.38,PromptPay,Cancelled,N,0,0,DD-MM-YYYY,0,0,260.38,0,0,0,260.38,1.0,0
+T000408,C0011,Mint Rattanakul,mint.rattanakul11@example.com,F,Chanthaburi,2026-01-09,2026-01-09 13:00:00,Food,1,156.72,0.1,141.05,PromptPay,Returned,Y,0,0,YYYY-MM-DD,0,0,141.05,0,0,0,141.05,13.0,0
+T000381,C0122,Anan Wongsa,anan.wongsa122@example.com,M,Chanthaburi,2026-05-04,2026-05-04 10:00:00,Beauty,6,164.79,0.1,889.87,Cash on Delivery,Cancelled,N,0,0,YYYY/MM/DD,0,0,889.87,0,0,0,889.87,10.0,0
+T000418,C0012,Mint Pattanakul,mint.pattanakul12@example.com,M,Chiang Mai,2026-03-27,2026-03-27 03:00:00,Home,6,174.28,0.15,888.83,Credit Card,Cancelled,N,0,0,YYYY/MM/DD,0,0,888.83,0,0,0,888.83,3.0,0
+T000311,C0136,Nont Kittikul,nont.kittikul136@example.com,F,Khon Kaen,2026-03-09,2026-03-09 05:00:00,Food,2,116.93,0.0,233.86,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,233.86,0,0,0,233.86,5.0,0
+T000596,C0119,Boss Khamdee,boss.khamdee119@example.com,M,Khon Kaen,2026-04-02,2026-04-02 11:00:00,Beauty,2,331.71,0.1,597.08,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,597.08,0,0,0,597.08,11.0,0
+T000497,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-01-31,2026-02-04 17:00:00,Electronics,6,57.74,0.05,329.12,Bank Transfer,Cancelled,N,0,0,DD-MM-YYYY,0,0,329.12,0,0,0,329.12,113.0,1
+T000283,C0167,Anan Sukjai,anan.sukjai167@example.com,M,Nakhon Ratchasima,2026-06-03,2026-06-03 11:00:00,Sports,2,216.73,0.0,433.46,Bank Transfer,Returned,N,0,0,DD/MM/YYYY,0,0,433.46,0,0,0,433.46,11.0,0
+T000208,C0158,Nont Kittikul,nont.kittikul158@example.com,M,Nakhon Ratchasima,2026-02-24,2026-02-24 01:00:00,Beauty,4,188.46,0.0,753.84,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,753.84,0,0,0,753.84,1.0,0
+T000177,C0137,Film Boonmee,film.boonmee137@example.com,M,Khon Kaen,2026-01-23,2026-01-23 11:00:00,Electronics,3,318.69,0.05,908.27,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,908.27,0,0,0,908.27,11.0,0
+T000138,C0086,Korn Dechawat,korn.dechawat86@example.com,F,Nakhon Ratchasima,2026-01-17,2026-01-17 10:00:00,Home,2,250.5,0.1,450.9,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,450.9,0,0,0,450.9,10.0,0
+T000280,C0022,Film Kittikul,film.kittikul22@example.com,F,Nakhon Ratchasima,2026-01-20,2026-01-20 12:00:00,Food,6,493.6,0.1,2092.5,Credit Card,Returned,N,0,0,YYYY/MM/DD,0,0,2665.44,0,0,1,2665.44,12.0,0
+T000364,C0065,Pim Srisawat,pim.srisawat65@example.com,M,Nakhon Ratchasima,2026-04-12,2026-04-12 18:00:00,Home,6,367.07,0.1,1982.18,PromptPay,Completed,N,0,0,MM/DD/YYYY,0,0,1982.18,0,0,0,1982.18,18.0,0
+T000573,C0032,Bank Dechawat,bank.dechawat32@example.com,F,Nakhon Ratchasima,2026-04-18,2026-04-18 17:00:00,Electronics,3,251.69,0.0,755.07,Cash on Delivery,Cancelled,N,0,0,MM/DD/YYYY,0,0,755.07,0,0,0,755.07,17.0,0
+T000254,C0020,New Chaiyo,new.chaiyo20@example.com,M,Phuket,2026-05-09,2026-05-09 19:00:00,Sports,1,142.09,0.0,0.0,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,142.09,1,0,0,0.0,19.0,0
+T000348,C0086,Korn Dechawat,korn.dechawat86@example.com,F,Nakhon Ratchasima,2026-02-11,2026-02-11 12:00:00,Beauty,4,137.96,0.1,496.66,Bank Transfer,Processing,N,0,0,MM/DD/YYYY,0,0,496.66,0,0,0,496.66,12.0,0
+T000002,C0145,Tee Srisawat,tee.srisawat145@example.com,M,Nakhon Ratchasima,2026-06-28,2026-06-28 16:00:00,Sports,5,219.02,0.0,1095.1,Credit Card,Returned,N,0,0,MM/DD/YYYY,0,0,1095.1,0,0,0,1095.1,16.0,0
+T000299,C0075,Ice Maneerat,unknown_C0075@unknown.local,F,Bangkok,2026-01-21,2026-01-21 10:00:00,Electronics,5,180.3,0.0,901.5,Bank Transfer,Returned,N,1,0,DD-MM-YYYY,0,0,901.5,0,0,0,901.5,10.0,0
+T000309,C0005,Ploy Chaiyo,ploy.chaiyo5@example.com,F,Bangkok,2026-06-26,2026-06-26 17:00:00,Electronics,2,159.61,0.15,271.34,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,271.34,0,0,0,271.34,17.0,0
+T900002,C0098,Film Lertprasert,film.lertprasert98@example.com,F,Khon Kaen,2026-03-31,2026-03-31 17:00:00,Food,1,143.03,0.2,114.42,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,114.42,0,0,0,114.42,17.0,0
+T000370,C0141,Korn Phromla,korn.phromla141@example.com,M,Khon Kaen,2026-04-06,2026-04-06 18:00:00,Sports,6,204.06,0.0,2092.5,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,1224.36,1,0,1,888888.0,18.0,0
+T000232,C0025,Mook Srisawat,mook.srisawat25@example.com,M,Nakhon Ratchasima,2026-03-18,2026-03-18 14:00:00,Fashion,2,354.79,0.1,638.62,PromptPay,Processing,N,0,0,DD-MM-YYYY,0,0,638.62,0,0,0,638.62,14.0,0
+T000302,C0067,May Pattanakul,may.pattanakul67@example.com,M,Chonburi,2026-06-15,2026-06-17 23:00:00,Food,1,232.83,0.0,281.25,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,232.83,1,0,0,281.25,71.0,1
+T000029,C0117,Mint Phromla,mint.phromla117@example.com,F,Nakhon Ratchasima,2026-06-20,2026-06-20 16:00:00,Sports,2,154.63,0.15,262.87,Credit Card,Cancelled,N,0,0,MM/DD/YYYY,0,0,262.87,0,0,0,262.87,16.0,0
+T000420,C0021,May Boonmee,may.boonmee21@example.com,F,Nakhon Ratchasima,2026-03-12,2026-03-12 06:00:00,Fashion,1,157.46,0.0,157.46,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,157.46,0,0,0,157.46,6.0,0
+T000216,C0061,Tee Maneerat,tee.maneerat61@example.com,M,Chiang Mai,2026-05-05,2026-05-05 19:00:00,Fashion,3,319.14,0.0,957.42,Cash on Delivery,Returned,N,0,0,YYYY/MM/DD,0,0,957.42,0,0,0,957.42,19.0,0
+T000545,C0122,Anan Wongsa,anan.wongsa122@example.com,M,Chanthaburi,2026-01-24,2026-01-24 10:00:00,Home,2,348.29,0.2,557.26,Bank Transfer,Processing,N,0,0,Fallback_LoadTimestamp,1,0,557.26,0,0,0,557.26,10.0,0
+T000448,C0150,Mook Chaiyo,unknown_C0150@unknown.local,F,Chiang Mai,2026-01-25,2026-01-25 12:00:00,Sports,6,279.22,0.0,1675.32,PromptPay,Processing,N,1,0,YYYY-MM-DD,0,0,1675.32,0,0,0,1675.32,12.0,0
+T000576,C0069,Jane Saelim,jane.saelim69@example.com,M,Khon Kaen,2026-06-09,2026-06-09 17:00:00,Beauty,2,140.01,0.1,252.02,Bank Transfer,Processing,N,0,0,YYYY/MM/DD,0,0,252.02,0,0,0,252.02,17.0,0
+T000365,C0150,Mook Chaiyo,mook.chaiyo150@example.com,F,Unknown,2026-01-13,2026-01-13 13:00:00,Electronics,2,150.19,0.0,300.38,Bank Transfer,Completed,N,0,1,YYYY-MM-DD,0,0,300.38,0,0,0,300.38,13.0,0
+T000575,C0136,Nont Kittikul,nont.kittikul136@example.com,F,Khon Kaen,2026-04-29,2026-04-29 10:00:00,Electronics,3,296.4,0.0,889.2,Credit Card,Completed,N,0,0,DD/MM/YYYY,0,0,889.2,0,0,0,889.2,10.0,0
+T000079,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-04-19,2026-04-19 06:00:00,Food,4,276.71,0.0,1106.84,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,1106.84,0,0,0,1106.84,6.0,0
+T900006,C0086,Korn Dechawat,korn.dechawat86@example.com,F,Nakhon Ratchasima,2026-05-07,2026-05-07 08:00:00,Food,2,79.14,0.0,158.28,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,158.28,0,0,0,158.28,8.0,0
+T000152,C0077,Tee Chaiyo,tee.chaiyo77@example.com,F,Khon Kaen,2026-05-07,2026-05-07 07:00:00,Fashion,2,170.61,0.0,341.22,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,341.22,0,0,0,341.22,7.0,0
+T000390,C0039,Beam Boonmee,beam.boonmee39@example.com,M,Rayong,2026-06-09,2026-06-09 13:00:00,Electronics,2,57.71,0.0,115.42,Bank Transfer,Returned,Y,0,0,MM/DD/YYYY,0,0,115.42,0,0,0,115.42,13.0,0
+T000399,C0095,Tee Khamdee,tee.khamdee95@example.com,F,Khon Kaen,2026-04-06,2026-04-06 17:00:00,Fashion,5,78.12,0.05,371.07,Bank Transfer,Processing,N,0,0,MM/DD/YYYY,0,0,371.07,0,0,0,371.07,17.0,0
+T000246,C0095,Tee Khamdee,tee.khamdee95@example.com,F,Khon Kaen,2026-06-19,2026-06-20 13:00:00,Beauty,2,85.54,0.0,171.08,PromptPay,Returned,N,0,0,YYYY/MM/DD,0,0,171.08,0,0,0,171.08,37.0,1
+T000481,C0173,Tee Wongsa,tee.wongsa173@example.com,M,Phuket,2026-02-20,2026-02-20 15:00:00,Beauty,3,83.61,0.0,250.83,Credit Card,Returned,N,0,0,YYYY-MM-DD,0,0,250.83,0,0,0,250.83,15.0,0
+T000425,C0136,Nont Kittikul,nont.kittikul136@example.com,F,Khon Kaen,2026-02-05,2026-02-05 02:00:00,Fashion,1,140.75,0.1,126.67,Credit Card,Completed,N,0,0,MM/DD/YYYY,0,0,126.68,0,0,0,126.67,2.0,0
+T000568,C0062,Beam Rattanakul,beam.rattanakul62@example.com,M,Bangkok,2026-06-06,2026-06-06 12:00:00,Home,3,561.05,0.0,1683.15,PromptPay,Cancelled,Y,0,0,YYYY-MM-DD,0,0,1683.15,0,0,0,1683.15,12.0,0
+T000303,C0174,Ploy Kittikul,ploy.kittikul174@example.com,M,Chiang Mai,2026-06-18,2026-06-18 17:00:00,Sports,5,412.56,0.05,1959.66,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,1959.66,0,0,0,1959.66,17.0,0
+T000447,C0071,Aom Sukjai,unknown_C0071@unknown.local,M,Chanthaburi,2026-04-16,2026-04-16 14:00:00,Fashion,5,132.57,0.0,662.85,PromptPay,Cancelled,N,1,0,YYYY-MM-DD,0,0,662.85,0,0,0,662.85,14.0,0
+T000520,C0058,Anan Wongsa,anan.wongsa58@example.com,F,Khon Kaen,2026-03-08,2026-03-08 04:00:00,Fashion,4,107.84,0.1,388.22,Cash on Delivery,Cancelled,N,0,0,YYYY-MM-DD,0,0,388.22,0,0,0,388.22,4.0,0
+T000502,C0115,Korn Lertprasert,korn.lertprasert115@example.com,M,Phuket,2026-01-23,2026-01-23 17:00:00,Electronics,3,117.02,0.1,315.95,PromptPay,Returned,N,0,0,YYYY/MM/DD,0,0,315.95,0,0,0,315.95,17.0,0
+T000007,C0170,Beam Boonmee,beam.boonmee170@example.com,M,Nakhon Ratchasima,2026-06-12,2026-06-12 14:00:00,Sports,1,298.64,0.1,268.78,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,268.78,0,0,0,268.78,14.0,0
+T000019,C0057,Ploy Thongdee,ploy.thongdee57@example.com,F,Nakhon Ratchasima,2026-05-25,2026-05-25 08:00:00,Sports,6,188.1,0.0,1128.6,PromptPay,Completed,N,0,0,DD/MM/YYYY,0,0,1128.6,0,0,0,1128.6,8.0,0
+T000098,C0080,May Kittikul,may.kittikul80@example.com,F,Khon Kaen,2026-05-28,2026-05-28 18:00:00,Food,2,113.89,0.2,182.22,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,182.22,0,0,0,182.22,18.0,0
+T000446,C0040,Pim Srisawat,pim.srisawat40@example.com,M,Rayong,2026-05-02,2026-05-02 19:00:00,Sports,6,294.57,0.05,1679.05,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,1679.05,0,0,0,1679.05,19.0,0
+T000251,C0160,Mint Kittikul,mint.kittikul160@example.com,F,Chiang Mai,2026-02-03,2026-02-03 09:00:00,Food,5,244.43,0.05,1161.04,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,1161.04,0,0,0,1161.04,9.0,0
+T000316,C0032,Bank Dechawat,bank.dechawat32@example.com,F,Nakhon Ratchasima,2026-06-29,2026-06-29 10:00:00,Sports,5,71.54,0.15,304.05,PromptPay,Completed,N,0,0,DD-MM-YYYY,0,0,304.04,0,0,0,304.05,10.0,0
+T000341,C0158,Nont Kittikul,nont.kittikul158@example.com,M,Nakhon Ratchasima,2026-03-13,2026-03-13 02:00:00,Fashion,3,292.75,0.0,-500.0,Bank Transfer,Processing,N,0,0,DD-MM-YYYY,0,0,878.25,1,0,0,-500.0,2.0,0
+T000077,C0033,Pim Srisawat,pim.srisawat33@example.com,M,Rayong,2026-02-28,2026-02-28 03:00:00,Sports,3,281.35,0.1,759.65,PromptPay,Cancelled,N,0,0,DD/MM/YYYY,0,0,759.65,0,0,0,759.65,3.0,0
+T000221,C0053,Jane Pattanakul,jane.pattanakul53@example.com,M,Nakhon Ratchasima,2026-03-14,2026-03-14 03:00:00,Sports,2,147.43,0.1,265.37,PromptPay,Cancelled,N,0,0,MM/DD/YYYY,0,0,265.37,0,0,0,265.37,3.0,0
+T000225,C0167,Anan Sukjai,anan.sukjai167@example.com,M,Nakhon Ratchasima,2026-02-15,2026-02-15 06:00:00,Electronics,6,294.78,0.2,1414.94,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,1414.94,0,0,0,1414.94,6.0,0
+T000025,C0169,Boss Kittikul,boss.kittikul169@example.com,M,Nakhon Ratchasima,2026-03-10,2026-03-10 10:00:00,Fashion,4,189.68,0.0,758.72,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,758.72,0,0,0,758.72,10.0,0
+T000009,C0143,Korn Srisawat,korn.srisawat143@example.com,M,Rayong,2026-01-10,2026-01-10 13:00:00,Home,3,98.02,0.0,294.06,PromptPay,Processing,N,0,0,DD-MM-YYYY,0,0,294.06,0,0,0,294.06,13.0,0
+T900012,C0014,Beam Thongdee,beam.thongdee14@example.com,M,Chonburi,2026-01-28,2026-01-28 19:00:00,Fashion,1,379.52,0.0,379.52,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,379.52,0,0,0,379.52,19.0,0
+T000244,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-04-20,2026-04-20 08:00:00,Sports,1,199.42,0.1,179.48,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,179.48,0,0,0,179.48,8.0,0
+T000469,C0097,Ploy Boonmee,ploy.boonmee97@example.com,F,Chiang Mai,2026-03-27,2026-03-27 16:00:00,Sports,1,158.86,0.2,127.09,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,127.09,0,0,0,127.09,16.0,0
+T000567,C0063,Korn Wongsa,korn.wongsa63@example.com,M,Bangkok,2026-05-11,2026-05-11 12:00:00,Home,5,207.01,0.0,1035.05,Bank Transfer,Returned,N,0,0,YYYY/MM/DD,0,0,1035.05,0,0,0,1035.05,12.0,0
+T000451,C0054,Aom Wongsa,unknown_C0054@unknown.local,F,Nakhon Ratchasima,2026-03-25,2026-03-25 08:00:00,Beauty,1,224.69,0.05,213.46,Cash on Delivery,Completed,N,1,0,YYYY-MM-DD,0,0,213.46,0,0,0,213.46,8.0,0
+T000184,C0095,Tee Khamdee,tee.khamdee95@example.com,F,Khon Kaen,2026-05-06,2026-05-06 11:00:00,Home,1,343.06,0.05,325.91,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,325.91,0,0,0,325.91,11.0,0
+T000122,C0147,Film Chaiyo,film.chaiyo147@example.com,M,Chiang Mai,2026-03-19,2026-03-19 06:00:00,Sports,4,129.76,0.1,467.14,Credit Card,Completed,N,0,0,YYYY/MM/DD,0,0,467.14,0,0,0,467.14,6.0,0
+T000112,C0131,Narin Rattanakul,narin.rattanakul131@example.com,F,Khon Kaen,2026-03-05,2026-03-05 10:00:00,Beauty,5,187.25,0.05,889.44,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,889.44,0,0,0,889.44,10.0,0
+T000021,C0104,May Srisawat,may.srisawat104@example.com,F,Chonburi,2026-03-26,2026-03-26 06:00:00,Home,2,67.73,0.0,167.76,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,135.46,1,0,0,167.76,6.0,0
+T000266,C0027,Ploy Wongsa,ploy.wongsa27@example.com,M,Khon Kaen,2026-06-06,2026-06-06 07:00:00,Food,4,183.66,0.0,734.64,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,734.64,0,0,0,734.64,7.0,0
+T000155,C0029,Aom Pattanakul,aom.pattanakul29@example.com,F,Bangkok,2026-01-08,2026-01-08 04:00:00,Food,5,253.14,0.05,1202.41,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,1202.41,0,0,0,1202.41,4.0,0
+T000115,C0138,Mint Dechawat,mint.dechawat138@example.com,M,Khon Kaen,2026-02-12,2026-02-12 05:00:00,Fashion,5,213.87,0.1,962.41,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,962.42,0,0,0,962.41,5.0,0
+T000457,C0026,Mook Wongsa,mook.wongsa26@example.com,M,Chiang Mai,2026-04-03,2026-04-03 10:00:00,Electronics,2,197.14,0.2,315.42,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,315.42,0,0,0,315.42,10.0,0
+T000119,C0145,Tee Srisawat,tee.srisawat145@example.com,M,Nakhon Ratchasima,2026-03-23,2026-03-23 18:00:00,Food,1,547.71,0.05,520.32,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,520.32,0,0,0,520.32,18.0,0
+T000052,C0162,Aom Dechawat,aom.dechawat162@example.com,M,Rayong,2026-04-04,2026-04-04 12:00:00,Sports,1,237.94,0.2,190.35,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,190.35,0,0,0,190.35,12.0,0
+T000508,C0123,Ploy Khamdee,ploy.khamdee123@example.com,F,Chanthaburi,2026-02-04,2026-02-04 09:00:00,Fashion,5,175.79,0.1,791.05,PromptPay,Cancelled,N,0,0,DD/MM/YYYY,0,0,791.06,0,0,0,791.05,9.0,0
+T000260,C0149,May Pattanakul,unknown_C0149@unknown.local,F,Chiang Mai,2026-03-16,2026-03-16 16:00:00,Electronics,2,90.53,0.05,172.01,Bank Transfer,Cancelled,N,1,0,YYYY-MM-DD,0,0,172.01,0,0,0,172.01,16.0,0
+T000018,C0021,May Boonmee,may.boonmee21@example.com,F,Nakhon Ratchasima,2026-01-29,2026-02-02 12:00:00,Beauty,1,153.32,0.0,153.32,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,153.32,0,0,0,153.32,108.0,1
+T000452,C0128,Ploy Khamdee,ploy.khamdee128@example.com,M,Bangkok,2026-04-10,2026-04-10 09:00:00,Sports,2,108.66,0.2,173.86,Bank Transfer,Cancelled,N,0,0,MM/DD/YYYY,0,0,173.86,0,0,0,173.86,9.0,0
+T000340,C0114,Ploy Thongdee,ploy.thongdee114@example.com,M,Nakhon Ratchasima,2026-06-28,2026-06-28 04:00:00,Electronics,1,130.5,0.05,123.97,Cash on Delivery,Cancelled,N,0,0,YYYY/MM/DD,0,0,123.98,0,0,0,123.97,4.0,0
+T000144,C0077,Tee Chaiyo,tee.chaiyo77@example.com,F,Khon Kaen,2026-02-10,2026-02-10 01:00:00,Food,5,108.19,0.15,488.52,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,459.81,1,0,0,488.52,1.0,0
+T000100,C0040,Pim Srisawat,pim.srisawat40@example.com,M,Rayong,2026-05-11,2026-05-11 05:00:00,Electronics,4,85.92,0.1,309.31,Bank Transfer,Processing,N,0,0,DD/MM/YYYY,0,0,309.31,0,0,0,309.31,5.0,0
+T000084,C0108,Anan Khamdee,anan.khamdee108@example.com,M,Nakhon Ratchasima,2026-04-03,2026-04-03 15:00:00,Sports,4,168.16,0.2,538.11,Credit Card,Processing,N,0,0,DD/MM/YYYY,0,0,538.11,0,0,0,538.11,15.0,0
+T000449,C0063,Korn Wongsa,unknown_C0063@unknown.local,M,Bangkok,2026-06-07,2026-06-07 12:00:00,Food,5,417.06,0.0,2085.3,PromptPay,Completed,N,1,0,DD-MM-YYYY,0,0,2085.3,0,0,0,2085.3,12.0,0
+T900009,C0120,Mook Boonmee,mook.boonmee120@example.com,M,Chonburi,2026-04-03,2026-04-03 17:00:00,Electronics,5,298.23,0.0,1491.15,Bank Transfer,Cancelled,N,0,0,MM/DD/YYYY,0,0,1491.15,0,0,0,1491.15,17.0,0
+T000061,C0006,Pim Khamdee,pim.khamdee6@example.com,M,Nakhon Ratchasima,2026-03-20,2026-03-20 01:00:00,Beauty,1,104.93,0.1,94.44,Cash on Delivery,Cancelled,N,0,0,MM/DD/YYYY,0,0,94.44,0,0,0,94.44,1.0,0
+T000371,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-03-05,2026-03-05 12:00:00,Food,1,437.21,0.1,393.49,PromptPay,Completed,N,0,0,MM/DD/YYYY,0,0,393.49,0,0,0,393.49,12.0,0
+T000207,C0057,Ploy Thongdee,ploy.thongdee57@example.com,F,Nakhon Ratchasima,2026-05-29,2026-05-29 05:00:00,Fashion,2,334.28,0.0,668.56,Credit Card,Processing,N,0,0,MM/DD/YYYY,0,0,668.56,0,0,0,668.56,5.0,0
+T000126,C0032,Bank Dechawat,unknown_C0032@unknown.local,F,Nakhon Ratchasima,2026-01-18,2026-01-18 15:00:00,Home,5,242.52,0.05,1151.97,PromptPay,Cancelled,N,1,0,MM/DD/YYYY,0,0,1151.97,0,0,0,1151.97,15.0,0
+T000248,C0113,Tee Dechawat,tee.dechawat113@example.com,M,Rayong,2026-03-04,2026-03-04 14:00:00,Electronics,6,92.21,0.1,497.93,Credit Card,Cancelled,N,0,0,YYYY/MM/DD,0,0,497.93,0,0,0,497.93,14.0,0
+T000187,C0056,Mint Maneerat,mint.maneerat56@example.com,M,Rayong,2026-02-26,2026-02-26 19:00:00,Sports,6,199.53,0.0,1197.18,PromptPay,Cancelled,N,0,0,YYYY-MM-DD,0,0,1197.18,0,0,0,1197.18,19.0,0
+T000238,C0177,Ice Lertprasert,ice.lertprasert177@example.com,M,Chiang Mai,2026-04-29,2026-05-01 03:00:00,Fashion,1,235.29,0.05,223.53,PromptPay,Returned,N,0,0,MM/DD/YYYY,0,0,223.53,0,0,0,223.53,51.0,1
+T000233,C0135,Korn Srisawat,korn.srisawat135@example.com,F,Bangkok,2026-06-26,2026-06-26 10:00:00,Beauty,2,94.94,0.0,189.88,Credit Card,Cancelled,N,0,0,DD/MM/YYYY,0,0,189.88,0,0,0,189.88,10.0,0
+T000417,C0078,Nont Khamdee,unknown_C0078@unknown.local,F,Bangkok,2026-01-21,2026-01-21 03:00:00,Food,6,218.27,0.05,1244.14,PromptPay,Returned,N,1,0,DD-MM-YYYY,0,0,1244.14,0,0,0,1244.14,3.0,0
+T000237,C0138,Mint Dechawat,mint.dechawat138@example.com,M,Khon Kaen,2026-02-09,2026-02-09 16:00:00,Electronics,4,187.97,0.2,601.5,Bank Transfer,Cancelled,N,0,0,DD/MM/YYYY,0,0,601.5,0,0,0,601.5,16.0,0
+T000286,C0124,Aom Thongdee,aom.thongdee124@example.com,F,Khon Kaen,2026-06-07,2026-06-08 06:00:00,Sports,6,186.14,0.1,1005.16,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,1005.16,0,0,0,1005.16,30.0,1
+T000200,C0052,Gun Dechawat,gun.dechawat52@example.com,F,Rayong,2026-01-19,2026-01-19 11:00:00,Food,6,117.92,0.0,707.52,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,707.52,0,0,0,707.52,11.0,0
+T000572,C0023,Beam Boonmee,beam.boonmee23@example.com,M,Khon Kaen,2026-06-13,2026-06-13 02:00:00,Sports,3,70.4,0.0,211.2,Cash on Delivery,Processing,N,0,0,YYYY-MM-DD,0,0,211.2,0,0,0,211.2,2.0,0
+T000066,C0092,Tee Wongsa,tee.wongsa92@example.com,F,Chanthaburi,2026-04-04,2026-04-04 03:00:00,Fashion,6,354.08,0.1,1912.03,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,1912.03,0,0,0,1912.03,3.0,0
+T000474,C0149,May Pattanakul,may.pattanakul149@example.com,F,Chiang Mai,2026-04-03,2026-04-03 17:00:00,Fashion,2,218.01,0.1,392.42,Bank Transfer,Returned,N,0,0,Fallback_LoadTimestamp,1,0,392.42,0,0,0,392.42,17.0,0
+T000159,C0088,Narin Sukjai,narin.sukjai88@example.com,F,Phuket,2026-04-06,2026-04-06 03:00:00,Electronics,6,115.72,0.0,6943.2,Bank Transfer,Completed,Y,0,0,YYYY-MM-DD,0,0,694.32,1,0,0,6943.2,3.0,0
+T000472,C0098,Film Lertprasert,film.lertprasert98@example.com,F,Khon Kaen,2026-03-31,2026-03-31 17:00:00,Food,1,143.03,0.2,114.42,Cash on Delivery,Completed,N,0,0,YYYY-MM-DD,0,0,114.42,0,0,0,114.42,17.0,0
+T000026,C0156,Beam Kittikul,beam.kittikul156@example.com,M,Chanthaburi,2026-02-24,2026-02-24 02:00:00,Electronics,5,320.88,0.0,1091.24,Cash on Delivery,Cancelled,N,0,0,DD/MM/YYYY,0,0,1604.4,1,0,0,1091.24,2.0,0
+T000089,C0127,Fah Rattanakul,fah.rattanakul127@example.com,F,Rayong,2026-03-24,2026-03-24 17:00:00,Beauty,2,111.37,0.1,200.47,Bank Transfer,Unknown,N,0,0,YYYY-MM-DD,0,0,200.47,0,1,0,200.47,17.0,0
+T000080,C0145,Tee Srisawat,tee.srisawat145@example.com,M,Nakhon Ratchasima,2026-03-23,2026-03-23 15:00:00,Food,1,160.91,0.0,160.91,Credit Card,Processing,N,0,0,YYYY-MM-DD,0,0,160.91,0,0,0,160.91,15.0,0
+T000145,C0135,Korn Srisawat,korn.srisawat135@example.com,F,Bangkok,2026-01-22,2026-01-22 04:00:00,Fashion,5,344.72,0.05,1637.42,Bank Transfer,Completed,N,0,0,YYYY-MM-DD,0,0,1637.42,0,0,0,1637.42,4.0,0
+T000515,C0049,Gun Dechawat,gun.dechawat49@example.com,F,Nakhon Ratchasima,2026-01-19,2026-01-19 17:00:00,Food,6,165.59,0.0,993.54,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,993.54,0,0,0,993.54,17.0,0
+T000160,C0045,Boss Khamdee,boss.khamdee45@example.com,M,Phuket,2026-01-05,2026-01-05 09:00:00,Electronics,1,153.49,0.0,153.49,Credit Card,Completed,N,0,0,MM/DD/YYYY,0,0,153.49,0,0,0,153.49,9.0,0
+T000062,C0158,Nont Kittikul,nont.kittikul158@example.com,M,Nakhon Ratchasima,2026-01-28,2026-01-28 07:00:00,Fashion,6,312.64,0.2,1500.67,Bank Transfer,Returned,N,0,0,YYYY-MM-DD,0,0,1500.67,0,0,0,1500.67,7.0,0
+T000436,C0076,Pim Phromla,pim.phromla76@example.com,M,Chanthaburi,2026-05-27,2026-05-27 02:00:00,Sports,5,120.63,0.0,603.15,Bank Transfer,Cancelled,N,0,0,YYYY-MM-DD,0,0,603.15,0,0,0,603.15,2.0,0
+T000035,C0179,Jane Chaiyo,jane.chaiyo179@example.com,F,Chanthaburi,2026-03-14,2026-03-14 04:00:00,Electronics,5,555.97,0.0,2092.5,Credit Card,Completed,N,0,0,DD-MM-YYYY,0,0,2779.85,0,0,1,2779.85,4.0,0
+T000281,C0171,Beam Lertprasert,unknown_C0171@unknown.local,F,Rayong,2026-04-04,2026-04-04 13:00:00,Sports,1,152.16,0.0,152.16,Credit Card,Cancelled,N,1,0,YYYY-MM-DD,0,0,152.16,0,0,0,152.16,13.0,0
+T000304,C0103,Tee Phromla,tee.phromla103@example.com,F,Phuket,2026-01-20,2026-01-20 11:00:00,Fashion,5,87.61,0.0,438.05,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,438.05,0,0,0,438.05,11.0,0
+T000008,C0130,Jane Srisawat,jane.srisawat130@example.com,F,Nakhon Ratchasima,2026-05-25,2026-05-25 06:00:00,Sports,3,392.05,0.05,1117.34,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,1117.34,0,0,0,1117.34,6.0,0
+T000110,C0130,Jane Srisawat,jane.srisawat130@example.com,F,Nakhon Ratchasima,2026-02-26,2026-02-26 06:00:00,Home,6,107.91,0.0,647.46,Cash on Delivery,Returned,N,0,0,YYYY-MM-DD,0,0,647.46,0,0,0,647.46,6.0,0
+T000261,C0170,Beam Boonmee,beam.boonmee170@example.com,M,Nakhon Ratchasima,2026-03-16,2026-03-16 09:00:00,Fashion,4,501.85,0.0,2007.4,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,2007.4,0,0,0,2007.4,9.0,0
+T000167,C0122,Anan Wongsa,anan.wongsa122@example.com,M,Chanthaburi,2026-06-15,2026-06-15 05:00:00,Food,3,233.58,0.0,700.74,Credit Card,Processing,N,0,0,YYYY/MM/DD,0,0,700.74,0,0,0,700.74,5.0,0
+T000058,C0031,Ploy Rattanakul,unknown_C0031@unknown.local,F,Chiang Mai,2026-02-21,2026-02-21 17:00:00,Sports,5,509.49,0.2,2037.96,Bank Transfer,Completed,N,1,0,YYYY-MM-DD,0,0,2037.96,0,0,0,2037.96,17.0,0
+T000252,C0009,Beam Sukjai,beam.sukjai9@example.com,M,Bangkok,2026-01-11,2026-01-14 04:00:00,Food,3,37.36,0.0,112.08,Credit Card,Completed,N,0,0,YYYY/MM/DD,0,0,112.08,0,0,0,112.08,76.0,1
+T000372,C0094,Boss Srisawat,boss.srisawat94@example.com,M,Chiang Mai,2026-03-20,2026-03-20 05:00:00,Fashion,1,487.42,0.1,438.68,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,438.68,0,0,0,438.68,5.0,0
+T000162,C0094,Boss Srisawat,unknown_C0094@unknown.local,M,Chiang Mai,2026-05-16,2026-05-16 10:00:00,Sports,5,347.16,0.0,1735.8,PromptPay,Returned,N,1,0,YYYY-MM-DD,0,0,1735.8,0,0,0,1735.8,10.0,0
+T000168,C0057,Ploy Thongdee,ploy.thongdee57@example.com,F,Nakhon Ratchasima,2026-05-22,2026-05-22 01:00:00,Fashion,3,194.0,0.0,582.0,Credit Card,Processing,N,0,0,DD-MM-YYYY,0,0,582.0,0,0,0,582.0,1.0,0
+T000453,C0147,Film Chaiyo,unknown_C0147@unknown.local,M,Chiang Mai,2026-04-08,2026-04-08 01:00:00,Fashion,1,448.49,0.1,403.64,Cash on Delivery,Processing,N,1,0,DD/MM/YYYY,0,0,403.64,0,0,0,403.64,1.0,0
+T000229,C0151,Mook Thongdee,mook.thongdee151@example.com,M,Bangkok,2026-05-10,2026-05-10 07:00:00,Home,1,313.84,0.0,313.84,Bank Transfer,Completed,N,0,0,MM/DD/YYYY,0,0,313.84,0,0,0,313.84,7.0,0
+T000421,C0064,Ploy Thongdee,ploy.thongdee64@example.com,F,Unknown,2026-03-11,2026-03-11 12:00:00,Sports,3,315.62,0.1,852.17,Cash on Delivery,Returned,Y,0,1,YYYY/MM/DD,0,0,852.17,0,0,0,852.17,12.0,0
+T000313,C0101,Boss Phromla,boss.phromla101@example.com,M,Bangkok,2026-06-06,2026-06-06 09:00:00,Food,6,166.55,0.1,899.37,Cash on Delivery,Completed,N,0,0,DD/MM/YYYY,0,0,899.37,0,0,0,899.37,9.0,0
+T000330,C0017,Mook Rattanakul,mook.rattanakul17@example.com,F,Khon Kaen,2026-02-26,2026-02-26 17:00:00,Electronics,4,233.7,0.05,888.06,PromptPay,Completed,N,0,0,DD/MM/YYYY,0,0,888.06,0,0,0,888.06,17.0,0
+T000356,C0060,Tee Maneerat,tee.maneerat60@example.com,M,Rayong,2026-05-12,2026-05-12 15:00:00,Food,5,86.45,0.0,432.25,PromptPay,Completed,Y,0,0,YYYY-MM-DD,0,0,432.25,0,0,0,432.25,15.0,0
+T000268,C0045,Boss Khamdee,boss.khamdee45@example.com,M,Phuket,2026-03-30,2026-03-30 15:00:00,Fashion,6,137.69,0.15,702.22,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,702.22,0,0,0,702.22,15.0,0
+T000329,C0078,Nont Khamdee,nont.khamdee78@example.com,F,Bangkok,2026-01-21,2026-01-21 09:00:00,Food,3,169.49,0.05,483.05,Bank Transfer,Processing,N,0,0,YYYY-MM-DD,0,0,483.05,0,0,0,483.05,9.0,0
+T000163,C0125,May Lertprasert,may.lertprasert125@example.com,F,Rayong,2026-05-01,2026-05-01 02:00:00,Fashion,3,392.06,0.1,1058.56,Credit Card,Completed,N,0,0,MM/DD/YYYY,0,0,1058.56,0,0,0,1058.56,2.0,0
+T000206,C0012,Mint Pattanakul,mint.pattanakul12@example.com,M,Chiang Mai,2026-02-21,2026-02-21 04:00:00,Beauty,3,476.62,0.0,1429.86,PromptPay,Processing,N,0,0,YYYY-MM-DD,0,0,1429.86,0,0,0,1429.86,4.0,0
+T000274,C0002,Mint Thongdee,mint.thongdee2@example.com,F,Rayong,2026-03-12,2026-03-12 11:00:00,Electronics,4,211.21,0.1,760.36,PromptPay,Completed,N,0,0,YYYY-MM-DD,0,0,760.36,0,0,0,760.36,11.0,0
+T000161,C0048,Boss Dechawat,boss.dechawat48@example.com,F,Rayong,2026-02-15,2026-02-15 07:00:00,Food,1,230.89,0.2,184.71,Credit Card,Cancelled,N,0,0,YYYY-MM-DD,0,0,184.71,0,0,0,184.71,7.0,0
+T000020,C0095,Tee Khamdee,unknown_C0095@unknown.local,F,Khon Kaen,2026-06-05,2026-06-05 16:00:00,Fashion,2,267.86,0.1,482.15,PromptPay,Processing,N,1,0,YYYY-MM-DD,0,0,482.15,0,0,0,482.15,16.0,0
+T000191,C0071,Aom Sukjai,aom.sukjai71@example.com,M,Chanthaburi,2026-03-26,2026-03-26 01:00:00,Sports,2,628.13,0.0,1256.26,PromptPay,Returned,N,0,0,YYYY-MM-DD,0,0,1256.26,0,0,0,1256.26,1.0,0
+T000530,C0083,Beam Srisawat,beam.srisawat83@example.com,M,Chiang Mai,2026-04-25,2026-04-25 16:00:00,Beauty,5,145.37,0.0,726.85,Bank Transfer,Completed,N,0,0,DD/MM/YYYY,0,0,726.85,0,0,0,726.85,16.0,0
+T000379,C0147,Film Chaiyo,film.chaiyo147@example.com,M,Chiang Mai,2026-03-25,2026-03-25 18:00:00,Sports,2,328.4,0.15,558.28,Credit Card,Completed,N,0,0,DD/MM/YYYY,0,0,558.28,0,0,0,558.28,18.0,0

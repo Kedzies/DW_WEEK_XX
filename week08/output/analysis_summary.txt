@@ -1,0 +1,22 @@
+Total net sales: 11,884,876.44
+Total unique orders: 748
+
+Top 3 provinces by net sales:
+ - Bangkok: 2,901,172.71
+ - Khon Kaen: 2,364,767.18
+ - Phuket: 1,877,693.58
+
+Top 5 products by net sales:
+ - Smartphone Model 03 (P003): 1,299,662.00
+ - Accessory Model 25 (P025): 1,273,891.50
+ - Smartphone Model 27 (P027): 1,175,212.50
+ - Notebook Model 32 (P032): 1,162,262.50
+ - Accessory Model 35 (P035): 1,140,636.00
+
+Average order value (AOV): 15,888.87
+Returns: count=2, total_value=-13,397.75
+
+Payment status distribution:
+ - PAID: 702
+ - FAILED: 48
+ - REFUNDED: 18

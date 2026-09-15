@@ -1,0 +1,5 @@
+-- q02: Roll-up – ยอดขายรายเดือน เรียงตามเดือน
+SELECT month, SUM(amount) AS revenue
+FROM sales
+GROUP BY month
+ORDER BY month;

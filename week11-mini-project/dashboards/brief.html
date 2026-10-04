@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ExerLink · Dashboard Brief Canvas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&family=Prompt:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F8FAFC;--surface:#FFFFFF;--ink:#0F2236;--muted:#4A5B6C;--line:#E2E8F0;--soft:#EEF2F6;
+  --brand:#1A4B75;--green:#0B8A5A;--green-ink:#08734B;--blue:#1A4B75;--orange:#F38221;--orange-ink:#8A4A0B;
+  --red-ink:#B42318;--red-bg:#FDECEA;--orange-bg:#FDEBD9;--green-bg:#DDF3E8;--blue-bg:#E1ECF6;--band:#FFF1E3;
+  --c-user:#2F5FD0;--c-decision:#1F8F7F;--c-metric:#C46A0C;--c-grain:#7A4FD6;--c-dim:#2E8A57;--c-action:#C8323A;
+  --font:'Prompt','Noto Sans Thai','Leelawadee UI',Tahoma,sans-serif;
+  --head:'Kanit','Prompt','Noto Sans Thai',Tahoma,sans-serif;
+  --num:'Montserrat','Prompt',system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D1722;--surface:#15222F;--ink:#E6EDF4;--muted:#A3B3C3;--line:#26384C;--soft:#1C2C3C;
+  --green:#2FB37C;--green-ink:#6BD8A8;--blue:#7AAEE0;--orange:#F59A4A;--orange-ink:#F8BA80;
+  --red-ink:#FF9A90;--red-bg:#3A1D1D;--orange-bg:#3A2915;--green-bg:#143426;--blue-bg:#182D44;--band:#2C2216;
+  --c-user:#8DAEF5;--c-decision:#5FCDBE;--c-metric:#F2A95B;--c-grain:#B79BF2;--c-dim:#6FCB98;--c-action:#FF8A8F;}}
+:root[data-theme="dark"]{
+  --bg:#0D1722;--surface:#15222F;--ink:#E6EDF4;--muted:#A3B3C3;--line:#26384C;--soft:#1C2C3C;
+  --green:#2FB37C;--green-ink:#6BD8A8;--blue:#7AAEE0;--orange:#F59A4A;--orange-ink:#F8BA80;
+  --red-ink:#FF9A90;--red-bg:#3A1D1D;--orange-bg:#3A2915;--green-bg:#143426;--blue-bg:#182D44;--band:#2C2216;
+  --c-user:#8DAEF5;--c-decision:#5FCDBE;--c-metric:#F2A95B;--c-grain:#B79BF2;--c-dim:#6FCB98;--c-action:#FF8A8F;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.6}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+header.top{background:var(--brand);color:#fff;padding:22px 0}
+header.top .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px}
+.brand b{font-family:var(--num);font-size:19px}
+.brand span{font-size:13px;color:#C9D8E6}
+.seg{display:inline-flex;background:rgba(255,255,255,.12);border-radius:12px;padding:4px;gap:4px}
+.seg button{min-height:40px;padding:0 14px;border:0;border-radius:9px;background:transparent;color:#fff;cursor:pointer}
+.seg button[aria-pressed="true"]{background:#fff;color:#1A4B75;font-weight:500}
+.mock{font-size:12px;font-weight:500;background:#FAD3AF;color:#5A3008;border-radius:999px;padding:2px 10px}
+h1{font-family:var(--head);font-weight:600;font-size:30px;line-height:1.25;margin:0}
+h2{font-family:var(--head);font-weight:600;font-size:22px;margin:0}
+h3{font-family:var(--head);font-weight:500;font-size:17px;margin:0}
+.lead{color:var(--muted);margin:4px 0 0}
+section.block{padding:36px 0 8px}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:16px}
+
+/* Brief canvas */
+.canvas{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.bcard{position:relative;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 24px;cursor:pointer;display:flex;flex-direction:column;gap:8px;overflow:hidden;transition:border-color .15s}
+.bcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--c)}
+.bcard:hover{border-color:var(--c)}
+.bcard .t{display:flex;align-items:baseline;gap:12px}
+.bcard .n{font-family:var(--num);font-weight:700;font-size:22px;color:var(--c)}
+.bcard .q{font-size:13px;color:var(--muted)}
+.bcard p{margin:0}
+.bcard ul{margin:0;padding-left:18px}
+.bcard li{margin:2px 0}
+.bcard .go{margin-top:auto;font-size:13px;font-weight:500;color:var(--c)}
+
+/* Dashboard */
+.board{display:flex;flex-direction:column;gap:16px}
+.panel{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
+.panel.flash{animation:flash 1.6s ease}
+@keyframes flash{0%,60%{box-shadow:0 0 0 4px var(--fc,var(--orange))}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.panel.flash{animation:none;box-shadow:0 0 0 4px var(--fc,var(--orange))}html{scroll-behavior:auto}}
+.ph{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+.ph small{display:block;color:var(--muted);font-size:12px}
+.chip{font-size:11px;font-weight:500;padding:1px 8px;border-radius:999px;border:1px solid var(--c);color:var(--c);white-space:nowrap}
+.filters{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.fgroup{display:flex;flex-direction:column;gap:4px}
+.fgroup label,.fgroup .lbl{font-size:12px;color:var(--muted)}
+.pills{display:inline-flex;flex-wrap:wrap;gap:6px}
+.pills button{min-height:40px;padding:0 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);cursor:pointer}
+.pills button[aria-pressed="true"]{background:var(--blue-bg);border-color:var(--blue);color:var(--ink);font-weight:500}
+input[type=range]{width:200px;accent-color:var(--orange);min-height:40px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.kpi{border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.kpi .k{font-size:13px;color:var(--muted)}
+.kpi .v{font-family:var(--num);font-weight:700;font-size:26px;line-height:1.2}
+.kpi .v small{font-size:14px;color:var(--muted);font-weight:600}
+.kpi .d{font-size:12px;font-weight:500}
+.up{color:var(--green-ink)}.down{color:var(--red-ink)}.flat{color:var(--muted)}
+.row{display:flex;flex-wrap:wrap;gap:16px;align-items:stretch}
+.row>.panel{flex:1 1 320px}
+.row>.wide{flex:2 1 560px}
+svg text{font-family:var(--font)}
+.chart{position:relative}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:6px 10px;border-radius:8px;white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .1s}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted);margin-top:6px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.alerts{display:flex;flex-direction:column;gap:10px}
+.alert{border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;background:var(--soft)}
+.alert.danger{background:var(--red-bg)}.alert.warn{background:var(--orange-bg)}.alert.ok{background:var(--green-bg)}.alert.info{background:var(--blue-bg)}
+.alert .at{display:flex;gap:8px;align-items:flex-start;font-weight:500}
+.alert .lv{font-size:11px;font-weight:600;padding:1px 8px;border-radius:999px;white-space:nowrap;margin-top:2px}
+.danger .lv{background:var(--red-ink);color:var(--surface)}.warn .lv{background:var(--orange-ink);color:var(--surface)}.ok .lv{background:var(--green-ink);color:var(--surface)}.info .lv{background:var(--blue);color:var(--surface)}
+.alert p{margin:0;font-size:13px;color:var(--ink)}
+.alert .act{font-size:13px}
+.alert button{align-self:flex-start;min-height:36px;padding:0 12px;border-radius:9px;border:1px solid var(--ink);background:transparent;cursor:pointer;font-size:13px}
+.alert button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.bars{display:flex;flex-direction:column;gap:12px}
+.bar .bl{display:flex;justify-content:space-between;gap:8px;font-size:13px}
+.bar .tr{height:12px;border-radius:5px;background:var(--soft);margin-top:4px}
+.bar .fill{height:12px;border-radius:5px;background:var(--green);transition:width .3s}
+.tablebox{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{font-weight:500;color:var(--muted)}
+tr.out td{color:var(--muted)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 18px}
+summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-family:var(--head);font-weight:500}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;padding:4px 0 16px}
+.why div{border-top:3px solid var(--c);padding-top:10px}
+.why p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+footer{color:var(--muted);font-size:12px;padding:32px 0 48px}
+
+/* Wireframe mode */
+.wire-label{display:none}
+body.wire .panel{background:transparent;border:2px dashed var(--muted);min-height:120px}
+body.wire .panel>*:not(.wire-label){visibility:hidden}
+body.wire .wire-label{display:flex;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;gap:4px;text-align:center;padding:12px;color:var(--ink)}
+body.wire .wire-label b{font-family:var(--head);font-weight:500;font-size:16px}
+body.wire .wire-label span{font-size:13px;color:var(--muted);max-width:420px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 34 34" fill="none" stroke-width="3" aria-hidden="true"><circle cx="17" cy="17" r="14" stroke="#3DBE8B"/><path d="M11 11h8M11 17h6M11 23h8M11 11v12" stroke="#fff" stroke-linecap="round"/><path d="M20 20c2-3 4-1 6-4" stroke="#F38221" stroke-linecap="round"/></svg>
+      <div><b>ExerLink</b><br><span>Workshop: Dashboard Brief Canvas</span></div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+      <span class="mock">ข้อมูลจำลอง</span>
+      <div class="seg" role="group" aria-label="โหมดการแสดงผล">
+        <button type="button" id="mHi" aria-pressed="true">Dashboard จริง</button>
+        <button type="button" id="mWire" aria-pressed="false">Wireframe</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="block" aria-labelledby="h-canvas">
+    <div class="sec-head">
+      <div>
+        <h1 id="h-canvas">Dashboard Brief Canvas</h1>
+        <p class="lead">Use case: ติดตามผลการจับคู่ของเสียในนิคมฯ นำร่อง เพื่อตัดสินใจว่าจะส่งทีมวิศวกรไปทำงานตรงไหนต่อ · กดการ์ดเพื่อดูว่าส่วนนั้นอยู่ตรงไหนใน dashboard</p>
+      </div>
+    </div>
+    <div class="canvas">
+      <button type="button" class="bcard" style="--c:var(--c-user)" data-go="p-head">
+        <div class="t"><span class="n">1</span><h3>User</h3></div>
+        <span class="q">ใครเป็นคนดูจอ?</span>
+        <p><strong>ผู้จัดการโครงการ ExerLink ประจำนิคมฯ</strong> และวิศวกรสิ่งแวดล้อมในทีม</p>
+        <p style="font-size:13px;color:var(--muted)">เปิดดูทุกเช้าวันจันทร์ และก่อนประชุมรายไตรมาสกับผู้บริหารนิคมฯ</p>
+        <span class="go">ดูส่วนหัว dashboard ↓</span>
+      </button>
+      <button type="button" class="bcard" style="--c:var(--c-decision)" data-go="p-main">
+        <div class="t"><span class="n">2</span><h3>Decision</h3></div>
+        <span class="q">ต้องตัดสินใจอะไร?</span>
+        <p>สัปดาห์นี้จะส่ง<strong>วิศวกร (ต้นทุน ~60%)</strong> ไปทำงานกับโรงงานหรือของเสียชนิดไหน เพื่อให้ลูกค้าลดต้นทุนได้ถึงเป้า 10–20% และเปลี่ยนโรงงานทดลองให้เป็นสมาชิก</p>
+        <span class="go">ดูกราฟหลัก ↓</span>
+      </button>
+      <button type="button" class="bcard" style="--c:var(--c-metric)" data-go="p-kpi">
+        <div class="t"><span class="n">3</span><h3>Metric</h3></div>
+        <span class="q">KPI หลัก 3–5 ตัว</span>
+        <ul>
+          <li>% ต้นทุนกำจัดที่ลูกค้าลดได้ (เทียบเป้า)</li>
+          <li>% ของเสียที่ยังไปหลุมฝังกลบ</li>
+          <li>ตันที่เลี่ยงหลุมฝังกลบ</li>
+          <li>จำนวนคู่ที่จับสำเร็จ</li>
+          <li>รายได้ประจำ (สมาชิก + คอมมิชชัน)</li>
+        </ul>
+        <span class="go">ดูแถว KPI ↓</span>
+      </button>
+      <button type="button" class="bcard" style="--c:var(--c-grain)" data-go="p-grain">
+        <div class="t"><span class="n">4</span><h3>Grain</h3></div>
+        <span class="q">ข้อมูลระดับไหน?</span>
+        <p><strong>1 แถว = โรงงาน × ชนิดของเสีย × เดือน</strong></p>
+        <p style="font-size:13px;color:var(--muted)">ข้อมูลจำลองตอนนี้รวมเป็นระดับนิคม × เดือน และชนิดของเสีย × เดือน ก.ย. เมื่อมีข้อมูลจริงจะเก็บที่ระดับโรงงาน เพื่อเจาะดูได้ว่าใครต่ำกว่าเป้า</p>
+        <span class="go">ดูตารางข้อมูล ↓</span>
+      </button>
+      <button type="button" class="bcard" style="--c:var(--c-dim)" data-go="p-filter">
+        <div class="t"><span class="n">5</span><h3>Dimension</h3></div>
+        <span class="q">ต้องตัดมุมมองด้วยอะไร?</span>
+        <ul>
+          <li>เวลา: เดือน / ไตรมาส</li>
+          <li>ชนิดของเสีย (รหัสของเสีย)</li>
+          <li>กลุ่มลูกค้า: SME / โรงงานรีไซเคิล</li>
+          <li>ผู้รับตามใบอนุญาต 101 / 105 / 106</li>
+        </ul>
+        <span class="go">ดูตัวกรอง ↓</span>
+      </button>
+      <button type="button" class="bcard" style="--c:var(--c-action)" data-go="p-alert">
+        <div class="t"><span class="n">6</span><h3>Action</h3></div>
+        <span class="q">เห็นแล้วทำอะไรต่อ?</span>
+        <ul>
+          <li>ต่ำกว่าเป้า → ส่งวิศวกรหาผู้รับรายใหม่ให้ของเสียชนิดนั้น</li>
+          <li>กลุ่มรวมของใกล้ครบ → ชวน SME เพิ่ม</li>
+          <li>ทดลองฟรีใกล้หมด → นัดคุยต่อสมาชิก</li>
+        </ul>
+        <span class="go">ดู Alert ↓</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="h-board">
+    <div class="board">
+      <div class="panel" id="p-head" style="--fc:var(--c-user)">
+        <div class="wire-label"><b>Header</b><span>ชื่อ dashboard · นิคมฯ · ผู้ใช้ · วันที่อัปเดต</span></div>
+        <div class="ph" style="margin:0">
+          <div>
+            <h2 id="h-board">ExerLink Ops · [ชื่อนิคมอุตสาหกรรม]</h2>
+            <small>สำหรับผู้จัดการโครงการและวิศวกร · ข้อมูลถึง ก.ย. 2569</small>
+          </div>
+          <span class="chip" style="--c:var(--c-user)">1 User</span>
+        </div>
+      </div>
+
+      <div class="panel" id="p-filter" style="--fc:var(--c-dim)">
+        <div class="wire-label"><b>ตัวกรอง</b><span>ช่วงเวลา · เป้าลดต้นทุน (เกณฑ์ของ alert)</span></div>
+        <div class="filters">
+          <div class="fgroup">
+            <span class="lbl" id="lblPeriod">ช่วงเวลา</span>
+            <div class="pills" role="group" aria-labelledby="lblPeriod" id="periodPills">
+              <button type="button" data-p="all" aria-pressed="false">9 เดือน</button>
+              <button type="button" data-p="q1" aria-pressed="false">Q1</button>
+              <button type="button" data-p="q2" aria-pressed="false">Q2</button>
+              <button type="button" data-p="q3" aria-pressed="true">Q3</button>
+            </div>
+          </div>
+          <div class="fgroup">
+            <label for="target">เป้าลดต้นทุนขั้นต่ำ: <strong id="targetVal">10%</strong></label>
+            <input type="range" id="target" min="5" max="20" step="1" value="10">
+          </div>
+          <span class="chip" style="--c:var(--c-dim);margin-left:auto">5 Dimension</span>
+        </div>
+      </div>
+
+      <div class="panel" id="p-kpi" style="--fc:var(--c-metric)">
+        <div class="wire-label"><b>KPI cards × 5</b><span>ตัวเลขใหญ่ + เทียบช่วงก่อนหน้า</span></div>
+        <div class="ph"><h3>ตัวชี้วัดหลัก · <span id="periodName"></span></h3><span class="chip" style="--c:var(--c-metric)">3 Metric</span></div>
+        <div class="kpis" id="kpis"></div>
+      </div>
+
+      <div class="row">
+        <div class="panel wide" id="p-main" style="--fc:var(--c-decision)">
+          <div class="wire-label"><b>กราฟหลัก: Line + แถบเป้าหมาย</b><span>% ต้นทุนที่ลดได้รายเดือน เทียบโซนเป้า 10–20%</span></div>
+          <div class="ph">
+            <div><h3>% ต้นทุนที่ลูกค้าลดได้ เทียบโซนเป้าหมาย</h3><small>เส้นต่ำกว่าแถบส้ม = ต้องส่งทีมเข้าไปช่วย · ชี้ที่จุดเพื่อดูค่า</small></div>
+            <span class="chip" style="--c:var(--c-decision)">2 Decision</span>
+          </div>
+          <div class="chart" id="mainChart"></div>
+          <div class="legend"><span><i style="background:var(--green)"></i>% ต้นทุนที่ลดได้</span><span><i style="background:var(--band);border:1px dashed var(--orange)"></i>โซนเป้าหมาย</span><span><i style="background:var(--soft)"></i>นอกช่วงที่เลือก</span></div>
+        </div>
+        <div class="panel" id="p-alert" style="--fc:var(--c-action)">
+          <div class="wire-label"><b>Alert</b><span>กฎแจ้งเตือน + ปุ่มมอบหมายงาน</span></div>
+          <div class="ph"><h3>Alert ที่ต้องทำต่อ</h3><span class="chip" style="--c:var(--c-action)">6 Action</span></div>
+          <div class="alerts" id="alerts" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="panel" id="p-stream" style="--fc:var(--c-dim)">
+          <div class="wire-label"><b>Bar แนวนอน: จัดอันดับชนิดของเสีย</b><span>สลับดูตามตัน / บาทที่ประหยัด / บาทต่อตัน</span></div>
+          <div class="ph">
+            <div><h3>ชนิดของเสียไหนควรได้แรงทีมก่อน</h3><small>ก.ย. 2569 · จัดอันดับตาม</small></div>
+            <span class="chip" style="--c:var(--c-dim)">5 Dimension</span>
+          </div>
+          <div class="pills" role="group" aria-label="เรียงตาม" id="streamPills" style="margin-bottom:14px">
+            <button type="button" data-s="saved" aria-pressed="true">บาทที่ประหยัด</button>
+            <button type="button" data-s="tons" aria-pressed="false">ตัน</button>
+            <button type="button" data-s="per" aria-pressed="false">บาทต่อตัน</button>
+          </div>
+          <div class="bars" id="streamBars"></div>
+        </div>
+        <div class="panel" id="p-landfill" style="--fc:var(--c-metric)">
+          <div class="wire-label"><b>Line รอง: % ไปหลุมฝังกลบ</b><span>ทิศทางผลด้านสิ่งแวดล้อม</span></div>
+          <div class="ph">
+            <div><h3>% ของเสียที่ยังไปหลุมฝังกลบ</h3><small>ยิ่งต่ำยิ่งดี · เกณฑ์เตือน 50%</small></div>
+            <span class="chip" style="--c:var(--c-metric)">3 Metric</span>
+          </div>
+          <div class="chart" id="landChart"></div>
+        </div>
+      </div>
+
+      <div class="panel" id="p-grain" style="--fc:var(--c-grain)">
+        <div class="wire-label"><b>ตารางข้อมูล</b><span>แสดงระดับข้อมูล (grain) ที่ใช้คำนวณทุกกราฟ</span></div>
+        <div class="ph"><div><h3>ข้อมูลที่อยู่เบื้องหลังกราฟ</h3><small>ระดับ: นิคม × เดือน · แถวสีจาง = นอกช่วงที่เลือก</small></div><span class="chip" style="--c:var(--c-grain)">4 Grain</span></div>
+        <div class="tablebox"><table id="grainTable"></table></div>
+      </div>
+
+      <details open>
+        <summary>เหตุผลที่เลือก chart และกฎ alert</summary>
+        <div class="why">
+          <div style="--c:var(--c-decision)"><h3>กราฟหลัก: Line + แถบเป้าหมาย</h3><p>คำถามของผู้ใช้คือ "ตอนนี้ถึงเป้าหรือยัง และกำลังดีขึ้นหรือแย่ลง" เส้นแสดงทิศทางตามเวลาได้ดีที่สุด และแถบส้มทำให้เห็นทันทีว่าเดือนไหนอยู่ต่ำกว่าเป้าโดยไม่ต้องอ่านตัวเลข</p></div>
+          <div style="--c:var(--c-dim)"><h3>Bar แนวนอนจัดอันดับ</h3><p>ใช้เปรียบเทียบหมวดหมู่ที่ชื่อยาว (ชื่อของเสียภาษาไทย) ได้อ่านง่ายกว่าแท่งแนวตั้ง และการสลับเกณฑ์ช่วยให้เห็นว่าของที่หนักที่สุดไม่ใช่ของที่คุ้มที่สุด</p></div>
+          <div style="--c:var(--c-metric)"><h3>KPI cards</h3><p>ผู้จัดการต้องรู้สถานะใน 5 วินาทีแรก จึงวางตัวเลขใหญ่ไว้บนสุด พร้อมลูกศรเทียบไตรมาสก่อน</p></div>
+          <div style="--c:var(--c-action)"><h3>กฎ alert</h3><p>① % ลดต้นทุนเดือนล่าสุดต่ำกว่าเป้า ② % ลดต้นทุนลดลงจากเดือนก่อน ③ % ฝังกลบเกิน 50% ④ ทดลองฟรีเหลือ ≤ 14 วัน ⑤ กลุ่มรวมของ SME ถึง 60–99% ของขั้นต่ำ ⑥ รายได้ครั้งเดียวเกิน 50% ของรายได้ไตรมาส</p></div>
+        </div>
+      </details>
+    </div>
+  </section>
+  <footer>ข้อมูลจำลองจาก ExerLink_Story_Data.xlsx · ค่ากำจัดเดิมสมมติ ฿85,000 ต่อโรงงานต่อเดือน · Pannakorn Polasen 67160352</footer>
+</main>
+
+<div class="tip" id="tip" role="status"></div>
+
+<script>
+(function(){
+const M=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.'];
+const D={
+  fact:[2,3,5,6,8,9,10,11,12],
+  listed:[45,60,78,84,98,118,112,120,130],
+  div:[10,20,33,40,50,65,62,70,82],
+  matches:[1,2,3,4,4,5,5,6,7],
+  saved:[9000,17000,30000,41000,58000,79000,92000,112000,146700],
+  co2:[3500,7100,11900,14800,18700,24900,22100,28600,35700]
+};
+const BASE=85000;
+const Q={recurring:[6000,75000,160000],total:[18000,96500,486400],oneoff:[0,0,300000]};
+const STREAMS=[
+  {n:'เศษโลหะ/เศษเหล็กปน',c:'12 01 01',t:30,per:1800},
+  {n:'เศษพลาสติก PP',c:'07 02 13',t:24,per:2500},
+  {n:'ขี้เลื่อยไม้',c:'03 01 05',t:13,per:900},
+  {n:'เศษผ้า/ใยสังเคราะห์',c:'04 02 22',t:10,per:1200},
+  {n:'เศษกระดาษ/กล่อง',c:'15 01 01',t:5,per:1800}
+].map(s=>({...s,saved:s.t*s.per}));
+const PILOTS=[{n:'[โรงงาน B]',days:9,pkg:'M · ฿30,000/ปี'},{n:'[ผู้รับ C]',days:41,pkg:'L'},{n:'[โรงงาน D]',days:63,pkg:'S'}];
+const POOL={n:'น้ำมันใช้แล้ว',sme:6,have:3.2,need:5};
+const PERIODS={all:{name:'ม.ค.–ก.ย. 2569',idx:[0,1,2,3,4,5,6,7,8],q:[0,1,2]},q1:{name:'Q1/2569',idx:[0,1,2],q:[0],prev:null},q2:{name:'Q2/2569',idx:[3,4,5],q:[1],prev:'q1'},q3:{name:'Q3/2569',idx:[6,7,8],q:[2],prev:'q2'}};
+
+const st={p:'q3',target:10,sort:'saved',done:{}};
+try{st.done=JSON.parse(localStorage.getItem('exerlink-alert-done')||'{}')}catch(e){st.done={}}
+
+const $=id=>document.getElementById(id);
+const fmt=n=>n.toLocaleString('th-TH');
+const pct=(n,d=1)=>(n*100).toFixed(d)+'%';
+const sum=(a,idx)=>idx.reduce((s,i)=>s+a[i],0);
+const monthPct=i=>D.saved[i]/(D.fact[i]*BASE);
+const landPct=i=>(D.listed[i]-D.div[i])/D.listed[i];
+
+function agg(key){
+  const P=PERIODS[key],idx=P.idx;
+  const base=idx.reduce((s,i)=>s+D.fact[i]*BASE,0);
+  return{
+    saved:sum(D.saved,idx)/base,
+    land:(sum(D.listed,idx)-sum(D.div,idx))/sum(D.listed,idx),
+    tons:sum(D.div,idx),
+    matches:sum(D.matches,idx),
+    rec:P.q.reduce((s,q)=>s+Q.recurring[q],0)
+  };
+}
+function delta(cur,prev,better,kind){
+  if(prev==null) return '<span class="d flat">ไม่มีช่วงก่อนหน้าให้เทียบ</span>';
+  const diff=cur-prev; const good=better==='up'?diff>0:diff<0;
+  const cls=diff===0?'flat':(good?'up':'down'); const arrow=diff>0?'▲':(diff<0?'▼':'•');
+  let txt;
+  if(kind==='pp') txt=Math.abs(diff*100).toFixed(1)+' จุด';
+  else if(kind==='rel') txt=prev?Math.abs(diff/prev*100).toFixed(0)+'%':'—';
+  else txt=fmt(Math.abs(diff));
+  return `<span class="d ${cls}">${arrow} ${txt} จากช่วงก่อน</span>`;
+}
+function renderKPI(){
+  const a=agg(st.p),P=PERIODS[st.p],b=P.prev?agg(P.prev):null;
+  $('periodName').textContent=P.name;
+  const hit=a.saved*100>=st.target;
+  $('kpis').innerHTML=[
+    `<div class="kpi"><span class="k">ต้นทุนที่ลูกค้าลดได้</span><span class="v" style="color:${hit?'var(--green-ink)':'var(--red-ink)'}">${pct(a.saved)}</span>${delta(a.saved,b&&b.saved,'up','pp')}<span class="d flat">เป้า ≥ ${st.target}% · ${hit?'ผ่าน':'ยังไม่ถึง'}</span></div>`,
+    `<div class="kpi"><span class="k">ยังไปหลุมฝังกลบ</span><span class="v">${pct(a.land)}</span>${delta(a.land,b&&b.land,'down','pp')}</div>`,
+    `<div class="kpi"><span class="k">ตันที่เลี่ยงหลุมฝังกลบ</span><span class="v">${fmt(a.tons)} <small>ตัน</small></span>${delta(a.tons,b&&b.tons,'up','rel')}</div>`,
+    `<div class="kpi"><span class="k">คู่ที่จับสำเร็จ</span><span class="v">${fmt(a.matches)} <small>คู่</small></span>${delta(a.matches,b&&b.matches,'up','abs')}</div>`,
+    `<div class="kpi"><span class="k">รายได้ประจำ</span><span class="v">฿${fmt(a.rec)}</span>${delta(a.rec,b&&b.rec,'up','rel')}</div>`
+  ].join('');
+}
+
+function lineChart(el,{vals,min,max,band,thr,fmtV,color,label,goodLow}){
+  const W=760,H=280,L=48,R=16,T=18,B=36,iw=W-L-R,ih=H-T-B;
+  const sel=new Set(PERIODS[st.p].idx);
+  const x=i=>L+iw*(i/(vals.length-1)), y=v=>T+ih*(1-(v-min)/(max-min));
+  let g='';
+  const ticks=5;
+  for(let k=0;k<=ticks;k++){const v=min+(max-min)*k/ticks;g+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-8}" y="${y(v)+4}" font-size="11" text-anchor="end" fill="var(--muted)">${fmtV(v)}</text>`}
+  // dim out-of-range
+  vals.forEach((v,i)=>{if(!sel.has(i)){const w=iw/(vals.length-1);g+=`<rect x="${x(i)-w/2}" y="${T}" width="${w}" height="${ih}" fill="var(--soft)" opacity=".7"/>`}});
+  if(band) g+=`<rect x="${L}" y="${y(band[1])}" width="${iw}" height="${y(band[0])-y(band[1])}" fill="var(--band)" stroke="var(--orange)" stroke-dasharray="5 4"/><text x="${W-R-6}" y="${y(band[1])+16}" font-size="12" text-anchor="end" fill="var(--orange-ink)" font-weight="500">เป้า ${fmtV(band[0])}–${fmtV(band[1])}</text>`;
+  if(thr!=null) g+=`<line x1="${L}" x2="${W-R}" y1="${y(thr)}" y2="${y(thr)}" stroke="var(--orange)" stroke-dasharray="5 4" stroke-width="1.5"/><text x="${W-R-6}" y="${y(thr)-6}" font-size="12" text-anchor="end" fill="var(--orange-ink)">เกณฑ์ ${fmtV(thr)}</text>`;
+  const pts=vals.map((v,i)=>`${x(i)},${y(v)}`).join(' ');
+  g+=`<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>`;
+  vals.forEach((v,i)=>{
+    const bad=band?v<band[0]:(thr!=null&&(goodLow?v>thr:v<thr));
+    g+=`<circle cx="${x(i)}" cy="${y(v)}" r="${sel.has(i)?5.5:3.5}" fill="${bad?'var(--red-ink)':color}" stroke="var(--surface)" stroke-width="2" opacity="${sel.has(i)?1:.55}"/>`;
+    g+=`<text x="${x(i)}" y="${H-12}" font-size="12" text-anchor="middle" fill="${sel.has(i)?'var(--ink)':'var(--muted)'}" font-weight="${sel.has(i)?600:400}">${M[i]}</text>`;
+    g+=`<rect class="hit" data-i="${i}" x="${x(i)-iw/(vals.length-1)/2}" y="${T}" width="${iw/(vals.length-1)}" height="${ih}" fill="transparent"/>`;
+  });
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${label}">${g}</svg>`;
+  const tip=$('tip'),svg=el.querySelector('svg');
+  svg.querySelectorAll('.hit').forEach(r=>{
+    const show=()=>{const i=+r.dataset.i,bb=svg.getBoundingClientRect(),sx=bb.width/W;
+      tip.textContent=`${M[i]} 2569 · ${fmtV(vals[i],1)}`;
+      tip.style.left=(bb.left+window.scrollX+x(i)*sx)+'px';tip.style.top=(bb.top+window.scrollY+y(vals[i])*sx)+'px';tip.style.opacity=1;};
+    r.addEventListener('mouseenter',show);r.addEventListener('mouseleave',()=>tip.style.opacity=0);
+    r.addEventListener('touchstart',show,{passive:true});
+  });
+}
+function renderCharts(){
+  lineChart($('mainChart'),{vals:M.map((_,i)=>monthPct(i)*100),min:0,max:25,band:[st.target,20],fmtV:(v,d=0)=>v.toFixed(d)+'%',color:'var(--green)',label:'กราฟเส้น % ต้นทุนที่ลดได้รายเดือนเทียบโซนเป้าหมาย'});
+  lineChart($('landChart'),{vals:M.map((_,i)=>landPct(i)*100),min:0,max:100,thr:50,goodLow:true,fmtV:(v,d=0)=>v.toFixed(d)+'%',color:'var(--blue)',label:'กราฟเส้น % ของเสียที่ไปหลุมฝังกลบรายเดือน'});
+}
+function renderStreams(){
+  const k=st.sort, arr=[...STREAMS].sort((a,b)=>b[k]-a[k]), mx=arr[0][k];
+  const unit={saved:v=>'฿'+fmt(v),tons:v=>fmt(v)+' ตัน',per:v=>'฿'+fmt(v)+'/ตัน'}[k];
+  $('streamBars').innerHTML=arr.map((s,i)=>`<div class="bar"><div class="bl"><span><strong>${i+1}.</strong> ${s.n} <span style="color:var(--muted);font-size:12px">${s.c}</span></span><strong>${unit(s[k])}</strong></div><div class="tr"><div class="fill" style="width:${(s[k]/mx*100).toFixed(1)}%;background:${i===0?'var(--green)':'var(--blue)'}"></div></div></div>`).join('');
+}
+function renderTable(){
+  const sel=new Set(PERIODS[st.p].idx);
+  let h='<thead><tr><th>เดือน</th><th>โรงงาน</th><th>ลงทะเบียน (ตัน)</th><th>จับคู่ได้ (ตัน)</th><th>% ฝังกลบ</th><th>คู่</th><th>ประหยัด (บาท)</th><th>% ลดต้นทุน</th><th>kgCO₂e</th></tr></thead><tbody>';
+  M.forEach((m,i)=>{h+=`<tr class="${sel.has(i)?'':'out'}"><td>${m} 69</td><td>${D.fact[i]}</td><td>${D.listed[i]}</td><td>${D.div[i]}</td><td>${pct(landPct(i))}</td><td>${D.matches[i]}</td><td>${fmt(D.saved[i])}</td><td>${pct(monthPct(i))}</td><td>${fmt(D.co2[i])}</td></tr>`});
+  $('grainTable').innerHTML=h+'</tbody>';
+}
+function renderAlerts(){
+  const idx=PERIODS[st.p].idx,last=idx[idx.length-1],prev=last-1,lp=monthPct(last)*100,A=[];
+  if(lp<st.target) A.push({id:'below-'+last+'-'+st.target,lv:'danger',L:'ด่วน',t:`${M[last]} ลดต้นทุนได้ ${lp.toFixed(1)}% ต่ำกว่าเป้า ${st.target}%`,a:'ส่งวิศวกรไปหาผู้รับรายใหม่ให้ของเสียที่ยังจ่ายค่ากำจัดสูง เริ่มจากอันดับต้นในกราฟจัดอันดับ'});
+  else A.push({id:'hit-'+last,lv:'ok',L:'ผ่าน',t:`${M[last]} ลดต้นทุนได้ ${lp.toFixed(1)}% ผ่านเป้า ${st.target}%`,a:'เก็บเป็นกรณีศึกษา ใส่ในรายงานไตรมาสให้ผู้บริหารนิคมฯ'});
+  if(prev>=0&&monthPct(last)<monthPct(prev)) A.push({id:'drop-'+last,lv:'warn',L:'เฝ้าดู',t:`% ลดต้นทุนลดลงจาก ${M[prev]}`,a:'ตรวจว่าคู่ไหนหยุดรับของ หรือราคารับซื้อเปลี่ยน'});
+  if(landPct(last)>0.5) A.push({id:'land-'+last,lv:'warn',L:'เฝ้าดู',t:`${M[last]} ของเสีย ${pct(landPct(last))} ยังไปหลุมฝังกลบ (เกิน 50%)`,a:'ทบทวนรายการของเสียที่ยังไม่มีคู่ ให้ AI เสนอผู้รับเพิ่ม'});
+  PILOTS.filter(p=>p.days<=14).forEach(p=>A.push({id:'trial-'+p.n,lv:'danger',L:'ด่วน',t:`${p.n} ทดลองฟรีเหลือ ${p.days} วัน`,a:`นัดคุยต่อสมาชิก แนะนำแพ็กเกจ ${p.pkg} พร้อมสรุปผลที่ประหยัดได้`}));
+  const r=POOL.have/POOL.need; if(r>=0.6&&r<1) A.push({id:'pool',lv:'warn',L:'โอกาส',t:`กลุ่ม${POOL.n} ${POOL.have}/${POOL.need} ตัน (${Math.round(r*100)}%) จาก ${POOL.sme} SME`,a:'ชวน SME ที่มีของชนิดเดียวกันเพิ่มอีก 2–3 ราย เพื่อให้ถึงขั้นต่ำของผู้รับ 106'});
+  PERIODS[st.p].q.forEach(q=>{if(Q.oneoff[q]/Q.total[q]>0.5) A.push({id:'rev-'+q,lv:'info',L:'ข้อสังเกต',t:`รายได้ครั้งเดียวคิดเป็น ${Math.round(Q.oneoff[q]/Q.total[q]*100)}% ของ Q${q+1}`,a:'เร่งเปลี่ยนโรงงานทดลองเป็นสมาชิก เพื่อเพิ่มรายได้ประจำ'})});
+  const order={danger:0,warn:1,info:2,ok:3}; A.sort((a,b)=>order[a.lv]-order[b.lv]);
+  $('alerts').innerHTML=A.map(x=>{const d=!!st.done[x.id];return `<div class="alert ${x.lv}"><div class="at"><span class="lv">${x.L}</span><span>${x.t}</span></div><p class="act"><strong>ทำต่อ:</strong> ${x.a}</p>${x.lv==='ok'?'':`<button type="button" data-id="${x.id}" aria-pressed="${d}">${d?'มอบหมายแล้ว ✓':'มอบหมายให้วิศวกร'}</button>`}</div>`}).join('')+
+  '<p style="margin:0;font-size:12px;color:var(--muted)">alert เรื่องทดลองฟรี กลุ่มรวมของ และรายได้ อิงสถานะ ณ ก.ย. 2569</p>';
+  $('alerts').querySelectorAll('button[data-id]').forEach(b=>b.addEventListener('click',()=>{const id=b.dataset.id;st.done[id]=!st.done[id];try{localStorage.setItem('exerlink-alert-done',JSON.stringify(st.done))}catch(e){}renderAlerts()}));
+}
+function renderAll(){renderKPI();renderCharts();renderStreams();renderTable();renderAlerts()}
+
+$('periodPills').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.p=b.dataset.p;$('periodPills').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderAll()});
+$('streamPills').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.sort=b.dataset.s;$('streamPills').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderStreams()});
+$('target').addEventListener('input',e=>{st.target=+e.target.value;$('targetVal').textContent=st.target+'%';renderKPI();renderCharts();renderAlerts()});
+document.querySelectorAll('.bcard').forEach(c=>c.addEventListener('click',()=>{const p=$(c.dataset.go);p.scrollIntoView({block:'center'});p.classList.remove('flash');void p.offsetWidth;p.classList.add('flash')}));
+function setMode(w){document.body.classList.toggle('wire',w);$('mWire').setAttribute('aria-pressed',w);$('mHi').setAttribute('aria-pressed',!w)}
+$('mHi').addEventListener('click',()=>setMode(false));$('mWire').addEventListener('click',()=>setMode(true));
+renderAll();
+})();
+</script>
+</body>
+</html>

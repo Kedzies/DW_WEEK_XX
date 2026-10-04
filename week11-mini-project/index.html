@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ExerLink · แดชบอร์ดผลการดำเนินงาน · กลุ่มอุตสาหกรรมการจัดการเพื่อสิ่งแวดล้อม</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Sans:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F6F8;--surface:#FFFFFF;--ink:#1F2933;--muted:#52606D;--faint:#7B8794;--line:#D9E2EC;--soft:#F0F4F8;
+  --navy:#16324F;--navy-2:#1F4E79;--navy-bg:#E8EEF5;
+  --pos:#0B7A52;--pos-bg:#E6F4EE;--neg:#B42318;--neg-bg:#FBEAE8;--warn:#B54708;--warn-bg:#FEF3E2;--neu:#7B8794;--neu-bg:#EEF1F4;
+  --font:'IBM Plex Sans Thai','Noto Sans Thai','Leelawadee UI',Tahoma,sans-serif;
+  --num:'IBM Plex Sans','IBM Plex Sans Thai',system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1720;--surface:#17212B;--ink:#E4E9EE;--muted:#AAB6C2;--faint:#8593A1;--line:#2A3846;--soft:#1D2934;
+  --navy:#0E2236;--navy-2:#8DB4DB;--navy-bg:#1C2D3F;
+  --pos:#4CC38A;--pos-bg:#14302A;--neg:#F28B82;--neg-bg:#3A1F1F;--warn:#F5B35C;--warn-bg:#3A2B17;--neu:#93A1AF;--neu-bg:#24303B;}}
+:root[data-theme="dark"]{
+  --bg:#0F1720;--surface:#17212B;--ink:#E4E9EE;--muted:#AAB6C2;--faint:#8593A1;--line:#2A3846;--soft:#1D2934;
+  --navy:#0E2236;--navy-2:#8DB4DB;--navy-bg:#1C2D3F;
+  --pos:#4CC38A;--pos-bg:#14302A;--neg:#F28B82;--neg-bg:#3A1F1F;--warn:#F5B35C;--warn-bg:#3A2B17;--neu:#93A1AF;--neu-bg:#24303B;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:14px;line-height:1.55;font-variant-numeric:tabular-nums}
+button,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--navy-2);outline-offset:2px}
+.num{font-family:var(--num)}
+
+header.hd{background:var(--navy);color:#fff}
+.hd .in{max-width:1480px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.hd .over{font-size:12px;letter-spacing:.3px;color:#B9C8D8}
+.hd h1{margin:0;font-size:20px;font-weight:600;line-height:1.35}
+.hd .meta{display:flex;flex-wrap:wrap;gap:16px;font-size:12px;color:#B9C8D8;align-items:center}
+.hd .meta b{color:#fff;font-weight:500}
+.tag{border:1px solid #6F8BA8;border-radius:4px;padding:1px 8px;color:#DCE6F0}
+
+.wrap{max-width:1480px;margin:0 auto;padding:14px 20px 28px;display:flex;flex-direction:column;gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.hl{outline:2px solid var(--navy-2);outline-offset:3px;transition:outline-color .2s}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 22px;padding:12px 16px}
+.f{display:flex;flex-direction:column;gap:4px}
+.f label,.f .lb{font-size:12px;color:var(--muted);font-weight:500}
+.f select{min-height:38px;min-width:150px;border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:0 10px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{min-height:38px;min-width:44px;padding:0 12px;border:0;border-right:1px solid var(--line);background:var(--surface);cursor:pointer}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--navy-2);color:var(--surface);font-weight:500}
+.btn{min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:6px;background:var(--surface);cursor:pointer}
+.btn:hover{background:var(--soft)}
+.rows{margin-left:auto;font-size:12px;color:var(--muted);text-align:right}
+
+/* brief */
+.brief{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid var(--line)}
+@media (max-width:1100px){.brief{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:620px){.brief{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.brief button{all:unset;cursor:pointer;padding:10px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:2px;min-height:44px}
+.brief button:hover,.brief button[aria-pressed="true"]{background:var(--navy-bg)}
+.brief button:focus-visible{outline:2px solid var(--navy-2);outline-offset:-2px}
+.brief .bk{font-size:11px;font-weight:600;color:var(--navy-2);letter-spacing:.3px}
+.brief .bv{font-size:12px;color:var(--ink)}
+.bhead{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;font-size:12px;color:var(--muted)}
+
+/* headline */
+.story{padding:14px 18px;display:flex;flex-direction:column;gap:2px;border-left:0}
+.story .lb{font-size:12px;color:var(--muted);font-weight:500}
+.story h2{margin:0;font-size:clamp(18px,1.7vw,23px);font-weight:600;line-height:1.4}
+.story .p{color:var(--pos)}.story .n{color:var(--neg)}
+
+/* kpis */
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0}
+@media (max-width:1000px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{padding:12px 16px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.kpi:last-child{border-right:0}
+@media (max-width:1000px){.kpi{border-bottom:1px solid var(--line)}}
+.kpi .k{font-size:12px;color:var(--muted);font-weight:500}
+.kpi .v{font-family:var(--num);font-size:26px;font-weight:600;line-height:1.25}
+.kpi .v small{font-size:13px;color:var(--muted);font-weight:500;font-family:var(--font)}
+.kpi .d{font-size:12px}
+.up{color:var(--pos)}.down{color:var(--neg)}.flat{color:var(--faint)}
+
+/* panels */
+.grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,.9fr);gap:14px}
+@media (max-width:1150px){.grid{grid-template-columns:1fr 1fr}.p3{grid-column:1/-1}}
+@media (max-width:720px){.grid{grid-template-columns:1fr}}
+.panel{padding:14px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.ph{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ph h3{margin:0;font-size:15px;font-weight:600}
+.ph .sn{font-family:var(--num);font-size:12px;font-weight:600;color:var(--navy-2);margin-right:6px}
+.ph small{display:block;font-size:12px;color:var(--muted);font-weight:400}
+.note{margin:0;font-size:13px;color:var(--ink);background:var(--soft);border-radius:6px;padding:8px 10px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.tabs{display:inline-flex;border-bottom:1px solid var(--line);gap:4px}
+.tabs button{border:0;background:transparent;min-height:36px;padding:0 10px;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--navy-2)}
+.sub{display:flex;flex-wrap:wrap;gap:6px}
+.sub button{min-height:30px;padding:0 10px;border-radius:4px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-size:12px}
+.sub button[aria-pressed="true"]{border-color:var(--navy-2);background:var(--navy-bg);font-weight:500}
+.hb{display:flex;flex-direction:column;gap:2px}
+.hrow{display:grid;grid-template-columns:150px 1fr 52px;align-items:center;gap:8px;min-height:27px;padding:0 4px;border:0;background:transparent;border-radius:4px;text-align:left;cursor:pointer;font-size:12px;width:100%}
+.hrow:hover,.hrow[aria-pressed="true"]{background:var(--soft)}
+.hrow .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hrow .tr{position:relative;height:11px;background:var(--soft);border-radius:2px;display:flex;overflow:visible}
+.hrow .tr>div{height:11px}
+.hrow .tg{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--warn)}
+.hrow .vv{font-family:var(--num);font-weight:600;text-align:right}
+.detail{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:8px;min-height:40px}
+.detail b{color:var(--ink);font-weight:600}
+
+/* alerts */
+.al{display:flex;flex-direction:column}
+.ar{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.ar:last-child{border-bottom:0}
+.st{font-size:11px;font-weight:600;padding:1px 7px;border-radius:4px;white-space:nowrap;height:fit-content;margin-top:2px}
+.st.danger{background:var(--neg-bg);color:var(--neg)}.st.warn{background:var(--warn-bg);color:var(--warn)}.st.info{background:var(--navy-bg);color:var(--navy-2)}.st.ok{background:var(--pos-bg);color:var(--pos)}
+.ar .t{font-weight:500;font-size:13px}
+.ar .a{grid-column:2;font-size:12px;color:var(--muted)}
+.ar .a b{color:var(--ink);font-weight:500}
+.ar button{grid-column:2;justify-self:start;min-height:30px;padding:0 10px;border-radius:4px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-size:12px}
+.ar button[aria-pressed="true"]{background:var(--pos-bg);border-color:var(--pos);color:var(--pos);font-weight:500}
+
+footer.ft{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);padding:0 2px}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12px;padding:5px 9px;border-radius:4px;white-space:nowrap;transform:translate(-50%,-125%);opacity:0;transition:opacity .1s;z-index:5}
+svg text{font-family:var(--font)}
+</style>
+</head>
+<body>
+<header class="hd" id="z-user">
+  <div class="in">
+    <div>
+      <div class="over">กลุ่มอุตสาหกรรมการจัดการเพื่อสิ่งแวดล้อม · ExerLink</div>
+      <h1>แดชบอร์ดผลการดำเนินงานโครงการนำร่อง [ชื่อนิคมอุตสาหกรรม]</h1>
+    </div>
+    <div class="meta">
+      <span>ผู้ใช้งาน: <b>ผู้จัดการโครงการ / วิศวกรสิ่งแวดล้อม</b></span>
+      <span>ข้อมูล ณ <b id="asof"></b></span>
+      <span class="tag">ข้อมูลจำลอง</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <div class="filters" id="z-dim">
+      <div class="f"><label for="fMonth">เดือน</label><select id="fMonth"></select></div>
+      <div class="f"><span class="lb" id="lSize">ขนาดโรงงาน</span>
+        <div class="seg" role="group" aria-labelledby="lSize" id="fSize">
+          <button type="button" data-v="all" aria-pressed="true">ทั้งหมด</button><button type="button" data-v="S" aria-pressed="false">S</button><button type="button" data-v="M" aria-pressed="false">M</button><button type="button" data-v="L" aria-pressed="false">L</button>
+        </div></div>
+      <div class="f"><label for="fStream">ชนิดของเสีย</label><select id="fStream"></select></div>
+      <button type="button" class="btn" id="reset">ล้างตัวกรอง</button>
+      <div class="rows" id="z-grain"></div>
+    </div>
+    <div class="bhead"><span>Dashboard Brief · กดหัวข้อเพื่อดูว่าอยู่ส่วนไหนของหน้า</span></div>
+    <div class="brief" id="brief">
+      <button type="button" data-z="z-user" aria-pressed="false"><span class="bk">1 · USER</span><span class="bv">ผู้จัดการโครงการและวิศวกร ExerLink</span></button>
+      <button type="button" data-z="z-story,z-act" aria-pressed="false"><span class="bk">2 · DECISION</span><span class="bv">เดือนนี้ส่งทีมไปที่ไหน และคุยต่อสมาชิกกับใคร</span></button>
+      <button type="button" data-z="z-kpi" aria-pressed="false"><span class="bk">3 · METRIC</span><span class="bv">% ลดต้นทุน · % ฝังกลบ · ตัน · ดีล · อัตราต่อสมาชิก</span></button>
+      <button type="button" data-z="z-grain" aria-pressed="false"><span class="bk">4 · GRAIN</span><span class="bv">โรงงาน × ชนิดของเสีย × เดือน</span></button>
+      <button type="button" data-z="z-dim,z-why" aria-pressed="false"><span class="bk">5 · DIMENSION</span><span class="bv">เดือน · ขนาด · ชนิดของเสีย · สถานะลูกค้า</span></button>
+      <button type="button" data-z="z-act" aria-pressed="false"><span class="bk">6 · ACTION</span><span class="bv">alert พร้อมงานที่ต้องทำต่อ</span></button>
+    </div>
+  </section>
+
+  <section class="card story" id="z-story" aria-live="polite">
+    <span class="lb" id="storyLb">สรุปประจำเดือน</span>
+    <h2 id="headline"></h2>
+  </section>
+
+  <section class="card kpis" id="z-kpi" aria-label="ตัวชี้วัดหลัก"></section>
+
+  <section class="grid">
+    <div class="card panel">
+      <div class="ph"><div><h3><span class="sn">01</span>ผลลัพธ์: ต้นทุนกำจัดที่ลูกค้าลดได้</h3><small>รายเดือน เทียบช่วงเป้าหมาย 10–20% · กดจุดเพื่อเลือกเดือน</small></div></div>
+      <p class="note" id="n1"></p>
+      <div id="lineChart"></div>
+      <div class="legend"><span><i style="background:var(--navy-2)"></i>% ต้นทุนที่ลดได้</span><span><i style="background:var(--warn-bg);border:1px dashed var(--warn)"></i>ช่วงเป้าหมาย</span></div>
+    </div>
+
+    <div class="card panel" id="z-why">
+      <div class="ph"><div><h3><span class="sn">02</span>สาเหตุ: เจาะดูตามมิติ</h3><small id="whySub"></small></div></div>
+      <div class="tabs" role="tablist" aria-label="มุมมอง">
+        <button type="button" role="tab" id="tF" aria-selected="true">รายโรงงาน</button>
+        <button type="button" role="tab" id="tS" aria-selected="false">รายชนิดของเสีย</button>
+      </div>
+      <p class="note" id="n2"></p>
+      <div class="sub" id="fStatus" role="group" aria-label="สถานะลูกค้า">
+        <button type="button" data-v="all" aria-pressed="true">ทุกสถานะ</button>
+        <button type="button" data-v="สมาชิก" aria-pressed="false">สมาชิก</button>
+        <button type="button" data-v="หมดทดลอง-ยังไม่ต่อ" aria-pressed="false">ไม่ต่อสมาชิก</button>
+        <button type="button" data-v="ทดลองฟรี" aria-pressed="false">ทดลองฟรี</button>
+      </div>
+      <div class="hb" id="bars"></div>
+      <div class="legend" id="lg2"></div>
+      <div class="detail" id="detail"></div>
+    </div>
+
+    <div class="card panel p3" id="z-act">
+      <div class="ph"><div><h3><span class="sn">03</span>สิ่งที่ต้องดำเนินการ</h3><small>เรียงตามความเร่งด่วน · กดเพื่อบันทึกการมอบหมาย</small></div></div>
+      <div class="al" id="alerts"></div>
+    </div>
+  </section>
+
+  <footer class="ft">
+    <span>รายวิชา Business Idea Creation · กลุ่มอุตสาหกรรมการจัดการเพื่อสิ่งแวดล้อม · Pannakorn Polasen 67160352</span>
+    <span>แหล่งข้อมูล: data/ExerLink_Dashboard_Data.xlsx (ข้อมูลจำลอง) · ค่ากำจัดเดิม S 55,000 / M 90,000 / L 165,000 บาทต่อเดือน</span>
+  </footer>
+</main>
+<div class="tip" id="tip" role="status"></div>
+
+<script>
+const DATA={"months":["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย."],"streams":{"metal":{"n":"เศษโลหะ/เศษเหล็กปน","code":"12 01 01","lic":"105","recv":"R1 โรงคัดแยกโลหะ"},"pp":{"n":"เศษพลาสติก PP","code":"07 02 13","lic":"105","recv":"R2 โรงรีไซเคิลพลาสติก"},"paper":{"n":"เศษกระดาษ/กล่อง","code":"15 01 01","lic":"105","recv":"R3 โรงรีไซเคิลกระดาษ"},"sawdust":{"n":"ขี้เลื่อยไม้","code":"03 01 05","lic":"105","recv":"R4 โรงเชื้อเพลิงชีวมวล"},"textile":{"n":"เศษผ้า/ใยสังเคราะห์","code":"04 02 22","lic":"105","recv":"R5 โรงผลิต RDF"},"oil":{"n":"น้ำมันหล่อลื่นใช้แล้ว","code":"13 02 05*","lic":"106","recv":"(รวมของให้ถึงขั้นต่ำ)"},"sludge":{"n":"กากตะกอน/ของเสียอื่น","code":"—","lic":"101","recv":"(ยังไม่มีผู้รับ)"}},"factories":[{"id":"F01","ind":"ชิ้นส่วนโลหะ","size":"M","base":90000,"join":0,"status":"สมาชิก","since":"2026-04","trial":null},{"id":"F02","ind":"บรรจุภัณฑ์พลาสติก","size":"S","base":55000,"join":0,"status":"หมดทดลอง-ยังไม่ต่อ","since":null,"trial":null},{"id":"F03","ind":"เฟอร์นิเจอร์ไม้","size":"S","base":55000,"join":1,"status":"หมดทดลอง-ยังไม่ต่อ","since":null,"trial":null},{"id":"F04","ind":"แม่พิมพ์โลหะ","size":"M","base":90000,"join":2,"status":"หมดทดลอง-ยังไม่ต่อ","since":null,"trial":null},{"id":"F05","ind":"สิ่งพิมพ์/กล่อง","size":"S","base":55000,"join":2,"status":"สมาชิก","since":"2026-06","trial":null},{"id":"F06","ind":"สิ่งทอ","size":"M","base":90000,"join":3,"status":"หมดทดลอง-ยังไม่ต่อ","since":null,"trial":null},{"id":"F07","ind":"ชิ้นส่วนยานยนต์","size":"L","base":165000,"join":4,"status":"สมาชิก","since":"2026-08","trial":null},{"id":"F08","ind":"อาหารแปรรูป","size":"S","base":55000,"join":4,"status":"หมดทดลอง-ยังไม่ต่อ","since":null,"trial":null},{"id":"F09","ind":"เฟอร์นิเจอร์ไม้","size":"S","base":55000,"join":5,"status":"หมดทดลอง-ยังไม่ต่อ","since":null,"trial":null},{"id":"F10","ind":"ชิ้นส่วนอิเล็กทรอนิกส์","size":"M","base":90000,"join":6,"status":"ทดลองฟรี","since":null,"trial":10},{"id":"F11","ind":"เครื่องนุ่งห่ม","size":"S","base":55000,"join":7,"status":"ทดลองฟรี","since":null,"trial":45},{"id":"F12","ind":"ชิ้นส่วนโลหะ","size":"L","base":165000,"join":8,"status":"ทดลองฟรี","since":null,"trial":63}],"fact":[[0,"F01","metal",21.7,10.0,9000,3500,1],[0,"F01","sludge",13.3,0.0,0,0,0],[0,"F02","pp",10.0,0.0,0,0,0],[1,"F01","metal",27.8,14.0,10660,4623,1],[1,"F01","sludge",11.3,0.0,0,0,0],[1,"F02","pp",11.9,6.0,6340,2477,1],[1,"F03","sawdust",8.5,0.0,0,0,0],[1,"F03","oil",0.5,0.0,0,0,0],[2,"F01","metal",16.5,9.0,7310,3126,1],[2,"F01","sludge",9.3,0.0,0,0,0],[2,"F02","pp",9.2,5.0,5650,2172,1],[2,"F03","sawdust",7.1,0.0,0,0,0],[2,"F03","oil",0.5,0.0,0,0,0],[2,"F04","metal",16.5,9.0,7320,3127,1],[2,"F04","oil",0.5,0.0,0,0,0],[2,"F05","paper",9.2,5.0,4070,1303,0],[2,"F05","pp",9.2,5.0,5650,2172,0],[3,"F01","metal",16.6,10.0,9610,3700,1],[3,"F01","sludge",7.5,0.0,0,0,0],[3,"F02","pp",10.0,6.0,8010,2775,1],[3,"F03","sawdust",6.6,4.0,1920,740,0],[3,"F03","oil",0.5,0.0,0,0,0],[3,"F04","metal",16.6,10.0,9610,3700,1],[3,"F04","oil",0.5,0.0,0,0,0],[3,"F05","paper",2.5,1.5,1440,416,0],[3,"F05","pp",10.0,6.0,8010,2775,1],[3,"F06","textile",9.0,0.0,0,0,0],[3,"F06","paper",4.2,2.5,2400,694,0],[4,"F01","metal",9.9,6.3,7170,2467,1],[4,"F01","sludge",6.5,0.0,0,0,0],[4,"F02","pp",5.0,3.2,5060,1566,0],[4,"F03","sawdust",14.1,9.0,5120,1762,1],[4,"F03","oil",0.5,0.0,0,0,0],[4,"F04","metal",9.9,6.3,7170,2467,0],[4,"F04","oil",0.5,0.0,0,0,0],[4,"F05","paper",2.2,1.4,1590,411,0],[4,"F05","pp",5.0,3.2,5060,1566,0],[4,"F06","textile",7.7,0.0,0,0,0],[4,"F06","paper",3.4,2.2,2500,646,0],[4,"F07","metal",14.7,9.4,10700,3681,1],[4,"F07","pp",11.9,7.6,12040,3723,1],[4,"F07","oil",0.5,0.0,0,0,0],[4,"F08","paper",2.2,1.4,1590,411,0],[4,"F08","sludge",4.0,0.0,0,0,0],[5,"F01","metal",11.9,7.4,8990,2936,1],[5,"F01","sludge",6.8,0.0,0,0,0],[5,"F02","pp",6.6,4.1,6920,2034,0],[5,"F03","sawdust",8.1,5.0,3040,992,0],[5,"F03","oil",0.5,0.0,0,0,0],[5,"F04","metal",11.9,7.4,8990,2936,1],[5,"F04","oil",0.5,0.0,0,0,0],[5,"F05","paper",2.3,1.4,1700,417,0],[5,"F05","pp",6.6,4.1,6920,2034,0],[5,"F06","textile",9.7,6.0,4860,2182,1],[5,"F06","paper",3.5,2.2,2670,655,0],[5,"F07","metal",18.0,11.2,13610,4444,1],[5,"F07","pp",15.8,9.8,16560,4861,1],[5,"F07","oil",0.5,0.0,0,0,0],[5,"F08","paper",2.3,1.4,1700,417,0],[5,"F08","sludge",4.4,0.0,0,0,0],[5,"F09","sawdust",8.1,5.0,3040,992,0],[5,"F09","oil",0.5,0.0,0,0,0],[6,"F01","metal",11.3,7.1,10520,2615,1],[6,"F01","sludge",6.4,0.0,0,0,0],[6,"F02","pp",4.5,2.8,5760,1289,0],[6,"F03","sawdust",7.2,4.5,3330,829,0],[6,"F03","oil",0.5,0.0,0,0,0],[6,"F04","metal",11.3,7.1,10520,2615,1],[6,"F04","oil",0.5,0.0,0,0,0],[6,"F05","paper",1.6,1.0,1480,276,0],[6,"F05","pp",4.5,2.8,5760,1289,0],[6,"F06","textile",9.5,6.0,5920,2026,1],[6,"F06","paper",2.4,1.5,2220,414,0],[6,"F07","metal",17.2,10.8,16010,3979,1],[6,"F07","pp",11.0,6.9,14190,3177,1],[6,"F07","oil",0.5,0.0,0,0,0],[6,"F08","paper",1.6,1.0,1480,276,0],[6,"F08","sludge",4.2,0.0,0,0,0],[6,"F09","sawdust",7.2,4.5,3330,829,0],[6,"F09","oil",0.5,0.0,0,0,0],[6,"F10","pp",7.2,4.5,9260,2072,0],[6,"F10","paper",2.4,1.5,2220,414,0],[6,"F10","oil",0.5,0.0,0,0,0],[7,"F01","metal",11.8,7.7,12300,3235,1],[7,"F01","sludge",6.1,0.0,0,0,0],[7,"F02","pp",5.1,3.3,7320,1733,0],[7,"F03","sawdust",7.7,5.0,3990,1050,1],[7,"F03","oil",0.5,0.0,0,0,0],[7,"F04","metal",11.8,7.7,12300,3235,1],[7,"F04","oil",0.5,0.0,0,0,0],[7,"F05","paper",1.2,0.8,1280,252,0],[7,"F05","pp",5.1,3.3,7320,1733,0],[7,"F06","textile",7.5,4.9,5220,1887,0],[7,"F06","paper",2.0,1.3,2080,410,0],[7,"F07","metal",18.0,11.6,18530,4871,1],[7,"F07","pp",12.4,8.1,17970,4253,1],[7,"F07","oil",0.5,0.0,0,0,0],[7,"F08","paper",1.2,0.8,1280,252,0],[7,"F08","sludge",3.8,0.0,0,0,0],[7,"F09","sawdust",7.7,5.0,3990,1050,0],[7,"F09","oil",0.5,0.0,0,0,0],[7,"F10","pp",8.1,5.3,11760,2783,1],[7,"F10","paper",2.0,1.3,2080,410,0],[7,"F10","oil",0.5,0.0,0,0,0],[7,"F11","textile",4.8,3.1,3300,1194,0],[7,"F11","paper",1.2,0.8,1280,252,0],[8,"F01","metal",8.3,6.0,10800,2697,0],[8,"F01","sludge",4.3,0.0,0,0,0],[8,"F02","pp",5.5,4.0,10000,2248,0],[8,"F03","sawdust",9.0,6.5,5850,1461,1],[8,"F03","oil",0.6,0.0,0,0,0],[8,"F04","metal",8.3,6.0,10800,2697,0],[8,"F04","oil",0.6,0.0,0,0,0],[8,"F05","paper",1.1,0.8,1440,270,0],[8,"F05","pp",5.5,4.0,10000,2248,0],[8,"F06","textile",8.6,6.2,7440,2555,1],[8,"F06","paper",1.8,1.3,2340,438,0],[8,"F07","metal",12.4,9.0,16200,4046,1],[8,"F07","pp",13.3,9.6,24000,5393,1],[8,"F07","oil",0.5,0.0,0,0,0],[8,"F08","paper",1.1,0.8,1440,270,0],[8,"F08","sludge",2.7,0.0,0,0,0],[8,"F09","sawdust",9.0,6.5,5850,1461,1],[8,"F09","oil",0.5,0.0,0,0,0],[8,"F10","pp",8.8,6.4,16000,3596,1],[8,"F10","paper",1.8,1.3,2340,438,0],[8,"F10","oil",0.5,0.0,0,0,0],[8,"F11","textile",5.2,3.8,4560,1566,0],[8,"F11","paper",1.1,0.8,1440,270,0],[8,"F12","metal",12.4,9.0,16200,4046,1],[8,"F12","oil",0.5,0.0,0,0,0],[8,"F12","sludge",6.6,0.0,0,0,0]],"revenue":{"q":["Q1","Q2","Q3"],"recurring":[6000,75000,160000],"total":[18000,96500,486400]}};
+(function(){
+const MN=DATA.months, FAC=DATA.factories, STR=DATA.streams;
+const FACT=DATA.fact.map(r=>({m:r[0],f:r[1],s:r[2],listed:r[3],div:r[4],saved:r[5],co2:r[6],deals:r[7]}));
+const FS={};FACT.forEach(r=>{(FS[r.f]=FS[r.f]||new Set()).add(r.s)});
+const FM=Object.fromEntries(FAC.map(f=>[f.id,f]));
+const TGT=10, ST_ORDER=['metal','pp','paper','sawdust','textile','oil','sludge'];
+const st={m:8,size:'all',stream:'all',status:'all',view:'f',sel:null,done:{}};
+try{st.done=JSON.parse(localStorage.getItem('exl2-done')||'{}')}catch(e){}
+const $=id=>document.getElementById(id), fmt=n=>Math.round(n).toLocaleString('th-TH'), p1=v=>v.toFixed(1)+'%';
+const sinceIdx=f=>f.since?(+f.since.slice(5,7)-1):99;
+const statusAt=(f,m)=>f.join>m?null:sinceIdx(f)<=m?'สมาชิก':(m-f.join<3?'ทดลองฟรี':'หมดทดลอง-ยังไม่ต่อ');
+const trialDays=(f,m)=>m===8&&f.trial!=null?f.trial:Math.max(0,(f.join+3-m)*30-20);
+const SC={'สมาชิก':'var(--pos)','หมดทดลอง-ยังไม่ต่อ':'var(--neg)','ทดลองฟรี':'var(--neu)'};
+const SL={'สมาชิก':'สมาชิก','หมดทดลอง-ยังไม่ต่อ':'ไม่ต่อสมาชิก','ทดลองฟรี':'ทดลองฟรี'};
+const fname=f=>`${f.id} ${f.ind}`;
+
+const inScopeF=(f,m)=>f.join<=m&&(st.size==='all'||f.size===st.size)&&(st.stream==='all'||FS[f.id].has(st.stream));
+const scopeRows=m=>FACT.filter(r=>r.m===m&&inScopeF(FM[r.f],m)&&(st.stream==='all'||r.s===st.stream));
+function agg(m){
+  const rows=scopeRows(m), fs=FAC.filter(f=>inScopeF(f,m)), base=fs.reduce((s,f)=>s+f.base,0), S=k=>rows.reduce((s,r)=>s+r[k],0);
+  const ended=fs.filter(f=>statusAt(f,m)!=='ทดลองฟรี'), mem=fs.filter(f=>statusAt(f,m)==='สมาชิก');
+  const listed=S('listed');
+  return{rows:rows.length,n:fs.length,saved:S('saved'),pct:base?S('saved')/base*100:0,land:listed?(listed-S('div'))/listed*100:0,tons:S('div'),deals:S('deals'),co2:S('co2'),ended:ended.length,mem:mem.length,conv:ended.length?mem.length/ended.length*100:null};
+}
+function perFactory(m){
+  return FAC.filter(f=>inScopeF(f,m)).map(f=>{
+    const rows=FACT.filter(r=>r.m===m&&r.f===f.id&&(st.stream==='all'||r.s===st.stream)), saved=rows.reduce((s,r)=>s+r.saved,0);
+    const und=rows.filter(r=>r.listed-r.div>0.05).sort((a,b)=>(b.listed-b.div)-(a.listed-a.div));
+    return{...f,st:statusAt(f,m),saved,pct:saved/f.base*100,rows,topUnd:und[0]};
+  });
+}
+function filterLabel(){const p=[];if(st.size!=='all')p.push('ขนาด '+st.size);if(st.stream!=='all')p.push(STR[st.stream].n);return p.length?' · กรอง: '+p.join(', '):''}
+
+function renderHeadline(){
+  const a=agg(st.m), pf=perFactory(st.m), nr=pf.filter(f=>f.st==='หมดทดลอง-ยังไม่ต่อ'), nrHit=nr.filter(f=>f.pct>=TGT);
+  $('storyLb').textContent=`สรุปประจำเดือน ${MN[st.m]} 2569${filterLabel()}`;
+  if(!a.n){$('headline').textContent='ไม่มีโรงงานที่ตรงกับตัวกรองในเดือนนี้';return}
+  let h=`ลูกค้าลดค่ากำจัดได้ <span class="${a.pct>=TGT?'p':'n'}">${p1(a.pct)}</span> ${a.pct>=TGT?'ผ่านเป้าหมาย 10%':'ยังต่ำกว่าเป้าหมาย 10%'}`;
+  h+= nr.length?` แต่ <span class="n">${nr.length} จาก ${a.ended} โรงงานที่ทดลองครบยังไม่ต่อสมาชิก</span>${nrHit.length?` แม้ ${nrHit.length} รายจะประหยัดได้เกินเป้าหมาย`:''}`:' และยังไม่มีโรงงานที่หมดช่วงทดลองโดยไม่ต่อสมาชิก';
+  $('headline').innerHTML=h;
+}
+function kpi(label,val,cur,prev,better,kind){
+  let d='<span class="d flat">ไม่มีข้อมูลเดือนก่อน</span>';
+  if(prev!=null&&cur!=null){const df=cur-prev,good=better==='up'?df>0:df<0,cls=Math.abs(df)<1e-9?'flat':good?'up':'down',ar=df>0?'▲':df<0?'▼':'–';
+    const t=kind==='pp'?Math.abs(df).toFixed(1)+' จุด':kind==='int'?fmt(Math.abs(df)):(prev?Math.abs(df/prev*100).toFixed(0)+'%':'');
+    d=`<span class="d ${cls}">${ar} ${t} เทียบ ${MN[st.m-1]}</span>`;}
+  return `<div class="kpi"><span class="k">${label}</span><span class="v">${val}</span>${d}</div>`;
+}
+function renderKPI(){
+  const a=agg(st.m), b=st.m>0?agg(st.m-1):null, hb=b&&b.n;
+  $('z-kpi').innerHTML=[
+    kpi('ต้นทุนกำจัดที่ลูกค้าลดได้',`<span style="color:${a.pct>=TGT?'var(--pos)':'var(--neg)'}">${p1(a.pct)}</span>`,a.pct,hb?b.pct:null,'up','pp'),
+    kpi('สัดส่วนของเสียที่ไปหลุมฝังกลบ',p1(a.land),a.land,hb?b.land:null,'down','pp'),
+    kpi('ปริมาณที่เลี่ยงหลุมฝังกลบ',`${a.tons.toFixed(1)} <small>ตัน</small>`,a.tons,hb?b.tons:null,'up','rel'),
+    kpi('ดีลที่ปิดได้',`${a.deals} <small>ดีล</small>`,a.deals,hb?b.deals:null,'up','int'),
+    kpi('อัตราต่อสมาชิกหลังทดลอง',a.conv==null?'–':`${p1(a.conv)} <small>(${a.mem}/${a.ended})</small>`,a.conv,hb?b.conv:null,'up','pp')
+  ].join('');
+  $('z-grain').innerHTML=`ระดับข้อมูล: โรงงาน × ชนิดของเสีย × เดือน<br>ใช้ <b class="num">${a.rows}</b> จาก ${FACT.length} แถว · ${a.n} โรงงาน`;
+  $('asof').textContent=`${MN[st.m]} 2569`;
+}
+function renderLine(){
+  const W=560,H=240,L=40,R=12,T=14,B=30,iw=W-L-R,ih=H-T-B,vals=MN.map((_,i)=>agg(i)),pv=vals.map(v=>v.pct),max=Math.max(25,Math.ceil(Math.max(...pv)/5)*5);
+  const x=i=>L+iw*i/8,y=v=>T+ih*(1-Math.min(v,max)/max);
+  let g=`<rect x="${L}" y="${y(20)}" width="${iw}" height="${y(10)-y(20)}" fill="var(--warn-bg)"/><line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="var(--warn)" stroke-dasharray="4 3"/>`;
+  for(let v=0;v<=max;v+=5) g+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-width="${v===0?1.2:.8}"/><text x="${L-6}" y="${y(v)+4}" font-size="11" text-anchor="end" fill="var(--muted)">${v}%</text>`;
+  g+=`<text x="${W-R-4}" y="${y(10)-5}" font-size="11" text-anchor="end" fill="var(--warn)" font-weight="500">เป้าหมาย 10%</text>`;
+  const valid=vals.map((v,i)=>v.n?i:-1).filter(i=>i>=0);
+  const seg=valid.filter(i=>i<=st.m), fut=valid.filter(i=>i>=st.m);
+  if(fut.length>1) g+=`<polyline points="${fut.map(i=>x(i)+','+y(pv[i])).join(' ')}" fill="none" stroke="var(--line)" stroke-width="2" stroke-dasharray="3 4"/>`;
+  if(seg.length) g+=`<polyline points="${seg.map(i=>x(i)+','+y(pv[i])).join(' ')}" fill="none" stroke="var(--navy-2)" stroke-width="2.5" stroke-linejoin="round"/>`;
+  MN.forEach((m,i)=>{const on=i<=st.m&&vals[i].n;
+    if(vals[i].n) g+=`<circle cx="${x(i)}" cy="${y(pv[i])}" r="${i===st.m?5.5:3.5}" fill="${on?(pv[i]>=TGT?'var(--navy-2)':'var(--surface)'):'var(--soft)'}" stroke="${on?'var(--navy-2)':'var(--line)'}" stroke-width="2"/>`;
+    g+=`<text x="${x(i)}" y="${H-9}" font-size="11" text-anchor="middle" fill="${i===st.m?'var(--ink)':'var(--muted)'}" font-weight="${i===st.m?600:400}">${m}</text>`;
+    g+=`<rect class="hit" data-i="${i}" x="${x(i)-iw/16}" y="${T}" width="${iw/8}" height="${ih}" fill="transparent" style="cursor:pointer"/>`;});
+  if(vals[st.m].n) g+=`<text x="${x(st.m)+(st.m>5?-9:9)}" y="${y(pv[st.m])-9}" font-size="13" text-anchor="${st.m>5?'end':'start'}" fill="var(--ink)" font-weight="600">${p1(pv[st.m])}</text>`;
+  $('lineChart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="กราฟเส้นร้อยละต้นทุนที่ลดได้รายเดือน">${g}</svg>`;
+  const tip=$('tip');
+  $('lineChart').querySelectorAll('.hit').forEach(r=>{const i=+r.dataset.i;
+    r.addEventListener('mouseenter',()=>{const v=vals[i];tip.textContent=v.n?`${MN[i]} 2569 · ${p1(v.pct)} · ฿${fmt(v.saved)} · ${v.n} โรงงาน`:`${MN[i]} · ไม่มีข้อมูลตามตัวกรอง`;const bb=r.getBoundingClientRect();tip.style.left=(bb.left+bb.width/2)+'px';tip.style.top=(bb.top+8)+'px';tip.style.opacity=1});
+    r.addEventListener('mouseleave',()=>tip.style.opacity=0);
+    r.addEventListener('click',()=>{st.m=i;$('fMonth').value=i;st.sel=null;renderAll()});});
+  const cross=valid.find(i=>pv[i]>=TGT), a=vals[st.m];
+  $('n1').innerHTML=!a.n?'ไม่มีข้อมูลตามตัวกรอง':(cross!=null&&cross<=st.m?`ผ่านเป้าหมายครั้งแรกในเดือน <b>${MN[cross]}</b> · เดือนนี้ลดได้ <b>${p1(a.pct)}</b> คิดเป็น <b>฿${fmt(a.saved)}</b>`:`เดือนนี้ลดได้ <b>${p1(a.pct)}</b> ยังต่ำกว่าเป้าหมาย <b>${(TGT-a.pct).toFixed(1)} จุด</b>`);
+}
+function renderWhy(){
+  $('tF').setAttribute('aria-selected',st.view==='f');$('tS').setAttribute('aria-selected',st.view==='s');
+  $('fStatus').style.display=st.view==='f'?'flex':'none';
+  if(st.view==='f') return renderFactories();
+  // streams view
+  $('whySub').textContent=`ปริมาณของเสียเดือน ${MN[st.m]} แยกตามชนิด (ตัน) · กดแถบเพื่อกรองทั้งหน้า`;
+  const rows=FACT.filter(r=>r.m===st.m&&inScopeF(FM[r.f],st.m)), by={};
+  rows.forEach(r=>{const o=by[r.s]=by[r.s]||{div:0,land:0,saved:0};o.div+=r.div;o.land+=r.listed-r.div;o.saved+=r.saved});
+  const arr=ST_ORDER.filter(s=>by[s]).map(s=>({s,...by[s],tot:by[s].div+by[s].land})).sort((a,b)=>b.tot-a.tot);
+  const mx=Math.max(1,...arr.map(a=>a.tot));
+  $('bars').innerHTML=arr.map(a=>`<button type="button" class="hrow" data-s="${a.s}" aria-pressed="${st.stream===a.s}"><span class="nm">${STR[a.s].n}</span><span class="tr"><div style="width:${a.div/mx*100}%;background:var(--navy-2)"></div><div style="width:${a.land/mx*100}%;background:var(--neg);opacity:.55"></div></span><span class="vv">${a.tot.toFixed(1)}</span></button>`).join('')||'<p style="margin:0;color:var(--muted)">ไม่มีข้อมูล</p>';
+  $('bars').querySelectorAll('.hrow').forEach(b=>b.addEventListener('click',()=>{st.stream=st.stream===b.dataset.s?'all':b.dataset.s;$('fStream').value=st.stream;renderAll()}));
+  $('lg2').innerHTML='<span><i style="background:var(--navy-2)"></i>จับคู่ได้</span><span><i style="background:var(--neg);opacity:.55"></i>ยังไปหลุมฝังกลบ</span>';
+  const worst=[...arr].sort((a,b)=>b.land-a.land)[0], best=[...arr].sort((a,b)=>b.saved-a.saved)[0];
+  $('n2').innerHTML=arr.length?`ยังไปหลุมฝังกลบมากที่สุด: <b>${STR[worst.s].n}</b> ${worst.land.toFixed(1)} ตัน · สร้างเงินประหยัดมากที่สุด: <b>${STR[best.s].n}</b> ฿${fmt(best.saved)}`:'ไม่มีข้อมูล';
+  $('detail').innerHTML=st.stream!=='all'?`<b>${STR[st.stream].n}</b> · รหัส ${STR[st.stream].code} · ผู้รับใบอนุญาต ${STR[st.stream].lic} · ${STR[st.stream].recv}`:'กดแถบชนิดของเสียเพื่อกรองข้อมูลทั้งหน้า';
+}
+function renderFactories(){
+  $('whySub').textContent=`% ต้นทุนที่ลดได้ของแต่ละโรงงาน เดือน ${MN[st.m]} · สีตามสถานะลูกค้า`;
+  const all=perFactory(st.m).sort((a,b)=>b.pct-a.pct), pf=st.status==='all'?all:all.filter(f=>f.st===st.status);
+  const mx=Math.max(25,...all.map(f=>f.pct));
+  $('bars').innerHTML=pf.map(f=>`<button type="button" class="hrow" data-id="${f.id}" aria-pressed="${st.sel===f.id}"><span class="nm">${fname(f)} <span style="color:var(--faint)">(${f.size})</span></span><span class="tr"><span class="tg" style="left:${TGT/mx*100}%"></span><div style="width:${Math.max(.8,f.pct/mx*100)}%;background:${SC[f.st]};border-radius:2px"></div></span><span class="vv">${p1(f.pct)}</span></button>`).join('')||'<p style="margin:0;color:var(--muted)">ไม่มีโรงงานตามตัวกรอง</p>';
+  $('bars').querySelectorAll('.hrow').forEach(b=>b.addEventListener('click',()=>{st.sel=st.sel===b.dataset.id?null:b.dataset.id;renderFactories()}));
+  $('lg2').innerHTML='<span><i style="background:var(--pos)"></i>สมาชิก</span><span><i style="background:var(--neg)"></i>ไม่ต่อสมาชิก</span><span><i style="background:var(--neu)"></i>ทดลองฟรี</span><span><i style="background:var(--warn);width:3px"></i>เป้าหมาย 10%</span>';
+  const nr=all.filter(f=>f.st==='หมดทดลอง-ยังไม่ต่อ'), nrHit=nr.filter(f=>f.pct>=TGT), low=all.filter(f=>f.pct<5);
+  $('n2').innerHTML=nr.length?`<b>${nrHit.length} จาก ${nr.length}</b> โรงงานที่ไม่ต่อสมาชิกประหยัดได้เกินเป้าหมาย แสดงว่าบริการได้ผล แต่ลูกค้ายังไม่เห็นมูลค่า${low.length?` · ${low.map(f=>f.id).join(', ')} ต่ำกว่า 5%`:''}`:`ยังไม่มีโรงงานที่ไม่ต่อสมาชิกในขอบเขตที่เลือก${low.length?` · ${low.map(f=>f.id).join(', ')} ต่ำกว่า 5%`:''}`;
+  const f=st.sel&&all.find(x=>x.id===st.sel);
+  $('detail').innerHTML=f?`<b>${fname(f)}</b> · ขนาด ${f.size} · ${SL[f.st]}${f.st==='ทดลองฟรี'?` (เหลือ ${st.m===8?'':'ประมาณ '}${trialDays(f,st.m)} วัน)`:''}<br>ประหยัด ฿${fmt(f.saved)} จากค่ากำจัดเดิม ฿${fmt(f.base)} ต่อเดือน · ของเสีย: ${[...FS[f.id]].map(s=>STR[s].n).join(', ')}${f.topUnd?`<br>ยังไปหลุมฝังกลบมากที่สุด: <b>${STR[f.topUnd.s].n}</b> ${(f.topUnd.listed-f.topUnd.div).toFixed(1)} ตัน`:''}`:'กดแถบโรงงานเพื่อดูรายละเอียด';
+}
+function renderAlerts(){
+  const pf=perFactory(st.m), A=[];
+  pf.filter(f=>f.st==='ทดลองฟรี'&&trialDays(f,st.m)<=14).forEach(f=>A.push({id:`t${f.id}${st.m}`,lv:'danger',L:'เร่งด่วน',t:`${fname(f)} สิ้นสุดการทดลองใน ${trialDays(f,st.m)} วัน`,a:`นัดประชุมต่อสมาชิกแพ็กเกจ ${f.size} พร้อมรายงานผลประหยัด ฿${fmt(f.saved)} ต่อเดือน (${p1(f.pct)})`}));
+  pf.filter(f=>f.pct<5&&f.topUnd).forEach(f=>{const s=STR[f.topUnd.s];A.push({id:`l${f.id}${st.m}`,lv:'danger',L:'ต่ำกว่าเกณฑ์',t:`${fname(f)} ลดต้นทุนได้ ${p1(f.pct)}`,a:`มอบหมายวิศวกรหาผู้รับใบอนุญาต ${s.lic} สำหรับ${s.n} ${(f.topUnd.listed-f.topUnd.div).toFixed(1)} ตัน${s.code==='—'?' โดยส่งตัวอย่างวิเคราะห์เพื่อระบุรหัสก่อน':` (รหัส ${s.code})`}`})});
+  const nrHit=pf.filter(f=>f.st==='หมดทดลอง-ยังไม่ต่อ'&&f.pct>=TGT);
+  if(nrHit.length) A.push({id:`nr${st.m}`,lv:'warn',L:'โอกาส',t:`${nrHit.length} โรงงานไม่ต่อสมาชิกแม้ประหยัดเกินเป้าหมาย`,a:`ส่งรายงานผลประหยัดให้ฝ่ายสิ่งแวดล้อมของ ${nrHit.map(f=>`${f.id} (${p1(f.pct)})`).join(', ')} แล้วนัดเสนอต่อสมาชิก`});
+  const oil=FACT.filter(r=>r.m===st.m&&r.s==='oil'&&inScopeF(FM[r.f],st.m)), oilT=oil.reduce((s,r)=>s+r.listed,0);
+  if(oil.length&&(st.stream==='all'||st.stream==='oil')) A.push({id:`o${st.m}`,lv:'info',L:'ติดตาม',t:`กลุ่มรวมน้ำมันใช้แล้ว ${oilT.toFixed(1)} / 5 ตัน (${oil.length} โรงงาน)`,a:oilT>=5?'ครบปริมาณขั้นต่ำ เสนอขายผู้รับใบอนุญาต 106':`ขาดอีก ${(5-oilT).toFixed(1)} ตัน ชักชวนโรงงานที่มีน้ำมันใช้แล้วเข้าร่วมกลุ่ม`});
+  if(!A.length) A.push({id:'none',lv:'ok',L:'ปกติ',t:'ไม่มีรายการที่ต้องดำเนินการเร่งด่วน',a:'ดำเนินงานตามแผน'});
+  $('alerts').innerHTML=A.map(x=>{const d=!!st.done[x.id];return `<div class="ar"><span class="st ${x.lv}">${x.L}</span><span class="t">${x.t}</span><span class="a"><b>ดำเนินการ:</b> ${x.a}</span>${x.lv==='ok'?'':`<button type="button" data-id="${x.id}" aria-pressed="${d}">${d?'มอบหมายแล้ว':'มอบหมายงาน'}</button>`}</div>`}).join('');
+  $('alerts').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{st.done[b.dataset.id]=!st.done[b.dataset.id];try{localStorage.setItem('exl2-done',JSON.stringify(st.done))}catch(e){}renderAlerts()}));
+}
+function renderAll(){renderKPI();renderHeadline();renderLine();renderWhy();renderAlerts()}
+
+$('fMonth').innerHTML=MN.map((m,i)=>`<option value="${i}"${i===8?' selected':''}>${m} 2569</option>`).join('');
+$('fStream').innerHTML='<option value="all">ทุกชนิด</option>'+ST_ORDER.map(s=>`<option value="${s}">${STR[s].n}</option>`).join('');
+$('fMonth').addEventListener('change',e=>{st.m=+e.target.value;st.sel=null;renderAll()});
+$('fStream').addEventListener('change',e=>{st.stream=e.target.value;st.sel=null;renderAll()});
+$('fSize').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.size=b.dataset.v;st.sel=null;$('fSize').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderAll()});
+$('fStatus').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.status=b.dataset.v;$('fStatus').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderFactories()});
+$('tF').addEventListener('click',()=>{st.view='f';renderWhy()});$('tS').addEventListener('click',()=>{st.view='s';renderWhy()});
+$('reset').addEventListener('click',()=>{Object.assign(st,{m:8,size:'all',stream:'all',status:'all',sel:null});$('fMonth').value=8;$('fStream').value='all';
+  $('fSize').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v==='all'));$('fStatus').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v==='all'));renderAll()});
+let hlT;
+$('brief').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const on=b.getAttribute('aria-pressed')!=='true';
+  document.querySelectorAll('.hl').forEach(x=>x.classList.remove('hl'));$('brief').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed','false'));clearTimeout(hlT);
+  if(on){b.setAttribute('aria-pressed','true');const ids=b.dataset.z.split(',');ids.forEach(id=>$(id).classList.add('hl'));$(ids[ids.length-1]).scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    hlT=setTimeout(()=>{document.querySelectorAll('.hl').forEach(x=>x.classList.remove('hl'));b.setAttribute('aria-pressed','false')},4000);}});
+renderAll();
+})();
+</script>
+</body>
+</html>

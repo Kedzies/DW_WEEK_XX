@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>ExerLink – Dashboard เชิงเล่าเรื่อง</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&amp;family=Prompt:wght@400;500&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F8FAFC}
+a{color:#1A4B75}a:hover{color:#0F2F4D}
+</style>
+</helmet>
+<div style="background: #F8FAFC; font-family: 'Prompt', 'Noto Sans Thai', sans-serif; color: #0F2236; font-size: 15px; line-height: 1.6">
+
+  <!-- HERO -->
+  <header style="background: #1A4B75; color: #FFFFFF; padding: 56px 24px 64px">
+    <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+        <div style="display: flex; align-items: center; gap: 10px">
+          <svg width="30" height="30" viewBox="0 0 34 34" fill="none" stroke-width="3" aria-hidden="true"><circle cx="17" cy="17" r="14" stroke="#3DBE8B"></circle><path d="M11 11h8M11 17h6M11 23h8M11 11v12" stroke="#FFFFFF" stroke-linecap="round"></path><path d="M20 20c2-3 4-1 6-4" stroke="#F38221" stroke-linecap="round"></path></svg>
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 18px">ExerLink</span>
+        </div>
+        <span style="font-size: 12px; font-weight: 500; color: #5A3008; background: #FAD3AF; padding: 2px 12px; border-radius: 999px">ข้อมูลจำลอง · ExerLink_Story_Data.xlsx</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; max-width: 760px">
+        <span style="font-size: 14px; color: #C9D8E6">รายงานนำร่อง [ชื่อนิคมอุตสาหกรรม] · ม.ค.–ก.ย. 2569</span>
+        <h1 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 44px; line-height: 1.2">9 เดือน ของเสีย 432 ตัน<br>ไม่ต้องไปจบที่หลุมฝังกลบ</h1>
+        <p style="margin: 0; font-size: 17px; color: #DCE6F0">นี่คือเรื่องของ SME 12 โรงงานที่เคยจ่ายค่ากำจัดแพงเพราะของมีน้อย และสิ่งที่เกิดขึ้นเมื่อเราจับคู่ของเสียกับผู้ที่ต้องการมันจริง ๆ</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+        <div style="background: rgba(255,255,255,0.10); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 2px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px">432 <span style="font-size: 16px">ตัน</span></span>
+          <span style="color: #DCE6F0; font-size: 14px">ของเสียที่เลี่ยงหลุมฝังกลบ</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.10); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 2px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px">167.3 <span style="font-size: 16px">tCO₂e</span></span>
+          <span style="color: #DCE6F0; font-size: 14px">ก๊าซเรือนกระจกที่ลดได้ (EF อ้างอิง TGO)</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.10); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 2px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px">฿584,700</span>
+          <span style="color: #DCE6F0; font-size: 14px">ค่ากำจัดที่โรงงานประหยัดได้รวม</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.10); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 2px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px">37 <span style="font-size: 16px">คู่</span></span>
+          <span style="color: #DCE6F0; font-size: 14px">จับคู่สำเร็จ ผ่านวิศวกรตรวจทุกคู่</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width: 1080px; margin: 0 auto; padding: 0 24px 72px; display: flex; flex-direction: column; gap: 72px">
+
+    <!-- 01 PROBLEM -->
+    <section style="padding-top: 64px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; color: #08734B; letter-spacing: 1px">01 · จุดเริ่มต้น</span>
+        <h2 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 30px; line-height: 1.3">ของน้อย เลยต้องจ่ายแพง</h2>
+        <p style="margin: 0; color: #334155">เดือนแรกของการนำร่อง ของเสียที่ SME ลงทะเบียนไว้เกือบ 8 ใน 10 ส่วนยังถูกส่งไปฝังกลบ ไม่ใช่เพราะไม่มีค่า แต่เพราะแต่ละโรงงานมีของน้อยเกินกว่าที่ผู้รับรีไซเคิลจะสนใจ จึงต้องจ่ายค่าขนส่งและค่ากำจัดเป็นรายเที่ยว</p>
+      </div>
+      <div style="flex: 1 1 380px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+        <span style="font-size: 14px; color: #4A5B6C">ปลายทางของเสียที่ลงทะเบียน · ม.ค. 2569 (45 ตัน)</span>
+        <div style="display: flex; height: 44px; border-radius: 10px; overflow: hidden">
+          <div style="width: 77.8%; background: #64748B; color: #FFFFFF; display: flex; align-items: center; padding-left: 14px; font-weight: 500">หลุมฝังกลบ 77.8%</div>
+          <div style="width: 22.2%; background: #0B8A5A"></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; color: #334155">
+          <span style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 3px; background: #64748B"></span>ฝังกลบ 35 ตัน</span>
+          <span style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 3px; background: #0B8A5A"></span>จับคู่ได้ 10 ตัน</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 WHAT WE DID -->
+    <section style="display: flex; flex-direction: column; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+        <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; color: #08734B; letter-spacing: 1px">02 · สิ่งที่เราทำ</span>
+        <h2 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 30px; line-height: 1.3">AI หาคู่ให้เร็ว วิศวกรยืนยันให้ถูกกฎหมาย</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px; color: #1A4B75">1</span>
+          <h3 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 500; font-size: 18px">แปลงคำอธิบายเป็นรหัสของเสีย</h3>
+          <p style="margin: 0; color: #4A5B6C; font-size: 14px">LLM อ่านสิ่งที่โรงงานเขียนเอง แปลงเป็นรหัสมาตรฐาน แล้วจับคู่ด้วยกฎ รหัสของเสีย × วัตถุดิบ × ระยะทาง</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px; color: #1A4B75">2</span>
+          <h3 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 500; font-size: 18px">วิศวกรตรวจใบอนุญาตทุกคู่</h3>
+          <p style="margin: 0; color: #4A5B6C; font-size: 14px">ยืนยันว่าผู้รับมีใบอนุญาต 101/105/106 ตรงรหัส ก่อนเตรียมเอกสาร กอ.1/กอ.2 ให้ลูกค้า</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px; color: #1A4B75">3</span>
+          <h3 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 500; font-size: 18px">รวมของ SME ให้ถึงขั้นต่ำ</h3>
+          <p style="margin: 0; color: #4A5B6C; font-size: 14px">ของชนิดเดียวกันจากหลายโรงงานถูกรวมเป็นล็อตเดียว จนผู้รับซื้อยอมรับและให้ราคา</p>
+        </div>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 14px; color: #4A5B6C">เส้นทาง 9 เดือน</span>
+        <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px">
+          <li style="display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 3px solid #1A4B75"><span style="font-family: 'Kanit', sans-serif; font-weight: 500; color: #1A4B75">ม.ค.</span><span style="font-size: 13px; color: #334155">MOU กับนิคมฯ เริ่ม 2 โรงงาน</span></li>
+          <li style="display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 3px solid #1A4B75"><span style="font-family: 'Kanit', sans-serif; font-weight: 500; color: #1A4B75">มี.ค.</span><span style="font-size: 13px; color: #334155">รวมเศษกระดาษจาก 5 SME ขายได้ครั้งแรก</span></li>
+          <li style="display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 3px solid #1A4B75"><span style="font-family: 'Kanit', sans-serif; font-weight: 500; color: #1A4B75">เม.ย.</span><span style="font-size: 13px; color: #334155">ทดลองฟรีครบ 3 เดือน ได้สมาชิกรายแรก</span></li>
+          <li style="display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 3px solid #F38221"><span style="font-family: 'Kanit', sans-serif; font-weight: 500; color: #8A4A0B">มิ.ย.</span><span style="font-size: 13px; color: #334155">ต้นทุนที่ลดได้ทะลุเป้า 10%</span></li>
+          <li style="display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 3px solid #1A4B75"><span style="font-family: 'Kanit', sans-serif; font-weight: 500; color: #1A4B75">ส.ค.</span><span style="font-size: 13px; color: #334155">นิคมฯ จ้าง Resource mapping ทั้งนิคม</span></li>
+          <li style="display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 3px solid #0B8A5A"><span style="font-family: 'Kanit', sans-serif; font-weight: 500; color: #08734B">ก.ย.</span><span style="font-size: 13px; color: #334155">12 / 20 โรงงาน ลดต้นทุนได้ 14.4%</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 03 LANDFILL -->
+    <section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; color: #08734B; letter-spacing: 1px">03 · ผลลัพธ์ต่อสิ่งแวดล้อม</span>
+        <h2 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 30px; line-height: 1.3">ส่วนที่ไปหลุมฝังกลบ ลดลงครึ่งหนึ่ง</h2>
+        <p style="margin: 0; color: #334155">แม้มีโรงงานเข้าร่วมเพิ่มจาก 2 เป็น 12 และของเสียที่ลงทะเบียนเพิ่มเกือบ 3 เท่า สัดส่วนที่ต้องฝังกลบกลับลดจาก 77.8% เหลือ 36.9% ปริมาณที่จับคู่ได้เพิ่มจาก 10 เป็น 82 ตันต่อเดือน</p>
+        <div style="display: flex; gap: 24px; flex-wrap: wrap">
+          <div style="display: flex; flex-direction: column"><span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px; color: #64748B">77.8%</span><span style="font-size: 13px; color: #4A5B6C">ม.ค.</span></div>
+          <div style="display: flex; flex-direction: column"><span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px; color: #08734B">36.9%</span><span style="font-size: 13px; color: #4A5B6C">ก.ย.</span></div>
+        </div>
+      </div>
+      <figure style="flex: 1.5 1 480px; min-width: 0; margin: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px">
+        <figcaption style="font-size: 14px; color: #4A5B6C; margin-bottom: 8px">สัดส่วนของเสียที่ลงทะเบียนแล้วยังไปหลุมฝังกลบ (%)</figcaption>
+        <svg viewBox="0 0 640 260" width="100%" role="img" aria-label="กราฟเส้นสัดส่วนฝังกลบลดจาก 77.8% ในเดือนมกราคม เหลือ 36.9% ในเดือนกันยายน" font-family="Prompt, sans-serif">
+          <g stroke="#E2E8F0" stroke-width="1"><line x1="44" y1="20" x2="620" y2="20"></line><line x1="44" y1="70" x2="620" y2="70"></line><line x1="44" y1="120" x2="620" y2="120"></line><line x1="44" y1="170" x2="620" y2="170"></line><line x1="44" y1="220" x2="620" y2="220"></line></g>
+          <g fill="#4A5B6C" font-size="12" text-anchor="end"><text x="36" y="24">100%</text><text x="36" y="74">75%</text><text x="36" y="124">50%</text><text x="36" y="174">25%</text><text x="36" y="224">0%</text></g>
+          <polygon points="50,64.4 117.5,86.6 185,104.6 252.5,115.2 320,122 387.5,130.2 455,130.8 522.5,136.6 590,146.2 590,220 50,220" fill="#E1ECF6"></polygon>
+          <polyline points="50,64.4 117.5,86.6 185,104.6 252.5,115.2 320,122 387.5,130.2 455,130.8 522.5,136.6 590,146.2" fill="none" stroke="#1A4B75" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></polyline>
+          <circle cx="50" cy="64.4" r="5" fill="#1A4B75"></circle>
+          <circle cx="590" cy="146.2" r="6" fill="#0B8A5A"></circle>
+          <text x="60" y="52" font-size="13" font-weight="600" fill="#1A4B75">77.8%</text>
+          <text x="590" y="132" font-size="13" font-weight="600" fill="#08734B" text-anchor="middle">36.9%</text>
+          <g fill="#4A5B6C" font-size="12" text-anchor="middle"><text x="50" y="246">ม.ค.</text><text x="117.5" y="246">ก.พ.</text><text x="185" y="246">มี.ค.</text><text x="252.5" y="246">เม.ย.</text><text x="320" y="246">พ.ค.</text><text x="387.5" y="246">มิ.ย.</text><text x="455" y="246">ก.ค.</text><text x="522.5" y="246">ส.ค.</text><text x="590" y="246">ก.ย.</text></g>
+        </svg>
+      </figure>
+    </section>
+
+    <!-- 04 COST -->
+    <section style="display: flex; flex-wrap: wrap-reverse; gap: 40px; align-items: center">
+      <figure style="flex: 1.5 1 480px; min-width: 0; margin: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+        <figcaption style="font-size: 14px; color: #4A5B6C">% ค่ากำจัดที่โรงงานนำร่องประหยัดได้ เทียบเป้า 10–20%</figcaption>
+        <div style="position: relative; height: 200px; margin-top: 16px">
+          <div style="position: absolute; left: 0; right: 0; bottom: 100px; height: 100px; background: #FFF1E3; border-top: 1px dashed #F38221; border-bottom: 1px dashed #F38221"></div>
+          <span style="position: absolute; right: 6px; bottom: 176px; font-size: 12px; font-weight: 500; color: #8A4A0B">โซนเป้าหมาย 10–20%</span>
+          <div style="position: absolute; inset: 0; display: flex; align-items: flex-end; gap: 10px; padding: 0 4px">
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; color: #334155">5.3</span><div style="width: 100%; height: 53px; border-radius: 6px 6px 0 0; background: #94A3B8"></div></div>
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; color: #334155">6.7</span><div style="width: 100%; height: 67px; border-radius: 6px 6px 0 0; background: #94A3B8"></div></div>
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; color: #334155">7.1</span><div style="width: 100%; height: 71px; border-radius: 6px 6px 0 0; background: #94A3B8"></div></div>
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; color: #334155">8.0</span><div style="width: 100%; height: 80px; border-radius: 6px 6px 0 0; background: #94A3B8"></div></div>
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; color: #334155">8.5</span><div style="width: 100%; height: 85px; border-radius: 6px 6px 0 0; background: #94A3B8"></div></div>
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; font-weight: 600; color: #8A4A0B">10.3</span><div style="width: 100%; height: 103px; border-radius: 6px 6px 0 0; background: #F38221"></div></div>
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; color: #334155">10.8</span><div style="width: 100%; height: 108px; border-radius: 6px 6px 0 0; background: #0B8A5A"></div></div>
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; color: #334155">12.0</span><div style="width: 100%; height: 120px; border-radius: 6px 6px 0 0; background: #0B8A5A"></div></div>
+            <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="font-size: 11px; font-weight: 600; color: #08734B">14.4</span><div style="width: 100%; height: 144px; border-radius: 6px 6px 0 0; background: #0B8A5A"></div></div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px; padding: 0 4px; font-size: 12px; color: #4A5B6C; border-top: 1px solid #CBD5E1; padding-top: 6px">
+          <span style="flex: 1 1 0; text-align: center">ม.ค.</span><span style="flex: 1 1 0; text-align: center">ก.พ.</span><span style="flex: 1 1 0; text-align: center">มี.ค.</span><span style="flex: 1 1 0; text-align: center">เม.ย.</span><span style="flex: 1 1 0; text-align: center">พ.ค.</span><span style="flex: 1 1 0; text-align: center">มิ.ย.</span><span style="flex: 1 1 0; text-align: center">ก.ค.</span><span style="flex: 1 1 0; text-align: center">ส.ค.</span><span style="flex: 1 1 0; text-align: center">ก.ย.</span>
+        </div>
+      </figure>
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; color: #08734B; letter-spacing: 1px">04 · ผลลัพธ์ต่อลูกค้า</span>
+        <h2 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 30px; line-height: 1.3">เดือนที่ 6 เราพิสูจน์เป้าได้</h2>
+        <p style="margin: 0; color: #334155">เป้าใน Value Proposition คือช่วยโรงงานลดค่ากำจัด 10–20% เดือน มิ.ย. ตัวเลขทะลุ 10% เป็นครั้งแรก และขึ้นต่อเนื่องจนถึง 14.4% ในเดือน ก.ย. หรือประหยัดได้ ฿146,700 ในเดือนเดียว</p>
+        <p style="margin: 0; font-size: 13px; color: #4A5B6C">เทียบกับค่ากำจัดเดิมเฉลี่ย ฿85,000 ต่อโรงงานต่อเดือน (สมมติฐานในชีต Monthly)</p>
+      </div>
+    </section>
+
+    <!-- 05 STREAMS -->
+    <section style="display: flex; flex-direction: column; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+        <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; color: #08734B; letter-spacing: 1px">05 · ของเสียไหนสร้างผลมากที่สุด</span>
+        <h2 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 30px; line-height: 1.3">เหล็กมากที่สุดตามน้ำหนัก แต่พลาสติก PP คุ้มที่สุด</h2>
+        <p style="margin: 0; color: #334155">เดือน ก.ย. เศษพลาสติก PP มีปริมาณน้อยกว่าเศษโลหะ 6 ตัน แต่สร้างเงินประหยัดได้มากกว่า เพราะเปลี่ยนจากของที่ต้องจ่าย ฿2,000/ตัน เป็นของที่ขายได้ ฿500/ตัน</p>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; overflow-x: auto">
+        <table style="width: 100%; min-width: 680px; border-collapse: collapse; font-size: 14px">
+          <caption style="text-align: left; font-size: 14px; color: #4A5B6C; padding-bottom: 12px">ชนิดของเสียที่จับคู่ได้ · ก.ย. 2569 · รวม 82 ตัน</caption>
+          <thead>
+            <tr style="text-align: left; color: #4A5B6C; font-size: 13px; border-bottom: 1px solid #E2E8F0">
+              <th style="padding: 0 12px 10px 0; font-weight: 500; width: 26%">ชนิดของเสีย</th>
+              <th style="padding: 0 12px 10px; font-weight: 500; width: 30%">ปริมาณ (ตัน)</th>
+              <th style="padding: 0 12px 10px; font-weight: 500; width: 30%">ประหยัดได้ (บาท/เดือน)</th>
+              <th style="padding: 0 0 10px 12px; font-weight: 500">ผู้รับ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #EEF2F6">
+              <td style="padding: 12px 12px 12px 0"><div style="font-weight: 500">เศษโลหะ/เศษเหล็กปน</div><div style="font-size: 12px; color: #4A5B6C">12 01 01 · 3 SME</div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #EEF2F6"><div style="width: 100%; height: 10px; border-radius: 4px; background: #1A4B75"></div></div><span>30</span></div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #EEF2F6"><div style="width: 90%; height: 10px; border-radius: 4px; background: #0B8A5A"></div></div><span>54,000</span></div></td>
+              <td style="padding: 12px 0 12px 12px">105 · คัดแยก</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #EEF2F6; background: #F3FAF6">
+              <td style="padding: 12px 12px 12px 0"><div style="font-weight: 600; color: #08603F">เศษพลาสติก PP</div><div style="font-size: 12px; color: #4A5B6C">07 02 13 · 2 SME</div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #E6EDF4"><div style="width: 80%; height: 10px; border-radius: 4px; background: #1A4B75"></div></div><span>24</span></div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #DDEFE5"><div style="width: 100%; height: 10px; border-radius: 4px; background: #0B8A5A"></div></div><span style="font-weight: 600; color: #08603F">60,000</span></div></td>
+              <td style="padding: 12px 0 12px 12px">105 · รีไซเคิลพลาสติก</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #EEF2F6">
+              <td style="padding: 12px 12px 12px 0"><div style="font-weight: 500">ขี้เลื่อยไม้</div><div style="font-size: 12px; color: #4A5B6C">03 01 05 · 4 SME</div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #EEF2F6"><div style="width: 43%; height: 10px; border-radius: 4px; background: #1A4B75"></div></div><span>13</span></div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #EEF2F6"><div style="width: 20%; height: 10px; border-radius: 4px; background: #0B8A5A"></div></div><span>11,700</span></div></td>
+              <td style="padding: 12px 0 12px 12px">105 · เชื้อเพลิงชีวมวล</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #EEF2F6">
+              <td style="padding: 12px 12px 12px 0"><div style="font-weight: 500">เศษผ้า/ใยสังเคราะห์</div><div style="font-size: 12px; color: #4A5B6C">04 02 22 · 2 SME</div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #EEF2F6"><div style="width: 33%; height: 10px; border-radius: 4px; background: #1A4B75"></div></div><span>10</span></div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #EEF2F6"><div style="width: 20%; height: 10px; border-radius: 4px; background: #0B8A5A"></div></div><span>12,000</span></div></td>
+              <td style="padding: 12px 0 12px 12px">105 · ผลิต RDF</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 12px 12px 0"><div style="font-weight: 500">เศษกระดาษ/กล่อง</div><div style="font-size: 12px; color: #4A5B6C">15 01 01 · 5 SME</div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #EEF2F6"><div style="width: 17%; height: 10px; border-radius: 4px; background: #1A4B75"></div></div><span>5</span></div></td>
+              <td style="padding: 12px"><div style="display: flex; align-items: center; gap: 8px"><div style="width: 100%; max-width: 160px; height: 10px; border-radius: 4px; background: #EEF2F6"><div style="width: 15%; height: 10px; border-radius: 4px; background: #0B8A5A"></div></div><span>9,000</span></div></td>
+              <td style="padding: 12px 0 12px 12px">105 · รีไซเคิลกระดาษ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 06 BUSINESS -->
+    <section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; color: #08734B; letter-spacing: 1px">06 · ธุรกิจของ ExerLink</span>
+        <h2 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 30px; line-height: 1.3">รายได้ก้อนใหญ่มาจากนิคมฯ แต่รายได้ประจำโตเร็วกว่า</h2>
+        <p style="margin: 0; color: #334155">Resource mapping ฿300,000 คิดเป็น 62% ของรายได้ Q3 ซึ่งเป็นรายได้ครั้งเดียว ตัวที่บอกว่าธุรกิจยั่งยืนคือสมาชิกรายปีบวกคอมมิชชัน ที่โตจาก ฿6,000 เป็น ฿160,000 ต่อไตรมาส</p>
+      </div>
+      <figure style="flex: 1.5 1 480px; min-width: 0; margin: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 18px">
+        <figcaption style="font-size: 14px; color: #4A5B6C">รายได้ต่อไตรมาส (บาท)</figcaption>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <div style="display: flex; justify-content: space-between; gap: 8px"><span style="font-weight: 500">Q1/2569</span><span style="font-family: 'Montserrat', sans-serif; font-weight: 600">18,000</span></div>
+          <div style="display: flex; height: 22px; border-radius: 6px; overflow: hidden; background: #EEF2F6"><div style="width: 1.2%; background: #0B8A5A"></div><div style="width: 2.5%; background: #94A3B8"></div></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <div style="display: flex; justify-content: space-between; gap: 8px"><span style="font-weight: 500">Q2/2569</span><span style="font-family: 'Montserrat', sans-serif; font-weight: 600">96,500</span></div>
+          <div style="display: flex; height: 22px; border-radius: 6px; overflow: hidden; background: #EEF2F6"><div style="width: 15.4%; background: #0B8A5A"></div><div style="width: 4.4%; background: #94A3B8"></div></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <div style="display: flex; justify-content: space-between; gap: 8px"><span style="font-weight: 500">Q3/2569</span><span style="font-family: 'Montserrat', sans-serif; font-weight: 600">486,400</span></div>
+          <div style="display: flex; height: 22px; border-radius: 6px; overflow: hidden; background: #EEF2F6"><div style="width: 32.9%; background: #0B8A5A"></div><div style="width: 5.4%; background: #94A3B8"></div><div style="width: 61.7%; background: #1A4B75"></div></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 18px; font-size: 13px; color: #334155">
+          <span style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 3px; background: #0B8A5A"></span>รายได้ประจำ (สมาชิก + คอมมิชชัน)</span>
+          <span style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 3px; background: #94A3B8"></span>ค่าเอกสาร กอ.1/กอ.2</span>
+          <span style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 3px; background: #1A4B75"></span>Resource mapping</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- 07 NEXT -->
+    <section style="background: #0B8A5A; color: #FFFFFF; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 22px">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; color: #E3F5EC; letter-spacing: 1px">07 · ก้าวต่อไป Q4/2569</span>
+        <h2 style="margin: 0; font-family: 'Kanit', sans-serif; font-weight: 600; font-size: 30px; line-height: 1.3">จาก 12 โรงงาน สู่ทั้งนิคม</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+        <div style="background: rgba(255,255,255,0.12); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px">+8 โรงงาน</span>
+          <span style="color: #E3F5EC; font-size: 14px">ให้ครบ 20 โรงงานนำร่อง โดยใช้ผลจาก Resource mapping ชี้เป้าโรงงานที่มีของเสียตรงกับผู้รับ</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.12); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px">3.2 / 5 ตัน</span>
+          <span style="color: #E3F5EC; font-size: 14px">ปิดกลุ่มน้ำมันใช้แล้วจาก 6 SME ให้ถึงขั้นต่ำของผู้รับ 106</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.12); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px">Scope 3</span>
+          <span style="color: #E3F5EC; font-size: 14px">เตรียมรายงานคาร์บอนสำหรับโรงงานส่งออกที่ต้องรับมือ CBAM (ระยะ 2 ของ BMC)</span>
+        </div>
+      </div>
+    </section>
+
+    <footer style="font-size: 12px; color: #4A5B6C; display: flex; flex-direction: column; gap: 4px">
+      <span>ตัวเลขทั้งหมดเป็นข้อมูลจำลองจากไฟล์ ExerLink_Story_Data.xlsx เพื่อการออกแบบ</span>
+      <span>แหล่งข้อมูลจริงที่จะใช้: ทะเบียนโรงงาน DIW, gdcatalog, ค่า EF ของ TGO, ใบรับของเสียและใบแจ้งหนี้จากผู้รับกำจัด</span>
+    </footer>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
